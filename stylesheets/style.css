@@ -39,40 +39,45 @@ header{
 
 .title{
     font-weight: 600;
-    font-size: 24px !important;
-    margin-top: 160px;
+    font-size: 30px !important;
+    margin-top: 100px;
+    line-height: 1.4; 
     text-align: center;
 }
 
 .titles{
-    font-weight: bolder;
+    font-weight: 500;
     font-size: 34px;
     margin-top: 160px;
     margin-bottom: 50px;
     text-align: center;
+    color: #336699;
 }
 
 .subtitle{
     font-weight: 400;
     font-size: 18px;
+    font-style: italic;
     text-align: center;
     color: #666699;
     margin-top: 15px;
 }
 
 strong.verde{
-    color: #003629;
-    font-size: 28px;
+    color: #2D2D2D;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 .gif{
     box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.26);
-    margin-top: 60px;
+    margin-top: 10px;
+    margin-bottom: 80px;
     padding: 0;
 }
 
 .boton{
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 15px;
     font-weight: 500;
     color: white;
@@ -81,17 +86,16 @@ strong.verde{
     border-radius: 2px;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .pres{
-    background-color: #f1f2f6;
+    background-color: white;
 }
 
 .car{
     padding-top: 80px;
-    padding-bottom: 280px;
-    background-image: url("../images/shapes.png");
+    padding-bottom: 160px;
     background-position: 0px 59px;
     background-size: 150%;
 }
@@ -146,6 +150,7 @@ ol.carousel-indicators li.active {
 
 h1.nues{
     margin-top: 60px;
+    color: #33cc99 !important;
 }
 
 .servT{
@@ -165,7 +170,6 @@ h1.nues{
 
 .services{
     padding-bottom: 350px;
-    background-image: url("../images/shapes.png");
     background-position: 0px 59px;
     background-size: 150%;
 }
@@ -177,7 +181,7 @@ h1.nues{
     border-left: 0;
     border-right: 0;
     background: transparent;
-    border-bottom: 0.5px solid black;
+    border-bottom: 0;
     padding: 0;
 }
 
@@ -196,8 +200,8 @@ h1.nues{
 }
 
 .comoT{
-    color: #2D2D2D;
-    font-weight: bolder;
+    color: #33cc99;
+    font-weight: 500;
     font-size: 34px;
     margin-top: 40px;
 }
@@ -211,9 +215,9 @@ h1.nues{
 }
 
 .tarifasT{
-    color: #2D2D2D;
+    color: #ffcc66;
     font-size: 34px;
-    font-weight: bolder;
+    font-weight: 400;
     margin-top: 380px;
 }
 
@@ -227,7 +231,7 @@ h1.nues{
     border-bottom: 0;
     background: transparent;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .btn2:focus{
     color: #1E7A5E;
@@ -235,9 +239,13 @@ h1.nues{
     border: 0.5px solid #1E7A5E !important;
 }
 
+strong.num{
+    font-weight: bolder;
+}
+
 .subT{
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     text-align: center;
     line-height: 35px; 
     color: #666666;
@@ -245,7 +253,7 @@ h1.nues{
 }
 
 input[type=range].form-range.col-8 {
-    width: 60%;
+    width: 90%;
     margin: 3.05px 0;
     margin-bottom: 40px;
     background-color: transparent;
@@ -259,7 +267,7 @@ input[type=range].form-range.col-8 {
     border: 0.2px solid #2d2d2d;
     border-radius: 8.1px;
     width: 100%;
-    height: 17.9px;
+    height: 25px;
     cursor: pointer;
   }
   input[type=range].form-range.col-8::-webkit-slider-thumb {
@@ -280,7 +288,7 @@ input[type=range].form-range.col-8 {
     border: 0.2px solid #2d2d2d;
     border-radius: 8.1px;
     width: 100%;
-    height: 17.9px;
+    height: 25px;
     cursor: pointer;
   }
   input[type=range].form-range.col-8::-moz-range-thumb {
@@ -297,7 +305,7 @@ input[type=range].form-range.col-8 {
     border-width: 5.15px 0;
     color: transparent;
     width: 100%;
-    height: 17.9px;
+    height: 25px;
     cursor: pointer;
   }
   input[type=range].form-range.col-8::-ms-fill-lower {
@@ -415,8 +423,8 @@ input[type=range].form-range.col-8 {
   }
 
   .nuestrosS{
-      color: #1E7A5E;
-      font-weight: bolder;
+      color: #cc6633;
+      font-weight: 400;
       font-size: 34px;
       margin-top: 100px;
       margin-bottom: 40px;
@@ -504,23 +512,31 @@ input[type=range].form-range.col-8 {
 }
 
 .contacto{
-    background: url("../images/mundo.png");
+    background-color: rgba(204,204,204,0.36);
     background-size: cover;
     background-position: -247px;
 }
 
 .contactoT{
-    color: #1E7A5E;
-      font-weight: bolder;
+    color: #cc6633;
+      font-weight: 400;
       font-size: 34px;
       margin-top: 70px;
       margin-bottom: 10px;
 }
 
+.subtitle1{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #666699;
+    margin-top: 15px;
+}
+
 .email{
     height: 55px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background: white;
     border: none;
     border-left: 4px solid #1e7a5e;
@@ -532,7 +548,7 @@ input[type=range].form-range.col-8 {
 }
 
 .iconos{
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .iconBut{
@@ -694,3 +710,50 @@ footer{
   #empresa{
       left: 0%;
   }
+
+  h3.msj{
+      text-align: center;
+      margin-top: 60px;
+      font-size: 16px;
+  }
+
+  h3.opciones{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+
+  .nosotrosDiv{
+      background: #f1f2f6;
+      margin-top: 40px;
+  }
+
+  .loguitos{
+      padding: 5px;
+      margin-left: 20px;
+      width: 60%;
+  }
+  .loguitos1{
+    padding: 25px;
+    width: 15%;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+  }
+    .tituloNos1{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1E7A5E;   
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .logosT{
+        margin: 10px;
+    }
+    .textNos2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+    }
