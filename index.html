@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kliv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel='stylesheet' href='./stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/882d6fd4b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        
+            <script type="text/javascript">
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                      x.style.left = "none";
+                    } else {
+                      x.style.display = "block";
+                    }
+                  }
+            </script>
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="#home" class="active"><div class="col-6 logo1">
+                    <img src="./Images/kliv-logo.png" alt="" class="col-10">
+                </div></a>
+                <!-- Navigation links (hidden by default) -->
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <script type="text/javascript">
+                    function burger(){
+                        var burger = document.getElementById('burger');
+                        var links = document.getElementById('links');
+                        var quit = document.getElementById('quit');
+                        burger.style.padding = '16px 16px 200vw 200vw';
+                        links.style.display = 'flex';
+                        quit.style.display = 'inline';
+                        }
+                
+                        function quit(){
+                        var burger = document.getElementById('burger');
+                        var links = document.getElementById('links');
+                        var quit = document.getElementById('quit');
+                        burger.style.padding = '16px 16px 32px 32px';
+                        links.style.display = 'none';
+                        quit.style.display = 'none';
+                    }
+                </script>
+            <i id="burger" class="material-icons" onclick="burger()">menu</i>
+            <i id="quit" class="material-icons" onclick="quit()">clear</i>
+        
+            <div id="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+            </div>
+
+    </header>
+
+    <main id="home">
+        <div class="container-fluid">
+            <div class="row align">
+                <section class="row align pres">
+                    <h1 class="col-12 title">Optimiza tu inversión publicitaria con <strong class="verde">Performance MKT</strong></h1>
+                    <h2 class="col-12 subtitle">Estrategias orientadas 100% a resultados</h2>
+                    <img src="./Images/gif-cono.png" alt="" class="col-12 gif">
+                    <button class="boton col-5">Get started</button>
+                </section>
+
+                <section class="row align car">
+                    <h1 class="col-12 titles">¿POR QUÉ NOS ELIGEN?</h1>
+
+                      <div class="porqCar row">
+                        <div class="item active align">
+                          <i class="fas fa-dollar-sign col-10 cIcono"></i>
+                          <h2 class="col-10 cSubtitle">+ Retorno de inversión</h2>
+                          <h3 class="col-11 cText">Maximizamos el rendimiento de tu presupuesto publicitario, ya que solo pagas por los resultados conseguidos a un costo por adquisición asignado que garantize rentabilidad.</h3>
+                        </div>
+                    
+                        <div class="item align">
+                          <i class="fas fa-dollar-sign col-10 cIcono"></i>
+                          <h2 class="col-10 cSubtitle">+ Retorno de inversión</h2>
+                          <h3 class="col-11 cText">Maximizamos el rendimiento de tu presupuesto publicitario, ya que solo pagas por los resultados conseguidos a un costo por adquisición asignado que garantize rentabilidad.</h3>
+                        </div>
+                    
+                        <div class="item align">
+                          <i class="fas fa-dollar-sign col-10 cIcono"></i>
+                          <h2 class="col-10 cSubtitle">+ Retorno de inversión</h2>
+                          <h3 class="col-11 cText">Maximizamos el rendimiento de tu presupuesto publicitario, ya que solo pagas por los resultados conseguidos a un costo por adquisición asignado que garantize rentabilidad.</h3>
+                        </div>
+
+                        <div class="item align">
+                          <i class="fas fa-dollar-sign col-10 cIcono"></i>
+                          <h2 class="col-10 cSubtitle">+ Retorno de inversión</h2>
+                          <h3 class="col-11 cText">Maximizamos el rendimiento de tu presupuesto publicitario, ya que solo pagas por los resultados conseguidos a un costo por adquisición asignado que garantize rentabilidad.</h3>
+                        </div>
+
+                        <div class="item align">
+                          <i class="fas fa-dollar-sign col-10 cIcono"></i>
+                          <h2 class="col-10 cSubtitle">+ Retorno de inversión</h2>
+                          <h3 class="col-11 cText">Maximizamos el rendimiento de tu presupuesto publicitario, ya que solo pagas por los resultados conseguidos a un costo por adquisición asignado que garantize rentabilidad.</h3>
+                        </div>
+                      </div>
+
+                      <script type="text/javascript">
+                        $('.porqCar').slick({
+                            infinite: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            prevArrow: false,
+                            nextArrow: false,
+                            dots: true
+                        });
+                      </script>
+
+                </section>
+
+                <section class="row align services">
+
+                    <h1 class="col-12 titles nues">NUESTROS SERVICIOS</h1>
+
+                    <div class="col-12 row serv">
+                        <img src="./Images/fb-insta.png" alt="" class="col-5 imgS">
+                        <div class="col-7">
+                            <h1 class="col-12 servT">Publicidad en Redes</h1>
+                            <p class="textT col-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
+                            <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 row serv">
+                        <div class="col-7">
+                            <h1 class="col-12 servT">Publicidad en Redes</h1>
+                            <p class="textT col-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
+                            <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
+                        </div>
+                        <img src="./Images/google-yt.png" alt="" class="col-5 imgS">
+                    </div>
+
+                    <div class="col-12 row serv">
+                        <img src="./Images/fb-insta.png" alt="" class="col-5 imgS">
+                        <div class="col-7">
+                            <h1 class="col-12 servT">Publicidad en Redes</h1>
+                            <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
+                            <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 row serv">
+                        <div class="col-7">
+                            <h1 class="col-12 servT">Publicidad en Redes</h1>
+                            <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
+                            <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
+                        </div>
+                        <img src="./Images/google-yt.png" alt="" class="col-5 imgS">
+                    </div>
+
+                    <div class="col-12 row serv">
+                        <img src="./Images/fb-insta.png" alt="" class="col-5 imgS">
+                        <div class="col-7">
+                            <h1 class="col-12 servT">Publicidad en Redes</h1>
+                            <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
+                            <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 row serv">
+                        <div class="col-7">
+                            <h1 class="col-12 servT">Publicidad en Redes</h1>
+                            <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
+                            <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
+                        </div>
+                        <img src="./Images/google-yt.png" alt="" class="col-5 imgS">
+                    </div>
+
+                    <div class="col-12 row serv">
+                        <img src="./Images/fb-insta.png" alt="" class="col-5 imgS">
+                        <div class="col-7">
+                            <h1 class="col-12 servT">Publicidad en Redes</h1>
+                            <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
+                            <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="row align como">
+                    <h1 class="col-12 titles comoT">COMO TRABAJAMOS</h1>
+                    <p class="col-12 textC">Partiendo de un relevamiento 360 grados de tu empresa y al mercado, diseñamos un embudo de conversión 100% a medida, ajustada a sus recursos y objetivos</p>
+                </section>
+
+                <section class="row align tarifas">
+                    <h1 class="col-12 titles tarifasT">TARIFAS POR CAMPAÑA</h1>
+                    <div class="col-12" style="display: flex;justify-content: space-around;">
+                        <button class="col-3 btn2 emp"><i class="fas fa-building"></i> Empresa</button>
+                        <button class="col-3 btn2 age"><i class="fas fa-building"></i> Agencia</button>
+                    </div>
+
+
+                    
+                        <h2 class="col-9 subT">Paquetes para empresas de todos los tamaños</h2>
+
+                        <label for="customRange3" class="form-label" style="text-align: center; font-size: 18px;">3 Campañas/ Mes</label>
+                        <input type="range" class="form-range col-8" min="0" max="5" step="1" id="customRange3">
+
+                        <div class="center align cont">
+                            <article class="col-11 card">
+                                <div class="row align">
+                                    <img src="./Images/precios-icon.png" alt="..." class="col-4" style="width: 30%;">
+                                    <div class="col-8">
+                                        <h1 class="col-12 precio">$13.500 /MES</h1>
+                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
+                                        <h1 class="col-12 desc">10% OFF / 4.500$ C/U</h1>
+                                        <button class="botonStart col-8">Comenzar ahora</button>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-11 card">
+                                <div class="row align">
+                                    <img src="./Images/precios-icon.png" alt="..." class="col-4" style="width: 30%;">
+                                    <div class="col-8">
+                                        <h1 class="col-12 precio">$13.500 /MES</h1>
+                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
+                                        <h1 class="col-12 desc">10% OFF / 4.500$ C/U</h1>
+                                        <button class="botonStart col-8">Comenzar ahora</button>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-11 card">
+                                <div class="row align">
+                                    <img src="./Images/precios-icon.png" alt="..." class="col-4" style="width: 30%;">
+                                    <div class="col-8">
+                                        <h1 class="col-12 precio">$13.500 /MES</h1>
+                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
+                                        <h1 class="col-12 desc">10% OFF / 4.500$ C/U</h1>
+                                        <button class="botonStart col-8">Comenzar ahora</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <script type="text/javascript">
+                            $('.center').slick({
+                            centerMode: true,
+                            centerPadding: '60px',
+                            slidesToShow: 1,
+                            responsive: [
+                                {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 3
+                                }
+                                },
+                                {
+                                breakpoint: 480,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 1
+                                }
+                                }
+                            ]
+                            });
+                        </script>
+                        
+
+                </section>
+
+                <section class="row align preguntas">
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Qué comprende la tarifa por campaña? <i class="fas fa-chevron-down 1" data-toggle="collapse" data-target="#content"></i>
+                    </p>
+                    <p class="preg col-11 collapse" id="content" style="justify-content: space-between;">
+                        ¿ Qué comprende la tarifa por campaña? <i class="fas fa-chevron-down 1"></i><i class="fas fa-chevron-up"></i>
+                    </p>
+
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Qué delimita cada campaña? <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Qué costos adicionales a los exhibidos hay? <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Cuántas campañas son adecuadas para mi organización? <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Qué metodos de pago aceptan? <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Cuándo se paga por los servicios? <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Hay devolución en caso de cancelación de servicios? <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                        ¿ Ofrecen planes con descuento? <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="preg col-11" style="display:flex;justify-content: space-between;">
+                        ¿ Hay garantía de resultados? <i class="fas fa-chevron-down" data-toggle="collapse" data-target="#content1"></i></i>
+                    </p>
+                    <div class="socios col-12 collapse" id="content1">
+                        <h1 class="col-12 align nuestrosS">NUESTROS SOCIOS</h1>
+                        <img src="./Images/socios.png" alt="" class="col-12">
+                        <p class="col-12 muchos">y muchos más!</p>
+                    </div>
+                </section>
+
+                <section class="row align nosotros">
+                    <h1 class="col-12 align nuestrosS">NOSOTROS</h1>
+                    <article class="col-8 cardNos">
+                        <img src="./Images/logo-mision.png" alt="" class="col-4 logo">
+                        <h1 class="tituloNos col-12">MISIÓN</h1>
+                        <p class="col-12 textNos">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+                    </article>
+                    <article class="col-8 cardNos">
+                        <img src="./Images/logo-vision.png" alt="" class="col-4 logo">
+                        <h1 class="tituloNos col-12">MISIÓN</h1>
+                        <p class="col-12 textNos">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+                    </article>
+                    <article class="col-8 cardNos">
+                        <img src="./Images/logo-valores.png" alt="" class="col-4 logo">
+                        <h1 class="tituloNos col-12">MISIÓN</h1>
+                        
+                          
+                            <!-- Wrapper for slides -->
+                            <div class="single-item row align car2">
+                                <p class="item active col-12 textNos1">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+                          
+                                <p class="item col-12 textNos1">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+                          
+                                <p class="item col-12 textNos1">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+    
+                                <p class="item col-12 textNos1">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+    
+                                <p class="item col-12 textNos1">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+                            </div>
+
+                        <script type="text/javascript">
+                            $('.single-item').slick({
+                                prevArrow: false,
+                                nextArrow: false,
+                                dots:true
+                            });
+                        </script>
+                            
+                        </article>
+                    
+                        <div class="nosCar align" style="justify-content: space-around;">
+                            <div class="imgNos col-5">
+                                <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                <h1 class="col-12 nombre">Nombre</h1>
+                                <p class="col-12 puesto">Puesto de trabajo</p>
+                            </div>
+                            <div class="imgNos col-5">
+                                <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                <h1 class="col-12 nombre">Nombre</h1>
+                                <p class="col-12 puesto">Puesto de trabajo</p>
+                            </div>
+                            <div class="imgNos col-5">
+                                <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                <h1 class="col-12 nombre">Nombre</h1>
+                                <p class="col-12 puesto">Puesto de trabajo</p>
+                            </div>
+                            <div class="imgNos col-5">
+                                <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                <h1 class="col-12 nombre">Nombre</h1>
+                                <p class="col-12 puesto">Puesto de trabajo</p>
+                            </div>
+                            <div class="imgNos col-5">
+                                <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                <h1 class="col-12 nombre">Nombre</h1>
+                                <p class="col-12 puesto">Puesto de trabajo</p>
+                            </div>
+                            <div class="imgNos col-5">
+                                <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                <h1 class="col-12 nombre">Nombre</h1>
+                                <p class="col-12 puesto">Puesto de trabajo</p>
+                            </div>
+                        </div>                
+                          <script type="text/javascript">
+                            $('.nosCar').slick({
+                                infinite: true,
+                                slidesToShow: 2,
+                                slidesToScroll: 2,
+                                prevArrow: false,
+                                nextArrow: false
+                            });
+                          </script>           
+                </section>
+
+                <section class="row align contacto">
+                    <h1 class="col-12 align contactoT">CONTACTO</h1>
+
+                    <h3 class="subtitle col-12">Contactanos para hacer crecer tu negocio</h3>
+
+                    <div class="email align col-12" style="justify-content: space-around;">
+                        <input class="email-input col-10" type="email" placeholder="What's your email?"></input>
+                        <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                    </div>
+
+                    <div class="col-12 align iconos" style="justify-content: space-around;">
+                        <button class="col-3 iconBut"><i class="far fa-envelope iconI"></i></button>
+                        <button class="col-3 iconBut"><i class="far fa-calendar-alt iconI"></i></button>
+                        <button class="col-3 iconBut"><i class="fas fa-phone iconI"></i></button>
+                        <button class="col-3 iconBut"><i class="fab fa-whatsapp iconI"></i></button>
+                    </div>
+
+                </section>
+            </div>
+        </div>       
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row align">
+
+                <img src="./Images/kliv-logo-fondo.png" alt="" class="col-7 logoFoot">
+                <p class="direc col-12">Rosario de Sta Fé 1106 · piso 6 · Of. E · x5900 · Córdoba, Argentina</p>
+                <div class="col-12 align iconosFoot" style="justify-content: space-around;"> 
+                    <img src="./Images/google-partner.png" alt="" class="col-3 partners">
+                    <img src="./Images/marketing-partner.png" alt="" class="col-3 partners">
+                    <i class="fab fa-facebook-square col-2 icFoot"></i>
+                    <i class="fab fa-instagram col-2 icFoot"></i>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+</body>
+
+<!--<script src="./javascripts/navBar.js"></script>-->
+<script src="./javascripts/emp.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</html>
