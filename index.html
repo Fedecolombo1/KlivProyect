@@ -25,7 +25,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="mobile">
         
             <script type="text/javascript">
                 function myFunction() {
@@ -39,7 +39,7 @@
             </script>
             <!-- Top Navigation Menu -->
             <div class="topnav">
-                <a href="#home" class="active"><div class="col-6 logo1">
+                <a href="#home" class="active"><div class="col-6 col-lg-3 logo1">
                     <img src="./Images/kliv-logo.png" alt="" class="col-10">
                 </div></a>
                 <!-- Navigation links (hidden by default) -->
@@ -75,21 +75,38 @@
 
     </header>
 
+    <header class="desk">
+        <div class="container-fluid">
+            <div class="row align" style="justify-content: space-between;">
+                <img src="./Images/kliv-logo.png" alt="" class="col-4 logoH">
+                <nav class="col-7 row">
+                    <h3 class="col-3 navT">Servicios</h3>
+                    <h3 class="col-3 navT">Tarifas</h3>
+                    <h3 class="col-3 navT">Nosotros</h3>
+                    <h3 class="col-3 navT">Contacto</h3>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <main id="home">
         <div class="container-fluid">
             <div class="row align">
                 <section class="row align pres">
-                    <h1 class="col-12 title">Optimiza tu inversión publicitaria con <strong class="verde">PERFORMANCE MKT</strong></h1>
-                    <h2 class="col-12 subtitle">Estrategias 100% orientadas a resultados</h2>
-                    <button class="boton col-5">Get started</button>
-                    <img src="./Images/gif-cono.png" alt="" class="col-12 gif">
+                    <h1 class="col-12 col-lg-5 title">Optimiza tu inversión publicitaria con <strong class="verde">PERFORMANCE MKT</strong></h1>
+                    <h2 class="col-12 col-lg-9 subtitle">Estrategias 100% orientadas a resultados</h2>
+                    <button class="boton mobile col-5">Get started</button>
+                    <div class="desk align col-12" style="display: flex !important;">
+                        <button class="boton col-2 desk">Get started</button>
+                    </div>
+                    <img src="./Images/gif-cono.png" alt="" class="col-12 col-lg-7 gif">
                     
                 </section>
 
                 <section class="row align car">
                     <h1 class="col-12 titles">¿POR QUÉ NOS ELIGEN?</h1>
 
-                      <div class="porqCar row">
+                      <div class="porqCar row col-lg-6">
                         <div class="item active align">
                           <img src="./Images/team.png" alt="" class="col-12" style="width: 20%;">
                           <h2 class="col-10 cSubtitle">+ Retorno de inversión</h2>
@@ -138,16 +155,16 @@
 
                     <h1 class="col-12 titles nues">NUESTROS SERVICIOS</h1>
 
-                    <div class="col-12 row serv">
+                    <div class="col-12 col-lg-8 row serv">
                         <img src="./Images/publi-redes.png" alt="" class="col-5 imgS">
-                        <div class="col-7">
+                        <div class="col-7 row align" style="justify-content: space-between;">
                             <h1 class="col-12 servT">Publicidad en Redes</h1>
                             <p class="textT col-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
                             <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
                         </div>
                     </div>
-                    <div class="col-12 row serv">
-                        <div class="col-7">
+                    <div class="col-12 col-lg-8 row serv">
+                        <div class="col-7 row align" style="justify-content: space-between;"">
                             <h1 class="col-12 servT">Publicidad en Redes</h1>
                             <p class="textT col-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
                             <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
@@ -155,16 +172,16 @@
                         <img src="./Images/publi-google.png" alt="" class="col-5 imgS">
                     </div>
 
-                    <div class="col-12 row serv">
+                    <div class="col-12 col-lg-8 row serv">
                         <img src="./Images/email-mkt.png" alt="" class="col-5 imgS">
-                        <div class="col-7">
+                        <div class="col-7 row align" style="justify-content: space-between;"">
                             <h1 class="col-12 servT">Publicidad en Redes</h1>
                             <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
                             <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
                         </div>
                     </div>
-                    <div class="col-12 row serv">
-                        <div class="col-7">
+                    <div class="col-12 col-lg-8 row serv">
+                        <div class="col-7 row align" style="justify-content: space-between;"">
                             <h1 class="col-12 servT">Publicidad en Redes</h1>
                             <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
                             <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
@@ -172,16 +189,16 @@
                         <img src="./Images/gest-contenidos.png" alt="" class="col-5 imgS">
                     </div>
 
-                    <div class="col-12 row serv">
+                    <div class="col-12 col-lg-8 row serv">
                         <img src="./Images/dis-web.png" alt="" class="col-5 imgS">
-                        <div class="col-7">
+                        <div class="col-7 row align" style="justify-content: space-between;"">
                             <h1 class="col-12 servT">Publicidad en Redes</h1>
                             <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
                             <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
                         </div>
                     </div>
-                    <div class="col-12 row serv">
-                        <div class="col-7">
+                    <div class="col-12 col-lg-8 row serv">
+                        <div class="col-7 row align" style="justify-content: space-between;"">
                             <h1 class="col-12 servT">Publicidad en Redes</h1>
                             <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
                             <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
@@ -189,9 +206,9 @@
                         <img src="./Images/dis-grafico.png" alt="" class="col-5 imgS">
                     </div>
 
-                    <div class="col-12 row serv">
+                    <div class="col-12 col-lg-8 row serv">
                         <img src="./Images/wpp-mkt.png" alt="" class="col-5 imgS">
-                        <div class="col-7">
+                        <div class="col-7 row align" style="justify-content: space-between;">
                             <h1 class="col-12 servT">Publicidad en Redes</h1>
                             <p class="textT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum enim in eum nihil tempore, accusantium maxime, consequatur facere temporibus quis ipsum aliquam ullam veritatis atque molestias sed eligendi architecto?</p>
                             <button class="col-5 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
@@ -202,7 +219,7 @@
 
                 <section class="row align como">
                     <h1 class="col-12 titles comoT">COMO TRABAJAMOS</h1>
-                    <p class="col-12 textC">Partiendo de un relevamiento 360 grados de tu empresa y al mercado, diseñamos un embudo de conversión 100% a medida, ajustada a sus recursos y objetivos</p>
+                    <p class="col-12 col-lg-6 textC">Partiendo de un relevamiento 360 grados de tu empresa y al mercado, diseñamos un embudo de conversión 100% a medida, ajustada a sus recursos y objetivos</p>
                 </section>
 
                 <section class="row align tarifas">
@@ -253,12 +270,34 @@
                                     </div>
                                 </div>
                             </article>
+                            <article class="col-11 card">
+                                <div class="row align">
+                                    
+                                    <div class="col-10">
+                                        <h1 class="col-12 precio">$13.500 /MES</h1>
+                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
+                                        <h1 class="col-12 desc">10% OFF / 4.500$ C/U</h1>
+                                        <button class="botonStart col-8">Comenzar ahora</button>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-11 card">
+                                <div class="row align">
+                                    
+                                    <div class="col-10">
+                                        <h1 class="col-12 precio">$13.500 /MES</h1>
+                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
+                                        <h1 class="col-12 desc">10% OFF / 4.500$ C/U</h1>
+                                        <button class="botonStart col-8">Comenzar ahora</button>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                         <script type="text/javascript">
                             $('.center').slick({
                             centerMode: true,
                             centerPadding: '60px',
-                            slidesToShow: 1,
+                            slidesToShow: 3,
                             responsive: [
                                 {
                                 breakpoint: 768,
@@ -286,38 +325,38 @@
                 </section>
 
                 <section class="row align preguntas">
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Qué comprende la tarifa por campaña? <i class="fas fa-chevron-down 1" data-toggle="collapse" data-target="#content"></i>
                     </p>
-                    <p class="preg col-11 collapse" id="content" style="justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7 collapse" id="content" style="justify-content: space-between;">
                         ¿ Qué comprende la tarifa por campaña? <i class="fas fa-chevron-down 1"></i><i class="fas fa-chevron-up"></i>
                     </p>
 
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Qué delimita cada campaña? <i class="fas fa-chevron-down"></i>
                     </p>
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Qué costos adicionales a los exhibidos hay? <i class="fas fa-chevron-down"></i>
                     </p>
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Cuántas campañas son adecuadas para mi organización? <i class="fas fa-chevron-down"></i>
                     </p>
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Qué metodos de pago aceptan? <i class="fas fa-chevron-down"></i>
                     </p>
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Cuándo se paga por los servicios? <i class="fas fa-chevron-down"></i>
                     </p>
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Hay devolución en caso de cancelación de servicios? <i class="fas fa-chevron-down"></i>
                     </p>
-                    <p class="preg col-11" style="display: flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
                         ¿ Ofrecen planes con descuento? <i class="fas fa-chevron-down"></i>
                     </p>
-                    <p class="preg col-11" style="display:flex;justify-content: space-between;">
+                    <p class="preg col-11 col-lg-7" style="display:flex;justify-content: space-between;">
                         ¿ Hay garantía de resultados? <i class="fas fa-chevron-down" data-toggle="collapse" data-target="#content1"></i></i>
                     </p>
-                    <div class="socios col-12 collapse" id="content1">
+                    <div class="socios col-12 col-lg-7 collapse" id="content1">
                         <h1 class="col-12 align nuestrosS">NUESTROS SOCIOS</h1>
                         <img src="./Images/socios.png" alt="" class="col-12">
                         <p class="col-12 muchos">y muchos más!</p>
@@ -328,7 +367,7 @@
                     <h1 class="col-12 align nuestrosS">NOSOTROS</h1>
 
 
-                    <div class="col-12 align nosotrosDiv">
+                    <div class="col-12 col-lg-6 align nosotrosDiv">
                         <div class="col-3 logosT">
                             <img src="./Images/logo-mision.png" alt="" class="col-12 loguitos">
                             <h1 class="tituloNos1 col-12">MISIÓN</h1>
@@ -344,7 +383,7 @@
 
                     </div>
                     <!-- Wrapper for slides -->
-                    <div class="single-item2 row align car2" style="margin-bottom: 80px !important;margin-top: 30px !important;">
+                    <div class="single-item2 row align car2 col-lg-7" style="margin-bottom: 80px !important;margin-top: 30px !important;">
                         <p class="item active col-12 textNos2">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
                   
                         <p class="item col-12 textNos2">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
@@ -360,22 +399,23 @@
                         $('.single-item2').slick({
                             prevArrow: false,
                             nextArrow: false,
-                            dots:true
+                            dots:true,
+                            
                         });
                     </script>
 
 
-                    <article class="col-8 cardNos">
+                    <article class="col-8 cardNos mobile">
                         <img src="./Images/logo-mision.png" alt="" class="col-4 logo">
                         <h1 class="tituloNos col-12">MISIÓN</h1>
                         <p class="col-12 textNos">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
                     </article>
-                    <article class="col-8 cardNos">
+                    <article class="col-8 cardNos mobile">
                         <img src="./Images/logo-vision.png" alt="" class="col-4 logo">
                         <h1 class="tituloNos col-12">MISIÓN</h1>
                         <p class="col-12 textNos">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
                     </article>
-                    <article class="col-8 cardNos">
+                    <article class="col-8 cardNos mobile">
                         <img src="./Images/logo-valores.png" alt="" class="col-4 logo">
                         <h1 class="tituloNos col-12">MISIÓN</h1>
                         
@@ -403,7 +443,7 @@
                             
                         </article>
                     
-                        <div class="nosCar align" style="justify-content: space-around;">
+                        <div class="nosCar align col-lg-7" style="justify-content: space-around;">
                             <div class="imgNos col-5">
                                 <img src="./Images/person-logo.png" alt="" class="foto col-12">
                                 <h1 class="col-12 nombre">Nombre</h1>
@@ -438,10 +478,30 @@
                           <script type="text/javascript">
                             $('.nosCar').slick({
                                 infinite: true,
-                                slidesToShow: 2,
                                 slidesToScroll: 2,
                                 prevArrow: false,
-                                nextArrow: false
+                                nextArrow: false,
+                                slidesToShow: 4,
+                                responsive: [
+                                    {
+                                    breakpoint: 768,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 2
+                                    }
+                                    },
+                                    {
+                                    breakpoint: 480,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '15px',
+                                        slidesToShow: 2
+                                    }
+                                    }
+                                ]
                             });
                           </script>           
                 </section>
@@ -453,18 +513,18 @@
 
                     <h3 class="msj col-11">/ Dejanos tu mensaje</h3>
 
-                    <div class="email align col-12" style="justify-content: space-around;">
+                    <div class="email align col-12 col-lg-5" style="justify-content: space-around;">
                         <input class="email-input col-10" type="email" placeholder="What's your email?"></input>
                         <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                     </div>
 
-                    <div class="col-12 align">
+                    <div class="col-12 col-lg-8 align">
                         <h3 class="opciones col-3">Email</h3>
                         <h3 class="opciones col-3">Telefono</h3>
                         <h3 class="opciones col-3">Mensaje</h3>
                     </div>
 
-                    <div class="col-12 align iconos" style="justify-content: space-around;">
+                    <div class="col-12 col-lg-5 align iconos" style="justify-content: space-around;">
                         <button class="col-3 iconBut"><img src="./Images/samsung-mail.png" alt="" style="width: 100%;"></button>
                         <button class="col-3 iconBut"><img src="./Images/samsung-calendar.png" alt="" style="width: 100%;"></i></button>
                         <button class="col-3 iconBut"><img src="./Images/samsung-phone.png" alt="" style="width: 100%;"></i></button>
@@ -480,11 +540,11 @@
         <div class="container-fluid">
             <div class="row align">
 
-                <img src="./Images/kliv-logo-blanco.png" alt="" class="col-7 logoFoot">
+                <img src="./Images/kliv-logo-blanco.png" alt="" class="col-7 col-lg-3 logoFoot">
                 <p class="direc col-12">Rosario de Sta Fé 1106 · piso 6 · Of. E · x5900 · Córdoba, Argentina</p>
                 <div class="col-12 align iconosFoot" style="justify-content: space-around;"> 
-                    <img src="./Images/google-partner.png" alt="" class="col-3 partners">
-                    <img src="./Images/marketing-partner.png" alt="" class="col-3 partners">
+                    <img src="./Images/google-partner.png" alt="" class="col-3 col-lg-1 partners">
+                    <img src="./Images/marketing-partner.png" alt="" class="col-3 col-lg-1 partners">
                     <i class="fab fa-facebook-square col-2 icFoot"></i>
                     <i class="fab fa-instagram col-2 icFoot"></i>
                 </div>
