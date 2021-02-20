@@ -1,6 +1,9 @@
-*{
-    font-family: 'Poppins', sans-serif;
-}
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
 
 .align{
     display: flex;
@@ -49,9 +52,9 @@ header{
 
 .titles{
     font-weight: 500;
-    font-size: 34px;
+    font-size: 32px;
     margin-top: 160px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     text-align: center;
     color: #336699;
 }
@@ -119,8 +122,8 @@ strong.verde{
 }
 
 .cText{
-    font-weight: 800;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 17px;
     color: #666666;
     text-align: start;
     margin-bottom: 60px;
@@ -148,6 +151,7 @@ ol.carousel-indicators li.active {
 .cIcono{
     color: #6699ff;
     font-size: 22px;
+    width: 17%;
 }
 
 h1.nues{
@@ -161,8 +165,9 @@ h1.nues{
 }
 
 .textT{
-    font-weight: 500;
-    font-size: 11px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
 }
 
 .serv{
@@ -178,7 +183,7 @@ h1.nues{
 
 .btnS{
     font-weight: bold;
-    font-size: 10px;
+    font-size: 15px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -189,7 +194,7 @@ h1.nues{
 
 .flechita{
     font-size: 10px;
-    margin-left: 23px;
+    margin-left: 5px;
 }
 
 .imgS{
@@ -218,14 +223,14 @@ h1.nues{
 
 .tarifasT{
     color: #ffcc66;
-    font-size: 34px;
+    font-size: 33px;
     font-weight: 400;
     margin-top: 380px;
 }
 
 .btn2{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     color: #003629;
     border-top: 0;
     border-left: 0;
@@ -233,7 +238,7 @@ h1.nues{
     border-bottom: 0;
     background: transparent;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .btn2:focus{
     color: #1E7A5E;
@@ -247,11 +252,11 @@ strong.num{
 
 .subT{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     line-height: 35px; 
     color: #666666;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 input[type=range].form-range.col-8 {
@@ -362,6 +367,7 @@ input[type=range].form-range.col-8 {
   }
 
   .precio{
+      text-align: center;
       margin-top: 30px;
       font-size: 26px;
       font-weight: bolder;
@@ -370,6 +376,7 @@ input[type=range].form-range.col-8 {
   }
 
   .ars{
+      text-align: center;
       font-size: 16px;
       font-weight: bold;
       color: #003629;
@@ -377,6 +384,7 @@ input[type=range].form-range.col-8 {
   }
 
   .desc{
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
@@ -481,7 +489,7 @@ input[type=range].form-range.col-8 {
 }
 
 .imgNos{
-    height: 100% !important;
+    height: 261px !important;
     background: white;
     margin:5px;
     margin-top: 10px;
@@ -496,15 +504,16 @@ input[type=range].form-range.col-8 {
 
 .nombre{
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 0px;
 }
 
 .puesto{
+    margin-top: 10px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     color: #666699;
 }
@@ -765,6 +774,24 @@ footer{
     }
     .mobile{
         display: inline-block;
+    }
+
+    .saberMas{
+        position: fixed;
+        display: flex;
+        z-index: 400;
+        height: 100%;
+        width: 100%;
+        background-color: #003629;
+    }
+
+    .cerrado{
+        left: -100%;
+        transition: all .5s;
+    }
+    .abierto{
+        left: 0%;
+        transition: all .5s;
     }
 
     @media(min-width:768px){

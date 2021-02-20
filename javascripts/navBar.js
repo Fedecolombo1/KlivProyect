@@ -8,25 +8,20 @@ window.addEventListener("load", function(){
     var aSec4 = document.querySelector("a.link.aSec4")
     var aSec5 = document.querySelector("a.link.aSec5")
 
-    iconoBars.addEventListener("click", function(){
-        iconoBars.classList.toggle("celeste")
-        navbar.classList.toggle("abierto")
-    })   
+    var info = document.querySelector("div.saberMas.cerrado")
+    var saberBtn = document.getElementById(btn1)
+    var saberBtn2 = document.querySelector("button.col-7.btnS2")
 
-    aSec1.addEventListener("click", function(){
-        navbar.classList.remove("abierto")
+    saberBtn.addEventListener("click", function(){
+        info.classList.toggle("abierto")
     })
-    aSec2.addEventListener("click", function(){
-        navbar.classList.remove("abierto")
+
+    saberBtn2.addEventListener("click", function(){
+        info.classList.toggle("abierto")
     })
-    aSec3.addEventListener("click", function(){
-        navbar.classList.remove("abierto")
-    })
-    aSec4.addEventListener("click", function(){
-        navbar.classList.remove("abierto")
-    })
-    aSec5.addEventListener("click", function(){
-        navbar.classList.remove("abierto")
-    })
+
+
+
+    
 
 })
