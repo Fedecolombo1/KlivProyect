@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
@@ -149,9 +150,12 @@
                     <h2 class="col-12 col-lg-9 subtitle">Estrategias 100% orientadas a resultados</h2>
                     <button class="boton mobile col-5">Get started</button>
                     <div class="desk align col-12" style="display: flex !important;">
-                        <button class="boton col-2 desk">Get started</button>
+                        <button class="boton col-2 desk">Comenzar Ahora</button>
                     </div>
-                    <img src="./Images/gif-cono.png" alt="" class="col-12 col-lg-6 gif">
+                    
+                    <video class="col-12 col-lg-6 gif" autoplay muted loop>
+                        <source src="./Images/Motion Embudo KLIV.mp4" type="video/mp4">
+                    </video>
                     
                 </section>
 
@@ -238,7 +242,7 @@
                             <p class="textT">Contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con la marca.</p>
                             <button id="btn15" class="col-7 btnS">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
                         </div>
-                        <img src="./Images/gest-contenidos.png" alt="" class="col-5 imgS">
+                        <img src="./Images/share.png" alt="" class="col-5 imgS">
                     </div>
 
                     <div class="col-12 col-lg-6 row serv">
@@ -345,9 +349,9 @@
 
                 <section class="row align tarifas">
                     <h1 class="col-12 titles tarifasT">TARIFAS POR CAMPAÑA</h1>
-                    <div class="col-12" style="display: flex;justify-content: center;">
-                        <button id="emp" class="col-4 btn2 emp"><i class="fas fa-building"></i> Empresa</button>
-                        <button id="age" class="col-4 btn2 age"><i class="fas fa-building"></i> Agencia</button>
+                    <div class="col-12" style="display: flex;justify-content: space-around;">
+                        <button id="emp" class="col-4 col-lg-2 btn2 emp seleccionado"><i class="fas fa-building"></i> Empresa</button>
+                        <button id="age" class="col-4 col-lg-2 btn2 age deseleccionado"><i class="fas fa-building"></i> Agencia</button>
                     </div>
 
                     
@@ -356,7 +360,7 @@
                         <div class="empresa row align col-lg-8">
                             <h2 class="col-8 subT">Paquetes para empresas de todos los tamaños</h2>
 
-                            <label for="customRange3" class="form-label col-12" style="text-align: center; font-size: 18px; font-weight: 400;margin-bottom: 20px;"><strong class="num"> 3 </strong> Campañas/ Mes</label>
+                            <label for="customRange3" class="form-label col-12" style="text-align: center; font-size: 18px; font-weight: 400;margin-bottom: 20px;"><strong class="num" style="font-weight: bolder;font-size: 22px;"> 3 </strong> Campañas/ Mes</label>
                             <input type="range" class="form-range col-8" min="0" max="5" step="1" id="customRange3">
                             
                         </div>
@@ -449,11 +453,11 @@
                     </div>
 
 
-                    <div id="agencia" class="agencia" style="display: none;">
+                    <div id="agencia" class=" row align col-12" style="display: none;">
                         <div class="col-12 row align">
-                            <h2 class="col-12 subT">Paquetes para agencias de todos los tamaños</h2>
+                            <h2 class="col-8 subT">Paquetes para agencias de todos los tamaños</h2>
 
-                            <h1 class="col-12" style="font-weight: 600;text-align: center;font-size: 30px;"><strong style="font-weight: 800;padding: 20px;">+10</strong> Campañas /Mes</h1>
+                            <h1 class="col-12" style="font-weight: 600;text-align: center;font-size: 30px;"><strong style="font-weight: bolder;padding: 20px;font-size: 30px;">+10</strong> Campañas /Mes</h1>
                         </div>
 
                         <div class="center1 align cont">
@@ -522,13 +526,21 @@
                         $("#emp").click(function(){
                             $("#agencia").fadeOut();
                             $("#empresa").fadeIn();
+                            document.getElementById("emp").classList.add("seleccionado")
+                            document.getElementById("emp").classList.remove("deseleccionado")
+                            document.getElementById("age").classList.add("deseleccionado")
+                            document.getElementById("age").classList.remove("seleccionado")
                         });
                         </script>
                         <script type="text/javascript">
                             $("#age").click(function(){
                                 $("#empresa").fadeOut();
                                 $("#agencia").fadeIn();
-                                document.getElementById("agencia").style.display = "inline-block"
+                                document.getElementById("agencia").style.display = "flex"
+                                document.getElementById("age").classList.add("seleccionado")
+                                document.getElementById("age").classList.remove("deseleccionado")
+                                document.getElementById("emp").classList.add("deseleccionado")
+                                document.getElementById("emp").classList.remove("seleccionado")
                             });
                         </script>
 
@@ -570,7 +582,16 @@
                     </p>
                     <div class="socios col-12 col-lg-7 collapse" id="content1">
                         <h1 class="col-12 align nuestrosS">NUESTROS SOCIOS</h1>
-                        <img src="./Images/socios.png" alt="" class="col-12">
+                        <div class="col 12 row align" style="justify-content: space-around;">
+                            <img src="./Images/Logo-PaP.png" alt="" class="col-5 sociosImgs">
+                            <img src="./Images/Logo-OCIO1.png" alt="" class="col-5 sociosImgs">
+                            <img src="./Images/LOGO-LIMA1.png" alt="" class="col-5 sociosImgs">
+                            <img src="./Images/LOGO-EEAF2.png" alt="" class="col-5 sociosImgs">
+                            <img src="./Images/LOGO-LED2.png" alt="" class="col-5 sociosImgs">
+                            <img src="./Images/LOGO-ESM2.png" class="col-5 sociosImgs">
+                            <img src="./Images/LOGO-AMAN2.png" alt="" class="col-5 sociosImgs">
+                            <img src="./Images/Logo-SET-IDEAS.png" alt="" class="col-5 sociosImgs">
+                        </div>
                         <p class="col-12 muchos">y muchos más!</p>
                     </div>
                 </section>
@@ -580,15 +601,15 @@
 
 
                     <div class="col-12 col-lg-6 align nosotrosDiv">
-                        <div id="mis" class="col-2 logosT row align">
+                        <div id="mis" class="col-4 col-lg-2 logosT row align">
                             <img src="./Images/logo-mision.png" alt="" class="col-12 loguitos">
                             <h1 class="tituloNos1 col-12">MISIÓN</h1>
                         </div>
-                        <div id="vis" class="col-2 logosT row align" style="opacity: 20%">
+                        <div id="vis" class="col-4 col-lg-2 logosT row align" style="opacity: 20%">
                             <img src="./Images/logo-vision.png" alt="" class="col-12 loguitos">
                             <h1 class="tituloNos1 col-12">VISIÓN</h1>
                         </div>
-                        <div id="val" class="col-2 logosT row align" style="opacity: 20%;">
+                        <div id="val" class="col-4 col-lg-2 logosT row align" style="opacity: 20%;">
                             <img src="./Images/logo-valores.png" alt="" class="col-12 loguitos">
                             <h1 class="tituloNos1 col-12">VALORES</h1>
                         </div>
@@ -619,12 +640,15 @@
 
                     <script type="text/javascript">
                         $('#valores').slick({
-                            prevArrow: false,
-                            nextArrow: false,
+                            arrows:false,
                             dots:true,
-                            
+                            autoplay: true
                         });
                     </script>
+
+                   
+
+                    
 
                     <script type="text/javascript">
                         $("#mis").click(function(){
@@ -662,7 +686,7 @@
                             document.getElementById("mis").style.opacity = "20%"
                             document.getElementById("mision").style.display = "none"
                             document.getElementById("vision").style.display = "none"
-                            document.getElementById("valores").style.display = "inline-block"
+                            document.getElementById("valores").style.display = "flex"
                         });
                     </script>
 
@@ -714,7 +738,7 @@
                                 </p>
                             </div>
                             <div class="imgNos col-5">
-                                <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                <img src="./Images/FOTO-Gonzalo Nazar.png" alt="" class="foto col-12">
                                 <h1 class="col-12 nombre">Gonzalo Nazar</h1>
                                 <p class="col-12 puesto">OPERATIONS DIRECTOR/ Co-Fundador</p>
                             </div>
@@ -848,10 +872,10 @@
 
 
                     <div class="col-12 col-lg-5 align iconos" style="justify-content: space-around;">
-                        <button id="mail" class="col-3 iconBut"><img src="./Images/samsung-mail.png" alt="" style="width: 100%;"></button>
-                        <button id="calendar" class="col-3 iconBut"><img src="./Images/samsung-calendar.png" alt="" style="width: 100%;"></i></button>
-                        <button id="numero" class="col-3 iconBut"><img src="./Images/samsung-phone.png" alt="" style="width: 100%;"></i></button>
-                        <button id="whats" class="col-3 iconBut"><img src="./Images/samsung-wpp2.png" alt="" style="width: 100%;"></i></button>
+                        <button id="mail" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-mail.png" alt="" style="width: 100%;"></button>
+                        <button id="calendar" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-calendar.png" alt="" style="width: 100%;"></i></button>
+                        <button id="numero" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-phone.png" alt="" style="width: 100%;"></i></button>
+                        <button id="whats" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-wpp2.png" alt="" style="width: 100%;"></i></button>
                     </div>
 
 
@@ -953,10 +977,10 @@
     </footer>
 
     
-    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     
 </body>
 

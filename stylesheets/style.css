@@ -5,7 +5,9 @@
     src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   }
 
-  
+  body{
+      overflow-x: hidden;
+  }
 
   header.desk1 {
     position: absolute;
@@ -259,21 +261,19 @@ h1.nues{
 }
 
 .btn2{
-    font-weight: bold;
-    font-size: 20px;
-    color: #003629;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    background: transparent;
-    padding: 0;
-    margin-bottom: 40px;
+    border: none !important;
+    font-size: 22px;
+    background: transparent !important;
 }
-.btn2:focus{
+
+
+.seleccionado{
     color: #1E7A5E;
-    
-    border: 0.5px solid #1E7A5E !important;
+    border-bottom: 1px solid #1E7A5E !important;
+}  
+.deseleccionado{
+    color: #666;
+    opacity: 20% !important;
 }
 
 strong.num{
@@ -281,10 +281,11 @@ strong.num{
 }
 
 .subT{
+    margin-top: 20px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-    line-height: 35px; 
+    line-height: 33px; 
     color: #666666;
     margin-bottom: 20px;
 }
@@ -342,7 +343,7 @@ input[type=range].form-range.col-8 {
     border-width: 5.15px 0;
     color: transparent;
     width: 100%;
-    height: 25px;
+    height: 28px;
     cursor: pointer;
   }
   input[type=range].form-range.col-8::-ms-fill-lower {
@@ -357,7 +358,7 @@ input[type=range].form-range.col-8 {
   }
   input[type=range].form-range.col-8::-ms-thumb {
     width: 23px;
-    height: 24px;
+    height: 26px;
     background: #ffffff;
     border: 1.2px solid #2d2d2d;
     border-radius: 18px;
@@ -519,7 +520,7 @@ input[type=range].form-range.col-8 {
 }
 
 .imgNos{
-    height: 261px !important;
+    height: 301px !important;
     background: white;
     margin:5px;
     margin-top: 10px;
@@ -568,7 +569,7 @@ input[type=range].form-range.col-8 {
 
 .subtitle1{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 31px;
     text-align: center;
     color: #666699;
     margin-top: 15px;
@@ -596,11 +597,14 @@ input[type=range].form-range.col-8 {
     width: 60px;
     height: 60px;
     border-radius: 32px;
-    background: white;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.26);
+    background: transparent;
+    
     border: none;
 }
-
+.imgLogos{
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.26);
+    border-radius: 17px;
+}
 .iconI{
     font-size: 34px;
     color: #003629;
@@ -746,6 +750,7 @@ footer{
 
   .slick-dots{
       bottom: 10px !important;
+      position: relative !important;
   }
 
   #empresa{
@@ -837,9 +842,13 @@ footer{
         padding: 0px !important;
     }
 
-    .tarifas{
-        padding: 0px !important;
+    .sociosImgs{
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
+
+
+    
     @media(min-width:768px){
         .desk{
             display: inline-block;
@@ -925,7 +934,7 @@ footer{
             font-size: 20px !important;
         }
         .subtitle1{
-            font-size: 26px;
+            font-size: 36px;
         }
         .direc{
             font-size: 20px;
@@ -1044,3 +1053,22 @@ footer{
 
        
     }
+
+    .carousel {
+        background: #EEE;
+      }
+      
+      .carousel-cell {
+        width: 66%;
+        height: 100%;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+      
+      /* cell number */
+      .carousel-cell:before {
+        display: block;
+        text-align: center;
+        font-size: 80px;
+      }
+      
