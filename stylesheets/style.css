@@ -848,6 +848,10 @@ footer{
     }
 
 
+    .textoSaberMas{
+        color: white;
+    }
+
     
     @media(min-width:768px){
         .desk{
