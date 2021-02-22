@@ -880,6 +880,26 @@ footer{
         transition: 0.2s linear;
         cursor: pointer;
     }
+
+    .textSvg{
+        font-size: 17px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .textSelec{
+
+    }
+    .textUnselec{
+        
+    }
+
+    .flechaSelec{
+        background: #006666;
+    }
+    .felchaUnselec{
+        
+    }
     
     @media(min-width:768px){
         .desk{
