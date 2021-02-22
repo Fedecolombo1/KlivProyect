@@ -5,18 +5,21 @@
     src: local('Open Sans'), local('OpenSans'), url() format('woff2');
 } */
 
-@font-face {
-    font-family: 'Product Sans';
-    src: url('slick/fonts/Product Sans Regular.ttf') format('ttf'),
-        url('slick/fonts/Product Sans Bold.ttf') format('ttf')
+
+@font-face{
+	font-family:Product Sans;
+    src: url(../slick/fonts/Product-Sans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
     overflow-x: hidden;
-    font-family: 'Product Sans';
+    font-family: Product Sans!important;
 }
+
 button, input{
-    font-family: 'Product Sans';
+    font-family: Product Sans!important;
 }
 header.desk1 {
 position: absolute;
@@ -252,6 +255,37 @@ h1.nues{
     font-weight: 500;
     font-size: 34px;
     margin-top: 40px;
+}
+#svg-cont{
+    position: relative;
+    padding: 5%;
+}
+#svg-cont>svg{
+    width: 100%;
+}
+.titulos-pasos{
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    color: #adadad;
+    font-size: 1.1em;
+    width: 26%;
+}
+#paso1txt{
+    right: 3%;
+    top: 0%;
+}
+#paso2txt{
+    right: 3%;
+    bottom: 0%;
+}
+#paso3txt{
+    left: 3%;
+    bottom: 0%;
+}
+#paso4txt{
+    left: 3%;
+    top: 0%;
 }
 
 .textC{
@@ -1024,8 +1058,14 @@ footer{
         .imgNos{
             height: 400px !important;
         }
+        .cSubtitle{
+            margin-bottom: 15px;
+        }
+        .imgPq{
+            margin-bottom: 20px;
+        }
         .porqCard{
-            box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 10%);
+            
             transition: 0.4s;
             margin: 20px;
             padding:20px;
