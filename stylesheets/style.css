@@ -782,11 +782,12 @@ footer{
   .nosotrosDiv{
       background: #f1f2f6;
       margin-top: 40px;
+      justify-content: space-evenly;
   }
 
   .loguitos{
       padding: 5px;
-      width: 60%;
+      width: 96%;
   }
   .loguitos1{
     padding: 25px;
@@ -1129,6 +1130,10 @@ footer{
         }
         .socios{
             margin-left: 0px;
+        }
+
+        .services{
+            justify-content: space-between;
         }
        
     }
