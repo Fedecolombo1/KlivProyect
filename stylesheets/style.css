@@ -847,6 +847,11 @@ footer{
         margin-bottom: 40px;
     }
 
+    .pregRta{
+        margin: 20px;
+        text-align: center;
+        justify-content: space-between;
+    }
 
     .textoSaberMas{
         color: white;
