@@ -570,7 +570,7 @@ input[type=range].form-range.col-8 {
 }
 
 .contacto{
-    background-color: rgba(204,204,204,0.36);
+    
     background-size: cover;
     background-position: -247px;
 }
@@ -878,10 +878,12 @@ footer{
     .fa-abierto{
         transform: rotate(180deg);
         transition: 0.2s linear;
+        cursor: pointer;
     }
     .fa-cerrado{
         transform: rotate(0deg);
         transition: 0.2s linear;
+        cursor: pointer;
     }
     
     @media(min-width:768px){
@@ -979,7 +981,7 @@ footer{
             margin-bottom: 80px;
         }
         .serv{
-            margin-left: 20px !important;
+            
             margin-bottom: 80px !important;
         }
         .nuestrosS{
@@ -994,8 +996,34 @@ footer{
         .nosotrosDiv{
             justify-content: space-around;
         }
-
-
+        .como{
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .preguntas{
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        .imgNos{
+            height: 400px !important;
+        }
+        .porqCard{
+            box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 10%);
+            transition: 0.4s;
+            margin: 20px;
+            padding:20px;
+        }
+        .porqCard:hover{
+            transform:scale(1.1)
+          }
+        .serv{
+            transition: 0.4s;
+        }
+        .serv:hover{
+            transform:scale(1.1)
+        }
 
         
         
@@ -1086,24 +1114,27 @@ footer{
             
         }
 
+        .imgPq{
+            margin-bottom: 30px;
+        }
+
+        section {
+            width: 75% !important;
+            margin: auto;
+        }
+        section.tarifas{
+            width: 100% !important;
+            margin: auto;
+        }
+
+        .fondo{
+            background-color: #f1f2f6;
+        }
+        .fondo2{
+            background-color: rgba(204,204,204,0.36);
+        }
+        .socios{
+            margin-left: 0px;
+        }
        
     }
-
-    .carousel {
-        background: #EEE;
-      }
-      
-      .carousel-cell {
-        width: 66%;
-        height: 100%;
-        margin-right: 10px;
-        border-radius: 5px;
-      }
-      
-      /* cell number */
-      .carousel-cell:before {
-        display: block;
-        text-align: center;
-        font-size: 80px;
-      }
-      
