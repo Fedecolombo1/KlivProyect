@@ -1,27 +1,43 @@
 window.addEventListener("load", function(){
-    var navbar = document.querySelector("nav.mobile.cerrado")
-    var iconoBars = document.querySelector("i.fas.fa-bars")
-    var iconoC = document.querySelector("i.fab.fa-mixer")
-    var aSec1 = document.querySelector("a.link.aSec1")
-    var aSec2 = document.querySelector("a.link.aSec2")
-    var aSec3 = document.querySelector("a.link.aSec3")
-    var aSec4 = document.querySelector("a.link.aSec4")
-    var aSec5 = document.querySelector("a.link.aSec5")
-
-    var info = document.querySelector("div.saberMas.cerrado")
-    var saberBtn = document.getElementById(btn1)
-    var saberBtn2 = document.querySelector("button.col-7.btnS2")
-
-    saberBtn.addEventListener("click", function(){
-        info.classList.toggle("abierto")
-    })
-
-    saberBtn2.addEventListener("click", function(){
-        info.classList.toggle("abierto")
-    })
+    
 
 
-
+    document.getElementById("icono45").addEventListener("click", function(){
+        document.getElementById("icono45").classList.toggle("fa-cerrado")
+          document.getElementById("icono45").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono46").addEventListener("click", function(){
+        document.getElementById("icono46").classList.toggle("fa-cerrado")
+          document.getElementById("icono46").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono47").addEventListener("click", function(){
+        document.getElementById("icono47").classList.toggle("fa-cerrado")
+          document.getElementById("icono47").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono48").addEventListener("click", function(){
+        document.getElementById("icono48").classList.toggle("fa-cerrado")
+          document.getElementById("icono48").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono49").addEventListener("click", function(){
+        document.getElementById("icono49").classList.toggle("fa-cerrado")
+          document.getElementById("icono49").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono50").addEventListener("click", function(){
+        document.getElementById("icono50").classList.toggle("fa-cerrado")
+          document.getElementById("icono50").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono51").addEventListener("click", function(){
+        document.getElementById("icono51").classList.toggle("fa-cerrado")
+          document.getElementById("icono51").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono52").addEventListener("click", function(){
+        document.getElementById("icono52").classList.toggle("fa-cerrado")
+          document.getElementById("icono52").classList.toggle("fa-abierto")
+      })
+      document.getElementById("icono53").addEventListener("click", function(){
+        document.getElementById("icono53").classList.toggle("fa-cerrado")
+          document.getElementById("icono53").classList.toggle("fa-abierto")
+      })
     
 
 })
