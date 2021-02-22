@@ -921,19 +921,10 @@ footer{
         text-align: center;
     }
 
-    .textSelec{
-
-    }
-    .textUnselec{
-        
+    .st0{
+        cursor: pointer;
     }
 
-    .flechaSelec{
-        background: #006666;
-    }
-    .felchaUnselec{
-        
-    }
     
     @media(min-width:768px){
         .desk{
@@ -981,9 +972,11 @@ footer{
         }
         .servT{
             font-size: 28px;
+            margin-bottom: -130px;
         }
         .textT{
             font-size: 20px;
+            margin-bottom: -100px;
         }
         .btnS{
             font-size: 20px;
@@ -1075,11 +1068,18 @@ footer{
           }
         .serv{
             transition: 0.4s;
+            justify-content: space-between;
         }
         .serv:hover{
             transform:scale(1.1)
         }
-
+        .btnS{
+            justify-content: start;
+        }
+        .titulos-pasos{
+            font-size: 30px;
+        }
+        
         
         
         .icon23 {
