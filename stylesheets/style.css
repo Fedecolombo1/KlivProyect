@@ -5,6 +5,36 @@
     src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   }
 
+  
+
+  header.desk1 {
+    position: absolute;
+    z-index: 8000;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo12 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+
+ .aSec{
+     text-align: center;
+    
+     color: #666;
+ }
+
 .align{
     display: flex;
     align-items: center;
@@ -741,7 +771,6 @@ footer{
 
   .loguitos{
       padding: 5px;
-      margin-left: 20px;
       width: 60%;
   }
   .loguitos1{
@@ -794,6 +823,23 @@ footer{
         transition: all .5s;
     }
 
+    .cont{
+        background-color: #f1f2f6;
+        margin-bottom: 0px !important;
+    }
+
+    #agencia{
+        
+        padding: 0px !important;
+    }
+    #empresa{
+        
+        padding: 0px !important;
+    }
+
+    .tarifas{
+        padding: 0px !important;
+    }
     @media(min-width:768px){
         .desk{
             display: inline-block;
@@ -833,7 +879,7 @@ footer{
             margin-bottom: 80px;
         }
         .titles{
-            font-size: 36px !important;
+            font-size: 40px !important;
         }
         .porqCar{
             margin-top: 60px;
@@ -884,4 +930,117 @@ footer{
         .direc{
             font-size: 20px;
         }
+        .titles.nues{
+            margin-top: 140px;
+            margin-bottom: 80px;
+        }
+        .serv{
+            margin-left: 20px !important;
+            margin-bottom: 80px !important;
+        }
+        .nuestrosS{
+            font-size: 40px !important;
+        }
+        .contactoT{
+            font-size: 40px !important;
+        }
+        .imgNos{
+            height: 330px !important;
+        }
+        .nosotrosDiv{
+            justify-content: space-around;
+        }
+
+
+
+        
+        
+        .icon23 {
+            position: relative;
+            overflow: hidden;
+            width: 120px;
+            height: 40px;
+            display: inline-block;
+            background-color: #003333;
+            margin: 25px 0 25px 25px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 12px;
+            font-family: sans-serif;
+          }
+          
+        .icon23:hover{
+            background-color: #006666;
+        }
+          
+          
+          /**
+           * The "shine" element
+           */
+          
+          .icon23:after {
+            
+            animation: shine 3s ease-in-out  infinite;
+            animation-fill-mode: forwards;  
+            content: "";
+            position: absolute;
+            top: -110%;
+            left: -210%;
+            width: 300%;
+            height: 300%;
+            opacity: 0;
+            transform: rotate(30deg);
+            
+            background: rgba(255, 255, 255, 0.13);
+            background: linear-gradient(
+              to right, 
+              rgba(255, 255, 255, 0.13) 0%,
+              rgba(255, 255, 255, 0.13) 77%,
+              rgba(255, 255, 255, 0.5) 92%,
+              rgba(255, 255, 255, 0.0) 100%
+            );
+          }
+          
+          /* Hover state - trigger effect */
+          
+          
+          /* Active state */
+          
+          .icon23:active:after {
+            opacity: 0;
+          }
+          
+          @keyframes shine{
+            10% {
+              opacity: 1;
+              top: -30%;
+              left: -30%;
+              transition-property: left, top, opacity;
+              transition-duration: 0.7s, 0.7s, 0.15s;
+              transition-timing-function: ease;
+            }
+            100% {
+              opacity: 0;
+              top: -30%;
+              left: -30%;
+              transition-property: left, top, opacity;
+            }
+          }
+
+
+          .slick-next:before {
+            content: '→';
+            font-size: 38px !important;
+            color: black !important;
+        }
+        .slick-prev:before {
+            content: '→';
+            font-size: 38px !important;
+            color: black !important;
+            
+        }
+
+       
     }
