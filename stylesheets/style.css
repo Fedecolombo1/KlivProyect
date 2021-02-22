@@ -2,22 +2,29 @@
     font-family: 'Product Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  }
+    src: local('Open Sans'), local('OpenSans'), url() format('woff2');
+}
+@font-face {font-family: 'Product Sans';
+    src: url('slick/fonts/Product Sans Regular.ttf') format('ttf'),
+        url('slick/fonts/Product Sans Bold.ttf') format('ttf')
+}
 
-  body{
-      overflow-x: hidden;
-  }
-
-  header.desk1 {
-    position: absolute;
-    z-index: 8000;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.897);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+body{
+    overflow-x: hidden;
+    font-family: 'Product Sans';
+}
+button, input{
+    font-family: 'Product Sans';
+}
+header.desk1 {
+position: absolute;
+z-index: 8000;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.897);
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
   .logo12 {
     margin-top: 10px;
@@ -246,6 +253,7 @@ h1.nues{
 }
 
 .textC{
+    margin-top: 10vh;
     text-align: center;
     font-weight: 600;
     font-size: 13px;
