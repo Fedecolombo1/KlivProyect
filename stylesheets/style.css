@@ -1,10 +1,12 @@
-@font-face {
+/* @font-face {
     font-family: 'Product Sans';
     font-style: normal;
     font-weight: 400;
     src: local('Open Sans'), local('OpenSans'), url() format('woff2');
-}
-@font-face {font-family: 'Product Sans';
+} */
+
+@font-face {
+    font-family: 'Product Sans';
     src: url('slick/fonts/Product Sans Regular.ttf') format('ttf'),
         url('slick/fonts/Product Sans Bold.ttf') format('ttf')
 }
