@@ -5,21 +5,15 @@
     src: local('Open Sans'), local('OpenSans'), url() format('woff2');
 } */
 
-@font-face {
-    font-family: 'Product Sans';
-    src: url(../slick/fonts/Product-Sans-Regular.ttf) format('ttf')
+
+@font-face{
+	font-family:"Product Sans";
+        src: url(../slick/fonts/Product-Sans-Regular.ttf)  format("truetype");
 }
-/* @font-face {
-    font-family: 'Product Sans';
-    src: url("CustomFont.eot");
-    src: url("CustomFont.woff") format("woff"),
-    url("CustomFont.otf") format("opentype"),
-    url("CustomFont.svg#filename") format("svg");
-} */
 
 body{
     overflow-x: hidden;
-    font-family: 'ProductSans-Regular';
+    font-family: 'Product Sans';
 }
 button, input{
     font-family: 'Product Sans';
