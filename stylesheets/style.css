@@ -925,6 +925,15 @@ footer{
         cursor: pointer;
     }
 
+    .numWhats{
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-size: 21px;
+    }
+    .opciones{
+        cursor: pointer;
+    }
     
     @media(min-width:768px){
         .desk{

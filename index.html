@@ -921,7 +921,7 @@
                                 document.getElementById("vis").style.opacity = "20%"
                                 document.getElementById("vision").style.display = "none"
                                 document.getElementById("valores").style.display = "none"
-                                document.getElementById("mision").style.display = "inline-block"
+                                document.getElementById("mision").style.display = "flex"
                             });
                         </script>
                         <script type="text/javascript">
@@ -934,7 +934,7 @@
                                 document.getElementById("mis").style.opacity = "20%"
                                 document.getElementById("mision").style.display = "none"
                                 document.getElementById("valores").style.display = "none"
-                                document.getElementById("vision").style.display = "inline-block"
+                                document.getElementById("vision").style.display = "flex"
                             });
                         </script>
                         <script type="text/javascript">
@@ -1077,59 +1077,157 @@
                         <div id="email" class="align row">
                             <h3 class="msj col-11">/ Dejanos tu mensaje</h3>
 
-                            <div class="email align col-12 col-lg-6" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="What's your email?"></input>
+                            <div id="email1" class="email align col-12 col-lg-6" style="justify-content: space-around;">
+                                <input class="email-input col-10" type="email" placeholder="Cual es tu mail?"></input>
+                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                            </div>
+                            <div id="telefono" class="email align col-12 col-lg-6" style="justify-content: space-around;display: none;">
+                                <input class="email-input col-10" type="email" placeholder="Dejanos tu telefono"></input>
+                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                            </div>
+                            <div id="mensaje" class="email align col-12 col-lg-6" style="justify-content: space-around;display: none;">
+                                <input class="email-input col-10" type="email" placeholder="Dejanos tu Mensaje"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
 
                             <div class="col-12 col-lg-8 align">
-                                <h3 class="opciones col-3">Email</h3>
-                                <h3 class="opciones col-3">Telefono</h3>
-                                <h3 class="opciones col-3">Mensaje</h3>
+                                <h3 id="emailClick" class="opciones col-3">Email</h3>
+                                <h3 id="telClick" class="opciones col-3">Telefono</h3>
+                                <h3 id="msjClick" class="opciones col-3">Mensaje</h3>
                             </div>
                         </div>
+                        <script type="text/javascript">
+                            $("#emailClick").click(function(){
+                                $("#mensaje").fadeOut();
+                                $("#telefono").fadeOut();
+                                $("#email1").fadeIn();
+                                
+                                document.getElementById("mensaje").style.display = "none"
+                                document.getElementById("telefono").style.display = "none"
+                                document.getElementById("email1").style.display = "flex"
+                            });
+                            $("#telClick").click(function(){
+                                $("#email1").fadeOut();
+                                $("#mensaje").fadeOut();
+                                $("#telefono").fadeIn();
+                                
+                                document.getElementById("mensaje").style.display = "none"
+                                document.getElementById("email1").style.display = "none"
+                                document.getElementById("telefono").style.display = "flex"
+                            });
+                            $("#msjClick").click(function(){
+                                $("#email1").fadeOut();
+                                $("#telefono").fadeOut();
+                                $("#mensaje").fadeIn();
+                                
+                                document.getElementById("telefono").style.display = "none"
+                                document.getElementById("email1").style.display = "none"
+                                document.getElementById("mensaje").style.display = "flex"
+                            });
+                        </script>
+
+
+
 
                         <div id="calen" class="align row" style="display: none;">
                             <h3 class="msj col-11">/ Dejanos tu fecha</h3>
 
-                            <div class="email align col-12 col-lg-6" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="What's your email?"></input>
+                            <div id="hora" class="email align col-12 col-lg-6" style="justify-content: space-around;">
+                                <input class="email-input col-10" type="email" placeholder="Hora"></input>
+                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                            </div>
+                            <div id="email2" class="email align col-12 col-lg-6" style="justify-content: space-around;display: none;">
+                                <input class="email-input col-10" type="email" placeholder="Cual es tu mail?"></input>
+                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                            </div>
+                            <div id="nombre" class="email align col-12 col-lg-6" style="justify-content: space-around;display: none;">
+                                <input class="email-input col-10" type="email" placeholder="Nombre"></input>
+                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                            </div>
+                            <div id="asunto" class="email align col-12 col-lg-6" style="justify-content: space-around;display: none;">
+                                <input class="email-input col-10" type="email" placeholder="Asunto"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
 
-                            <div class="col-12 col-lg-8 align">
-                                <h3 class="opciones col-3">Email</h3>
-                                <h3 class="opciones col-3">Telefono</h3>
-                                <h3 class="opciones col-3">Mensaje</h3>
+                            <div class="col-12 col-lg-7 align">
+                                <h3 id="horaClick" class="opciones col-3">Hora</h3>
+                                <h3 id="emailClick2" class="opciones col-3">Email</h3>
+                                <h3 id="nombreClick" class="opciones col-3">Nombre</h3>
+                                <h3 id="asuntoClick" class="opciones col-3">Asunto</h3>
                             </div>
                         </div>
+                        <script type="text/javascript">
+                            $("#horaClick").click(function(){
+                                $("#email1").fadeOut();
+                                $("#nombre").fadeOut();
+                                $("#asunto").fadeOut();
+                                $("#hora").fadeIn();
+                                
+                                document.getElementById("asunto").style.display = "none"
+                                document.getElementById("nombre").style.display = "none"
+                                document.getElementById("email2").style.display = "none"
+                                document.getElementById("hora").style.display = "flex"
+                            });
+                            $("#emailClick2").click(function(){
+                                $("#asunto").fadeOut();
+                                $("#nombre").fadeOut();
+                                $("#hora").fadeOut();
+                                $("#email2").fadeIn();
+                                
+                                document.getElementById("hora").style.display = "none"
+                                document.getElementById("asunto").style.display = "none"
+                                document.getElementById("nombre").style.display = "none"
+                                document.getElementById("email2").style.display = "flex"
+                            });
+                            
+                            $("#nombreClick").click(function(){
+                                $("#asunto").fadeOut();
+                                $("#email2").fadeOut();
+                                $("#hora").fadeOut();
+                                $("#nombre").fadeIn();
+                                
+                                document.getElementById("hora").style.display = "none"
+                                document.getElementById("asunto").style.display = "none"
+                                document.getElementById("email2").style.display = "none"
+                                document.getElementById("nombre").style.display = "flex"
+                            });
+                            $("#asuntoClick").click(function(){
+                                $("#nombre").fadeOut();
+                                $("#email2").fadeOut();
+                                $("#hora").fadeOut();
+                                $("#asunto").fadeIn();
+                                
+                                document.getElementById("hora").style.display = "none"
+                                document.getElementById("nombre").style.display = "none"
+                                document.getElementById("email2").style.display = "none"
+                                document.getElementById("asunto").style.display = "flex"
+                            });
+                        </script>
+
+
+
 
                         <div id="num" class="align row" style="display: none;">
-                            <h3 class="msj col-11">/ Dejanos tu numero</h3>
+                            <h3 class="msj col-11">/ Llamanos</h3>
 
                             <div class="email align col-12 col-lg-6" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="What's your email?"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                                <p class="numWhats col-12">+54 9 351 702-0235</p>
                             </div>
 
                             <div class="col-12 col-lg-8 align">
-                                <h3 class="opciones col-3">Email</h3>
-                                <h3 class="opciones col-3">Telefono</h3>
-                                <h3 class="opciones col-3">Mensaje</h3>
+                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs.</h3>
+                                
                             </div>
                         </div>
                         <div id="wpp" class="align row" style="display: none;">
-                            <h3 class="msj col-11">/ Dejanos tu wpp</h3>
+                            <h3 class="msj col-11">/ Whatsappeanos</h3>
 
                             <div class="email align col-12 col-lg-6" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="What's your email?"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                                <p class="numWhats col-12">+54 9 351 702-0235</p>
                             </div>
 
                             <div class="col-12 col-lg-8 align">
-                                <h3 class="opciones col-3">Email</h3>
-                                <h3 class="opciones col-3">Telefono</h3>
-                                <h3 class="opciones col-3">Mensaje</h3>
+                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs.</h3>
                             </div>
                         </div>
 
