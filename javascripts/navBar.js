@@ -10,6 +10,15 @@ window.addEventListener("load", function(){
         document.getElementById("paso2txt").style = "color: ##adadad !important"
         document.getElementById("paso3txt").style = "color: ##adadad !important"
         document.getElementById("paso4txt").style = "color: ##adadad !important"
+
+        $("#conten20").fadeOut();
+          $("#conten30").fadeOut();
+          $("#conten40").fadeOut();
+          $("#conten10").fadeIn();
+          document.getElementById("content20").style.display = "none"
+          document.getElementById("content30").style.display = "none"
+          document.getElementById("content40").style.display = "none"
+          document.getElementById("content10").style.display = "flex"
     })
     document.getElementById("flecha2").addEventListener("click", function(){
         document.querySelector("#flecha2 .st0").style = "fill: #003629 !important"
@@ -21,6 +30,18 @@ window.addEventListener("load", function(){
         document.getElementById("paso1txt").style = "color: ##adadad !important"
         document.getElementById("paso3txt").style = "color: ##adadad !important"
         document.getElementById("paso4txt").style = "color: ##adadad !important"
+
+        
+          $("#conten10").fadeOut();
+          $("#conten30").fadeOut();
+          $("#conten40").fadeOut();
+          $("#conten20").fadeIn();
+          document.getElementById("content10").style.display = "none"
+          document.getElementById("content30").style.display = "none"
+          document.getElementById("content40").style.display = "none"
+          document.getElementById("content20").style.display = "flex"
+          
+      
     })
     document.getElementById("flecha3").addEventListener("click", function(){
         document.querySelector("#flecha3 .st0").style = "fill: #003629 !important"
@@ -32,6 +53,18 @@ window.addEventListener("load", function(){
         document.getElementById("paso2txt").style = "color: ##adadad !important"
         document.getElementById("paso1txt").style = "color: ##adadad !important"
         document.getElementById("paso4txt").style = "color: ##adadad !important"
+
+        
+          $("#conten20").fadeOut();
+          $("#conten10").fadeOut();
+          $("#conten40").fadeOut();
+          $("#conten30").fadeIn();
+          document.getElementById("content20").style.display = "none"
+          document.getElementById("content10").style.display = "none"
+          document.getElementById("content40").style.display = "none"
+          document.getElementById("content30").style.display = "flex"
+          
+  
     })
     document.getElementById("flecha4").addEventListener("click", function(){
         document.querySelector("#flecha4 .st0").style = "fill: #003629 !important"
@@ -43,6 +76,18 @@ window.addEventListener("load", function(){
         document.getElementById("paso2txt").style = "color: ##adadad !important"
         document.getElementById("paso3txt").style = "color: ##adadad !important"
         document.getElementById("paso1txt").style = "color: ##adadad !important"
+
+        
+          $("#conten20").fadeOut();
+          $("#conten30").fadeOut();
+          $("#conten10").fadeOut();
+          $("#conten40").fadeIn();
+          document.getElementById("content20").style.display = "none"
+          document.getElementById("content30").style.display = "none"
+          document.getElementById("content10").style.display = "none"
+          document.getElementById("content40").style.display = "flex"
+        
+
     })
 
     document.getElementById("icono45").addEventListener("click", function(){
