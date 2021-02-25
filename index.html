@@ -694,6 +694,7 @@
                             infinite: false,
                             dots: true,
                             arrows: false,
+                            adaptiveHeight:true,
                             responsive: [
                                 {
                                 breakpoint: 768,
@@ -741,7 +742,7 @@
                                 document.getElementById("emp").classList.add("deseleccionado")
                                 document.getElementById("emp").classList.remove("seleccionado")
                             });
-                        </script>
+                    </script>
 
 
 
@@ -862,7 +863,7 @@
 
 
                         <div class="col-12 col-lg-6 align nosotrosDiv">
-                            <div id="mis" class="col-4 col-lg-3 logosT row align" style="cursor: pointer;">
+                            <div id="mis" class="col-4 col-lg-3 logosT row align" style="cursor: pointer; opacity: 20%;">
                                 <img src="./Images/logo-mision.png" alt="" class="col-12 col-lg-12 loguitos">
                                 <h1 class="tituloNos1 col-12">MISIÓN</h1>
                             </div>
@@ -870,7 +871,7 @@
                                 <img src="./Images/logo-vision.png" alt="" class="col-12 col-lg-12 loguitos">
                                 <h1 class="tituloNos1 col-12">VISIÓN</h1>
                             </div>
-                            <div id="val" class="col-4 col-lg-3 logosT row align" style="opacity: 20%; cursor: pointer;">
+                            <div id="val" class="col-4 col-lg-3 logosT row align" style=" cursor: pointer;">
                                 <img src="./Images/logo-valores.png" alt="" class="col-12 col-lg-12 loguitos">
                                 <h1 class="tituloNos1 col-12">VALORES</h1>
                             </div>
@@ -878,7 +879,7 @@
 
                         </div>
 
-                        <div id="mision" class="single-item row align car2 col-lg-7" style="margin-bottom: 80px !important;margin-top: 30px !important;">
+                        <div id="mision" class="single-item row align car2 col-lg-7" style="margin-bottom: 80px !important;margin-top: 30px !important;display: none;">
                             <p class="item active col-12 textNos2">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
                         </div>
 
@@ -887,8 +888,8 @@
                         </div>
 
                         <!-- Wrapper for slides -->
-                        <div id="valores" class="single-item2 row align car2 col-lg-7" style="margin-bottom: 80px !important;margin-top: 30px !important;display: none;">
-                            <p class="item active col-12 textNos2">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
+                        <div id="valores" class="single-item2 row align car2 col-lg-7" style="margin-bottom: 80px !important;margin-top: 30px !important;">
+                            <p class="item active textNos2">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
                     
                             <p class="item col-12 textNos2">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
                     
@@ -1348,7 +1349,7 @@
     
 </body>
 
-<script src="./javascripts/navBar.js"></script>
+<script src="./javascripts/js.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
