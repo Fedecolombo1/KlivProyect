@@ -1,4 +1,12 @@
 window.addEventListener("load", function(){
+
+    $(document).ready(function() {
+      //Set the carousel options
+      $('#quote-carousel').carousel({
+        pause: true,
+        interval: 5000,
+      });
+    });
     
     document.getElementById("flecha1").addEventListener("click", function(){
         document.querySelector("#flecha1 .st0").style = "fill: #003629 !important"

@@ -1003,6 +1003,17 @@ footer{
     }
 
 
+    #quote-carousel .carousel-control{
+        background: none;
+        color: #222;
+        font-size: 2.3em;
+        text-shadow: none;
+    }
+
+    .a134{
+        margin: 0px;
+    }
+
     
     
     @media(max-width:768px){
@@ -1147,7 +1158,7 @@ footer{
         .contactoT{
             font-size: 40px !important;
         }
-        .imgNos{
+        div.imgNos.col-5{
             height: 330px !important;
         }
         .nosotrosDiv{
