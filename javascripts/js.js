@@ -136,4 +136,64 @@ window.addEventListener("load", function(){
       })
     
 
+
+      document.getElementById("ars").addEventListener("click", function(){
+        document.getElementById("pesos1").style.display = "inline"
+        document.getElementById("dolares1").style.display = "none"
+        document.getElementById("arss").style.display = "inline"
+        document.getElementById("dolaress1").style.display = "none"
+      })
+      document.getElementById("usd").addEventListener("click", function(){
+          document.getElementById("pesos1").style.display = "none"
+          document.getElementById("arss").style.display = "none"
+          document.getElementById("dolares1").style.display = "inline"
+          document.getElementById("dolaress1").style.display = "inline"
+      })
+      document.getElementById("ars2").addEventListener("click", function(){
+        document.getElementById("pesos2").style.display = "inline"
+        document.getElementById("dolares2").style.display = "none"
+        document.getElementById("arss2").style.display = "inline"
+        document.getElementById("dolaress2").style.display = "none"
+      })
+      document.getElementById("usd2").addEventListener("click", function(){
+          document.getElementById("pesos2").style.display = "none"
+          document.getElementById("dolares2").style.display = "inline"
+          document.getElementById("arss2").style.display = "none"
+          document.getElementById("dolaress2").style.display = "inline"
+      })
+      document.getElementById("ars3").addEventListener("click", function(){
+        document.getElementById("pesos3").style.display = "inline"
+        document.getElementById("dolares3").style.display = "none"
+        document.getElementById("arss3").style.display = "inline"
+        document.getElementById("dolaress3").style.display = "none"
+      })
+      document.getElementById("usd3").addEventListener("click", function(){
+          document.getElementById("pesos3").style.display = "none"
+          document.getElementById("dolares3").style.display = "inline"
+          document.getElementById("arss3").style.display = "none"
+          document.getElementById("dolaress3").style.display = "inline"
+      })
+      document.getElementById("ars4").addEventListener("click", function(){
+        document.getElementById("pesos4").style.display = "inline"
+        document.getElementById("dolares4").style.display = "none"
+        document.getElementById("arss4").style.display = "inline"
+        document.getElementById("dolaress4").style.display = "none"
+      })
+      document.getElementById("usd4").addEventListener("click", function(){
+          document.getElementById("pesos4").style.display = "none"
+          document.getElementById("dolares4").style.display = "inline"
+          document.getElementById("arss4").style.display = "none"
+          document.getElementById("dolaress4").style.display = "inline"
+      })
+      document.getElementById("ars5").addEventListener("click", function(){
+        
+        
+        document.getElementById("arss5").style.display = "inline"
+        document.getElementById("dolaress5").style.display = "none"
+      })
+      document.getElementById("usd5").addEventListener("click", function(){
+          
+          document.getElementById("arss5").style.display = "none"
+          document.getElementById("dolaress5").style.display = "inline"
+      })
 })

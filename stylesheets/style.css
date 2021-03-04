@@ -490,6 +490,13 @@ input[type=range].form-range.col-8 {
       color: #003629;
       margin-top: 5px;
   }
+  .usd{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2D2D2D;
+    margin-top: 5px;
+  }
 
   .desc{
     text-align: center;
