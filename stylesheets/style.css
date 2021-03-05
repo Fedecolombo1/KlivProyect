@@ -1302,3 +1302,14 @@ footer{
         }
        
     }
+
+
+@media (min-width: 1200px){
+    .textT {
+        font-size: 18px;
+        margin: -8% 0;
+    }
+    .loguitos{
+        width: 64px!important;
+    }
+}
