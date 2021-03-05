@@ -498,6 +498,10 @@ input[type=range].form-range.col-8 {
     margin-top: 5px;
   }
 
+  .icon-pq path{
+      fill: #006633;
+  }
+
   .desc{
     text-align: center;
     font-size: 16px;
