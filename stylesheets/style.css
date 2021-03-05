@@ -1031,6 +1031,9 @@ footer{
         margin: 0px;
     }
 
+    .card{
+        height: 245px !important;
+    }
     
     
     @media(max-width:768px){
@@ -1371,6 +1374,9 @@ footer{
         }
         .nombre{
             margin-top: 10px;
+        }
+        .card{
+            height: 245px !important;
         }
     }
 

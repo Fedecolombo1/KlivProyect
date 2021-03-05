@@ -196,4 +196,89 @@ window.addEventListener("load", function(){
           document.getElementById("arss5").style.display = "none"
           document.getElementById("dolaress5").style.display = "inline"
       })
+
+
+      document.getElementById("icF1").addEventListener("click", function(){
+          
+        document.getElementById("precios1").style.display = "none"
+        document.getElementById("info1").style.display = "inline"
+        document.getElementById("icV1").style.display = "inline"
+      })
+      document.getElementById("icV1").addEventListener("click", function(){
+        document.getElementById("icV1").style.display = "none"
+        document.getElementById("precios1").style.display = "flex"
+        document.getElementById("info1").style.display = "none"
+      })
+
+      document.getElementById("icF2").addEventListener("click", function(){
+          
+        document.getElementById("precios2").style.display = "none"
+        document.getElementById("info2").style.display = "inline"
+        document.getElementById("icV2").style.display = "inline"
+      })
+      document.getElementById("icV2").addEventListener("click", function(){
+        document.getElementById("icV2").style.display = "none"
+        document.getElementById("precios2").style.display = "flex"
+        document.getElementById("info2").style.display = "none"
+      })
+
+      document.getElementById("icF3").addEventListener("click", function(){
+          
+        document.getElementById("precios3").style.display = "none"
+        document.getElementById("info3").style.display = "inline"
+        document.getElementById("icV3").style.display = "inline"
+      })
+      document.getElementById("icV3").addEventListener("click", function(){
+        document.getElementById("icV3").style.display = "none"
+        document.getElementById("precios3").style.display = "flex"
+        document.getElementById("info3").style.display = "none"
+      })
+
+      document.getElementById("icF4").addEventListener("click", function(){
+          
+        document.getElementById("precios4").style.display = "none"
+        document.getElementById("info4").style.display = "inline"
+        document.getElementById("icV4").style.display = "inline"
+      })
+      document.getElementById("icV4").addEventListener("click", function(){
+        document.getElementById("icV4").style.display = "none"
+        document.getElementById("precios4").style.display = "flex"
+        document.getElementById("info4").style.display = "none"
+      })
+
+      document.getElementById("icF5").addEventListener("click", function(){
+          
+        document.getElementById("precios5").style.display = "none"
+        document.getElementById("info5").style.display = "inline"
+        document.getElementById("icV5").style.display = "inline"
+      })
+      document.getElementById("icV5").addEventListener("click", function(){
+        document.getElementById("icV5").style.display = "none"
+        document.getElementById("precios5").style.display = "flex"
+        document.getElementById("info5").style.display = "none"
+      })
+
+      document.getElementById("icF6").addEventListener("click", function(){
+          
+        document.getElementById("precios6").style.display = "none"
+        document.getElementById("info6").style.display = "inline"
+        document.getElementById("icV6").style.display = "inline"
+      })
+      document.getElementById("icV6").addEventListener("click", function(){
+        document.getElementById("icV6").style.display = "none"
+        document.getElementById("precios6").style.display = "flex"
+        document.getElementById("info6").style.display = "none"
+      })
+
+      document.getElementById("icF7").addEventListener("click", function(){
+          
+        document.getElementById("precios7").style.display = "none"
+        document.getElementById("info7").style.display = "inline"
+        document.getElementById("icV7").style.display = "inline"
+      })
+      document.getElementById("icV7").addEventListener("click", function(){
+        document.getElementById("icV7").style.display = "none"
+        document.getElementById("precios7").style.display = "flex"
+        document.getElementById("info7").style.display = "none"
+      })
 })
