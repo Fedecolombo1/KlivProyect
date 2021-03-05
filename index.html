@@ -624,7 +624,7 @@
                             
                             <label for="customRange3" class="form-label col-12" style="text-align: center; font-size: 30px; font-weight: 400;margin-bottom: 20px;"><strong class="num" style="font-weight: bolder;font-size: 32px;"> 3 </strong> Campañas /mes</label>
                             <div id="range-cont">
-                                <input type="range" class="form-range col-8" value="1" min="1" max="5" step="1" id="customRange3">
+                                <input type="range" class="form-range col-8" value="1" min="1" max="100" step="1" id="customRange3">
                                 <div></div>
                             </div>
                                 
@@ -1490,12 +1490,15 @@ $(document).ready(function() {
 
     $('#customRange3').change(function(){
         console.log($(this).val())
-        $('.slick-dots li:nth-child('+ $(this).val() +')').click()
-        var porcen = $(this).val() * 25 
-        var porcen = porcen - 25 
+        var porcen = parseInt( $(this).val() /100*5) + 1
+        // var porcen = porcen 
         console.log(porcen)
+        if (porcen == 6) {
+            porcen = 5;
+        }
+        $('.slick-dots li:nth-child('+ porcen +')').click()
 
-        $('#range-cont>div').css('background-image','linear-gradient(90deg, #1E7A5E '+ porcen +'% , transparent '+ porcen +'% )')
+        $('#range-cont>div').css('background-image','linear-gradient(90deg, #1E7A5E '+ $(this).val() +'% , transparent '+ $(this).val() +'% )')
         
     })
 })
