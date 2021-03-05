@@ -34,14 +34,14 @@ align-items: center;
 }
 
   .logo12 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 13%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 8%;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     
   }
 
@@ -89,7 +89,7 @@ header{
 }
 
 .title{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 30px !important;
     margin-top: 100px;
     line-height: 1.4; 
@@ -98,8 +98,8 @@ header{
 
 .titles{
     font-weight: 500;
-    font-size: 32px;
-    margin-top: 160px;
+    font-size: 30px;
+    margin-top: 140px;
     margin-bottom: 70px;
     text-align: center;
     color: #336699;
@@ -110,7 +110,7 @@ header{
     font-size: 18px;
     font-style: italic;
     text-align: center;
-    color: #666699;
+    color: grey;
     margin-top: 15px;
 }
 
@@ -121,10 +121,10 @@ strong.verde{
 }
 
 .gif{
-    box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.22);
+    
     margin-top: 10px;
-    margin-bottom: 80px;
-    padding: 0;
+    margin-bottom: 10px;
+    padding: 0 !important;
 }
 
 .boton{
@@ -208,7 +208,7 @@ h1.nues{
 
 .servT{
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: 400;
 }
 
 .textT{
@@ -237,7 +237,7 @@ h1.nues{
     background: transparent;
     border-bottom: 0;
     padding: 0;
-    color: #5d5d5d;
+    color: #1E7A5E;
 }
 
 .flechita{
@@ -251,13 +251,13 @@ h1.nues{
 }
 
 .como{
-    background: #f1f2f6;
+    background: rgba(241, 241, 241, 0.418);
 }
 
 .comoT{
     color: #33cc99;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 30px;
     margin-top: 40px;
     margin-bottom: 0!important;
 }
@@ -288,6 +288,7 @@ h1.nues{
 #paso3txt{
     left: -1%;
     bottom: 14%;
+    font-size: 13px;
 }
 #paso4txt{
     left: -1%;
@@ -299,20 +300,20 @@ h1.nues{
 
 .textC{
     margin: auto; 
-    margin-top: 10vh;
+    margin-top: 5vh;
     text-align: center;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 50px;
     color: #003629;
 }
 
 .tarifasT{
     color: #ffcc66;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 400;
     margin-top: 10%;
-    margin-bottom: 0;
+    margin-bottom: 10%;
 }
 
 .btn2{
@@ -337,10 +338,10 @@ strong.num{
 
 .subT{
     margin-top: 20px;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     text-align: center;
-    line-height: 33px; 
+    line-height: 22px; 
     color: #666666;
     margin-bottom: 20px;
 }
@@ -459,7 +460,7 @@ input[type=range].form-range.col-8 {
   }
 
   .cont{
-      background: #f1f2f6;
+      background: rgba(241, 241, 241, 0.568) !important;
       padding-top: 40px;
   }
 
@@ -469,7 +470,7 @@ input[type=range].form-range.col-8 {
       border-left: 4px solid #1E7A5E;
       height: 100%;
       margin: 5px;
-      margin-bottom: 80px;
+      margin-bottom: 40px;
       box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.26);
   }
 
@@ -488,6 +489,13 @@ input[type=range].form-range.col-8 {
       font-weight: bold;
       color: #003629;
       margin-top: 5px;
+  }
+  .usd{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2D2D2D;
+    margin-top: 5px;
   }
 
   .desc{
@@ -517,7 +525,7 @@ input[type=range].form-range.col-8 {
 }
 
   .preguntas{
-    background: #f1f2f6;
+    background: rgba(241, 241, 241, 0.418);
   }
 
   .preg{
@@ -542,7 +550,7 @@ input[type=range].form-range.col-8 {
   .nuestrosS{
       color: #cc6633;
       font-weight: 400;
-      font-size: 34px;
+      font-size: 30px;
       margin-top: 100px;
       margin-bottom: 40px;
   }
@@ -557,7 +565,7 @@ input[type=range].form-range.col-8 {
   }
 
 .nosotros{
-    background-color: #f1f2f6;
+    background: rgba(241, 241, 241, 0.418);
 }
 .nosCar {
     width: 90%;
@@ -615,6 +623,10 @@ input[type=range].form-range.col-8 {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16);
 }
 
+.foto{
+    height: 49% !important;
+}
+
 .nosCar{
     margin-top: 40px;
     margin-bottom: 60px;
@@ -625,6 +637,7 @@ input[type=range].form-range.col-8 {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    margin-top: 70px;
     margin-bottom: 0px;
 }
 
@@ -649,16 +662,16 @@ input[type=range].form-range.col-8 {
 .contactoT{
     color: #cc6633;
       font-weight: 400;
-      font-size: 34px;
+      font-size: 30px;
       margin-top: 70px;
       margin-bottom: 10px;
 }
 
 .subtitle1{
     font-weight: 400;
-    font-size: 31px;
+    font-size: 28px;
     text-align: center;
-    color: #666699;
+    color: black;
     margin-top: 15px;
 }
 
@@ -728,10 +741,9 @@ footer{
 }
 
 .iconosFoot{
-    border-top: 00.2px solid #ccccff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 5px solid #1e7a5e;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 
 }
 
 .cerrado{
@@ -800,10 +812,10 @@ footer{
     position: fixed;
     right: 0;
     top: 0;
-    color: white;
-    background: linear-gradient(45deg, #006633 10%, #336666);;
+    color: black;
+    background: linear-gradient(45deg, white 10%, white);;
     font-size: 32px;
-    padding: 16px 16px 32px 32px;
+    padding: 16px 16px 13px 28px;
     border-radius: 0% 0% 0% 100%;
     transition: 0.5s;
     cursor: pointer;
@@ -812,7 +824,7 @@ footer{
   #quit{
     position: fixed;
     top: 0;
-    color: white;
+    color: black;
     font-size: 32px;
     padding: 16px;
     display: none;
@@ -830,7 +842,7 @@ footer{
   #links a{
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 2em;
     font-family: 'Roboto';
     z-index: 10;
@@ -852,7 +864,7 @@ footer{
   h3.msj{
       text-align: center;
       margin-top: 60px;
-      font-size: 16px;
+      font-size: 20px;
   }
 
   h3.opciones{
@@ -862,7 +874,7 @@ footer{
   }
 
   .nosotrosDiv{
-      background: #f1f2f6;
+      background: none;
       margin-top: 40px;
       justify-content: space-evenly;
   }
@@ -872,8 +884,8 @@ footer{
     }
 
   .loguitos{
-      width: 64px;
-      margin: auto;
+      width: 88px;
+      margin: 0px;
       display: block;
   }
   .loguitos1{
@@ -884,10 +896,11 @@ footer{
   }
     .tituloNos1{
         text-align: center;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bolder;
         color: #1E7A5E;   
         margin-top: 5px;
+        padding: 0;
         margin-bottom: 20px;
     }
     .logosT{
@@ -895,7 +908,8 @@ footer{
     }
     .textNos2{
         text-align: center;
-        font-weight: bold;
+        font-weight: 400;
+        color: grey;
         font-size: 15px;
         padding-bottom: 30px;
         margin-left: 10px;
@@ -982,6 +996,39 @@ footer{
     .st0{
         cursor: pointer;
     }
+
+    .numWhats{
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-size: 21px;
+    }
+    .opciones{
+        cursor: pointer;
+    }
+
+    .imgPq{
+        width: 20%;
+        height: 8% !important;
+    }
+
+    #valores .slick-list.draggable{
+        height: 90px;
+    }
+
+
+    #quote-carousel .carousel-control{
+        background: none;
+        color: #222;
+        font-size: 2.3em;
+        text-shadow: none;
+    }
+
+    .a134{
+        margin: 0px;
+    }
+
+    
     
     @media(max-width:768px){
         #svg-cont {
@@ -1065,11 +1112,9 @@ footer{
 
         }
         .textT{
-            font-size: 14px;
-            padding: 0;
-            /* margin-bottom: -100px; */
-            font-weight: 300;
-
+            font-size: 18px;
+            margin: -8% 0;
+            padding: 0 !important;
         }
         .btnS{
             font-size: 14px;
@@ -1127,7 +1172,7 @@ footer{
         .contactoT{
             font-size: 40px !important;
         }
-        .imgNos{
+        div.imgNos.col-5{
             height: 330px !important;
         }
         .nosotrosDiv{
@@ -1181,6 +1226,15 @@ footer{
         .titulos-pasos{
             font-size: 24px;
         }
+        .cSubtitle{
+            font-size: 28px;
+        }
+        .cText{
+            font-size: 20px;
+        }
+        .tarifasT{
+            margin-bottom: 0;
+        }
         
         
         
@@ -1191,7 +1245,7 @@ footer{
             height: 40px;
             display: inline-block;
             background-color: #003333;
-            margin: 25px 0 25px 25px;
+            margin: 5px 0 5px 25px;
             border-radius: 5px;
             color: #fff;
             text-decoration: none;
@@ -1277,9 +1331,10 @@ footer{
         }
 
         section {
-            width: 75% !important;
+            width: 70% !important;
             margin: auto;
         }
+        
         section.tarifas{
             width: 100% !important;
             margin: auto;
@@ -1301,6 +1356,19 @@ footer{
             justify-content: space-between;
         }
        
+        #valores .slick-list.draggable{
+            height: 120px;
+        }
+        #paso3txt{
+            font-size: 24px;
+        }
+
+        .foto{
+            height: 80% !important;
+        }
+        .nombre{
+            margin-top: 10px;
+        }
     }
 
 
