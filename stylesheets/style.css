@@ -498,7 +498,7 @@ input[type=range].form-range.col-8 {
     margin-top: 5px;
   }
 
-  .icon-pq path{
+  .imgPq path{
       fill: #006633;
   }
 
@@ -569,7 +569,7 @@ input[type=range].form-range.col-8 {
   }
 
 .nosotros{
-    background: rgba(241, 241, 241, 0.418);
+    background: none;
 }
 .nosCar {
     width: 90%;
@@ -1096,7 +1096,7 @@ footer{
             justify-content: space-around;
             margin: auto;
             margin-top: 14%;
-            width: 83%;
+            width: 100%;
         }
         #pq-car-cont>div{
             width: 30%;
@@ -1335,7 +1335,7 @@ footer{
         }
 
         section {
-            width: 70% !important;
+            width: 56% !important;
             margin: auto;
         }
         
@@ -1347,10 +1347,10 @@ footer{
         }
 
         .fondo{
-            background-color: #f1f2f6;
+            background: rgba(241, 241, 241, 0.418);
         }
         .fondo2{
-            background-color: rgba(204,204,204,0.36);
+            background: rgba(241, 241, 241, 0.418);
         }
         .socios{
             margin-left: 0px;
