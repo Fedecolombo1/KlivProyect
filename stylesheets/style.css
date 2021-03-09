@@ -122,8 +122,7 @@ strong.verde{
 
 .gif{
     
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0!important;
     padding: 0 !important;
 }
 
@@ -1075,8 +1074,13 @@ footer{
             position: absolute;
         }
         .title{
-            margin-top: 220px;
+            margin-top: 35%;
             font-size: 42px !important;
+        }
+        #inicio .row.head.align{
+            justify-content: start;
+            width: 105%;
+            margin: auto;
         }
         .verde{
             font-size: 42px !important;
@@ -1123,11 +1127,17 @@ footer{
         }
         .textT{
             font-size: 18px;
-            margin: -8% 0;
+            margin: 3% 0;
             padding: 0 !important;
+        }
+        main section{
+            width: 80%!important;
+            margin: auto;
         }
         .btnS{
             font-size: 14px;
+            margin: 0;
+            
         }
         .flechita{
             font-size: 16px;
@@ -1388,9 +1398,12 @@ footer{
 @media (min-width: 1200px){
     .textT {
         font-size: 18px;
-        margin: -8% 0;
+        margin: 3% 0;
     }
     .loguitos{
         width: 90px!important;
+    }
+    .btnS {
+        margin: 0;
     }
 }
