@@ -7,6 +7,10 @@ window.addEventListener("load", function(){
         interval: 5000,
       });
     });
+
+    document.querySelector(".aSec").addEventListener("click", function(){
+      quit()
+    })
     
     document.getElementById("flecha1").addEventListener("click", function(){
         document.querySelector("#flecha1 .st0").style = "fill: #003629 !important"
