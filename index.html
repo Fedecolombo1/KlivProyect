@@ -75,7 +75,7 @@
             <!-- Top Navigation Menu -->
             <div class="topnav">
                 <a href="#home" class="active"><div class="col-5 col-lg-3 logo1">
-                    <img src="./Images/kliv-logo.png" alt="" class="col-10" style="width: 80%;">
+                    <img src="./Images/kliv-logo.png" alt="" class="col-10" style="width: 70%;">
                 </div></a>
                 <!-- Navigation links (hidden by default) -->
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -84,7 +84,7 @@
                         var burger = document.getElementById('burger');
                         var links = document.getElementById('links');
                         var quit = document.getElementById('quit');
-                        burger.style.padding = '16px 16px 200vw 200vw';
+                        burger.style.padding = '10px 16px 200vw 200vw';
                         links.style.display = 'flex';
                         quit.style.display = 'inline';
                         }
@@ -93,13 +93,13 @@
                         var burger = document.getElementById('burger');
                         var links = document.getElementById('links');
                         var quit = document.getElementById('quit');
-                        burger.style.padding = '16px 16px 11px 32px';
+                        burger.style.padding = '10px 16px 11px 32px';
                         links.style.display = 'none';
                         quit.style.display = 'none';
                     }
                 </script>
-            <i id="burger" class="material-icons" onclick="burger()" style="padding: 16px 16px 11px 28px;">menu</i>
-            <i id="quit" class="material-icons" onclick="quit()" style="padding: 16px 16px 11px 28px;">clear</i>
+            <i id="burger" class="material-icons" onclick="burger()" style="padding: 10px 16px 11px 28px;">menu</i>
+            <i id="quit" class="material-icons" onclick="quit()" style="padding: 10px 16px 11px 28px;">clear</i>
         
             <div id="links" style="height: 80vh;">
                 <a href="#servicios" class="col 1 sec aSec">Servicios</a>
@@ -273,15 +273,17 @@
 
 
                 <section data-aos="fade-up" data-aos-duration="900" class="row align pres mobile">
-                    <h1 class="col-12 col-lg-12 title"><span></span><strong class="verde">PERFORMANCE MKT</strong></h1>
-                    <h2 class="col-12 col-lg-9 subtitle">Estrategias 100% orientadas a resultados</h2>
-                    <div class="col-12 align">
+                    <div>
+                        <h1 class="col-12 col-lg-12 title"><span></span><strong class="verde">PERFORMANCE MKT</strong></h1>
+                        <h2 class="col-12 col-lg-9 subtitle">Estrategias 100% orientadas a resultados</h2>
+                        <div class="col-12 align">
                         <a href="#contacto"><button class="boton mobile col-12">Comenzar ahora</button></a>
+                        </div>
                     </div>
                     
                     
                     
-                    <video class="col-12 col-lg-6 gif" autoplay muted loop>
+                    <video class="col-12 col-lg-6 gif" style="height: 50vh;" autoplay muted loop>
                         <source src="./Images/Motion Embudo KLIV.mp4" type="video/mp4">
                     </video>
                     

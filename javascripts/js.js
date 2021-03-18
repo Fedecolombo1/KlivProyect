@@ -1,5 +1,6 @@
 window.addEventListener("load", function(){
 
+    window.scroll(0, 0)
     $(document).ready(function() {
       //Set the carousel options
       $('#quote-carousel').carousel({

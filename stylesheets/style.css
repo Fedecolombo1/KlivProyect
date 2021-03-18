@@ -105,7 +105,7 @@ header{
 .title{
     font-weight: 400;
     font-size: 30px !important;
-    margin-top: 100px;
+    margin-top: 20%;
     line-height: 1.4; 
     text-align: center;
 }
@@ -150,7 +150,7 @@ strong.verde{
     border-radius: 2px;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .pres{
@@ -685,7 +685,7 @@ input[type=range].form-range.col-8 {
 
 .subtitle1{
     font-weight: 400;
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
     color: black;
     margin-top: 15px;
@@ -1117,6 +1117,8 @@ footer{
         .boton{
             margin-top: 40px;
             margin-bottom: 80px;
+            font-size: 17px;
+            padding: 10px 6px;
         }
         .titles{
             font-size: 40px !important;
@@ -1303,7 +1305,7 @@ footer{
             color: #fff;
             text-decoration: none;
             text-align: center;
-            font-size: 14px;
+            font-size: 15px;
             font-family: sans-serif;
           }
 
