@@ -104,40 +104,40 @@ window.addEventListener("load", function(){
     })
 
     document.getElementById("icono45").addEventListener("click", function(){
-        document.getElementById("icono45").classList.toggle("fa-cerrado")
-          document.getElementById("icono45").classList.toggle("fa-abierto")
+        document.getElementById("iicono45").classList.toggle("fa-cerrado")
+          document.getElementById("iicono45").classList.toggle("fa-abierto")
       })
       document.getElementById("icono46").addEventListener("click", function(){
-        document.getElementById("icono46").classList.toggle("fa-cerrado")
-          document.getElementById("icono46").classList.toggle("fa-abierto")
+        document.getElementById("iicono46").classList.toggle("fa-cerrado")
+          document.getElementById("iicono46").classList.toggle("fa-abierto")
       })
       document.getElementById("icono47").addEventListener("click", function(){
-        document.getElementById("icono47").classList.toggle("fa-cerrado")
-          document.getElementById("icono47").classList.toggle("fa-abierto")
+        document.getElementById("iicono47").classList.toggle("fa-cerrado")
+          document.getElementById("iicono47").classList.toggle("fa-abierto")
       })
       document.getElementById("icono48").addEventListener("click", function(){
-        document.getElementById("icono48").classList.toggle("fa-cerrado")
-          document.getElementById("icono48").classList.toggle("fa-abierto")
+        document.getElementById("iicono48").classList.toggle("fa-cerrado")
+          document.getElementById("iicono48").classList.toggle("fa-abierto")
       })
       document.getElementById("icono49").addEventListener("click", function(){
-        document.getElementById("icono49").classList.toggle("fa-cerrado")
-          document.getElementById("icono49").classList.toggle("fa-abierto")
+        document.getElementById("iicono49").classList.toggle("fa-cerrado")
+          document.getElementById("iicono49").classList.toggle("fa-abierto")
       })
       document.getElementById("icono50").addEventListener("click", function(){
-        document.getElementById("icono50").classList.toggle("fa-cerrado")
-          document.getElementById("icono50").classList.toggle("fa-abierto")
+        document.getElementById("iicono50").classList.toggle("fa-cerrado")
+          document.getElementById("iicono50").classList.toggle("fa-abierto")
       })
       document.getElementById("icono51").addEventListener("click", function(){
-        document.getElementById("icono51").classList.toggle("fa-cerrado")
-          document.getElementById("icono51").classList.toggle("fa-abierto")
+        document.getElementById("iicono51").classList.toggle("fa-cerrado")
+          document.getElementById("iicono51").classList.toggle("fa-abierto")
       })
       document.getElementById("icono52").addEventListener("click", function(){
-        document.getElementById("icono52").classList.toggle("fa-cerrado")
-          document.getElementById("icono52").classList.toggle("fa-abierto")
+        document.getElementById("iicono52").classList.toggle("fa-cerrado")
+          document.getElementById("iicono52").classList.toggle("fa-abierto")
       })
       document.getElementById("icono53").addEventListener("click", function(){
-        document.getElementById("icono53").classList.toggle("fa-cerrado")
-          document.getElementById("icono53").classList.toggle("fa-abierto")
+        document.getElementById("iicono53").classList.toggle("fa-cerrado")
+          document.getElementById("iicono53").classList.toggle("fa-abierto")
       })
     
 
@@ -220,6 +220,36 @@ window.addEventListener("load", function(){
           document.getElementById("dolaress5").style.display = "inline"
           document.getElementById("usd5").style.textDecoration = "underline"
           document.getElementById("ars5").style.textDecoration = "none"
+      })
+      document.getElementById("ars6").addEventListener("click", function(){
+        
+        
+        document.getElementById("arss6").style.display = "inline"
+        document.getElementById("dolaress6").style.display = "none"
+        document.getElementById("ars6").style.textDecoration = "underline"
+        document.getElementById("usd6").style.textDecoration = "none"
+      })
+      document.getElementById("usd6").addEventListener("click", function(){
+          
+          document.getElementById("arss6").style.display = "none"
+          document.getElementById("dolaress6").style.display = "inline"
+          document.getElementById("usd6").style.textDecoration = "underline"
+          document.getElementById("ars6").style.textDecoration = "none"
+      })
+      document.getElementById("ars7").addEventListener("click", function(){
+        
+        
+        document.getElementById("arss7").style.display = "inline"
+        document.getElementById("dolaress7").style.display = "none"
+        document.getElementById("ars7").style.textDecoration = "underline"
+        document.getElementById("usd7").style.textDecoration = "none"
+      })
+      document.getElementById("usd7").addEventListener("click", function(){
+          
+          document.getElementById("arss7").style.display = "none"
+          document.getElementById("dolaress7").style.display = "inline"
+          document.getElementById("usd7").style.textDecoration = "underline"
+          document.getElementById("ars7").style.textDecoration = "none"
       })
 
 

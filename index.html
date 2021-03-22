@@ -56,10 +56,7 @@
       </header>
 
     <header class="mobile">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a href="https://api.whatsapp.com/send?phone=541167048339&text=Hola." class="float" target="_blank">
-            <i class="fa fa-whatsapp my-float"></i>
-            </a>
+            
         
         
             <script type="text/javascript">
@@ -85,6 +82,8 @@
                         var links = document.getElementById('links');
                         var quit = document.getElementById('quit');
                         burger.style.padding = '10px 16px 200vw 200vw';
+                        burger.style.left = "0%"
+                        quit.style.right = "0%"
                         links.style.display = 'flex';
                         quit.style.display = 'inline';
                         }
@@ -96,22 +95,26 @@
                         burger.style.padding = '10px 16px 11px 32px';
                         links.style.display = 'none';
                         quit.style.display = 'none';
+                        burger.style.left = "82%"
                     }
                 </script>
             <i id="burger" class="material-icons" onclick="burger()" style="padding: 10px 16px 11px 28px;">menu</i>
             <i id="quit" class="material-icons" onclick="quit()" style="padding: 10px 16px 11px 28px;">clear</i>
         
-            <div id="links" style="height: 80vh;">
-                <a href="#servicios" class="col 1 sec aSec">Servicios</a>
-                <a href="#trabajamos" class="col 1 sec aSec">Como Trabajamos</a>
-                <a href="#tarifas" class="col 1 sec aSec">Tarifas</a>
-                <a href="#faqs" class="col 1 sec aSec">FAQs</a>
-                <a href="#socios" class="col 1 sec aSec">Nuestros Socios</a>
-                <a href="#nosotros" class="col 1 sec aSec">Nosotros</a>
-                <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <div id="links" class="align" style="height: 100vh;padding-bottom: 90%;
+            padding-top: 45%;">
+                <a href="#servicios" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Servicios</a>
+                <a href="#trabajamos" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Como Trabajamos</a>
+                <a href="#tarifas" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Tarifas</a>
+                <a href="#faqs" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">FAQs</a>
+                <a href="#socios" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Nuestros Socios</a>
+                <a href="#nosotros" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Nosotros</a>
+
+
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
                 <a href="https://api.whatsapp.com/send?phone=541167048339&text=Hola." class="float" target="_blank">
                 <i class="fa fa-whatsapp my-float"></i>
-                </a>-->
+                </a>
             </div>
             </div>
 
@@ -250,9 +253,19 @@
                     <div class="col-12 row align">
                         <div class="col-6">
                             
-                                <h1 class="col-12 col-lg-12 title" style="text-align: start;"><span></span><strong class="verde">PERFORMANCE MKT</strong></h1>
-                                <!--<h1 class="col-12 col-lg-12 title" style="text-align: start;">Logra tus objetivos publicitarios con <strong class="verde">PERFORMANCE MKT</strong></h1>-->
-                            
+                            <div id="textoTitle2" class="col-12 row align" style="margin-left: 0px;">
+                                <h1 class="col-12 col-lg-12 title align" style="text-align: start;margin-top: 4%;margin-bottom:0%">Optimiza tu inversión publicitaria con </h1>
+                                <h1 class="col-12 col-lg-12 title align" style="text-align: start;margin-top: 4%;margin-bottom:0%">Logra tus objetivos publicitarios con </h1>
+                            </div>
+                            <script type="text/javascript">
+                                $('#textoTitle2').slick({
+                                    arrows:false,
+                                    dots:false,
+                                    autoplay: true
+                                });
+                            </script> 
+                                
+                            <h1 class="col-12 col-lg-12 title" style="text-align: start;margin-top: 0%;"><strong class="verde">PERFORMANCE MKT</strong></h1>
 
 
                             
@@ -273,8 +286,22 @@
 
 
                 <section data-aos="fade-up" data-aos-duration="900" class="row align pres mobile">
-                    <div>
-                        <h1 class="col-12 col-lg-12 title"><span></span><strong class="verde">PERFORMANCE MKT</strong></h1>
+                    <div class="row align" style="margin-left: 0px;">
+                        <div id="textoTitle" class="col-12 row align">
+                            <h1 class="col-12 col-lg-12 title align" style="text-align: center;margin-top: 4%;margin-bottom:0%">Optimiza tu inversión publicitaria con </h1>
+                            <h1 class="col-12 col-lg-12 title align" style="text-align: center;margin-top: 4%;margin-bottom:0%">Logra tus objetivos publicitarios con </h1>
+                        </div>
+                        <script type="text/javascript">
+                            $('#textoTitle').slick({
+                                arrows:false,
+                                dots:false,
+                                autoplay: true
+                            });
+                        </script> 
+
+                        <h1 class="col-12 col-lg-12 title" style="text-align: center;margin-top: 0%;"><strong class="verde">PERFORMANCE MKT</strong></h1>
+
+
                         <h2 class="col-12 col-lg-9 subtitle">Estrategias 100% orientadas a resultados</h2>
                         <div class="col-12 align">
                         <a href="#contacto" class="col-5"><button class="boton mobile col-12">Comenzar ahora</button></a>
@@ -581,7 +608,7 @@
                             <text transform="matrix(1 0 0 1 41.6724 196.6167)" class="st2 st3 st4 paso3">3</text>
                             </svg>
                             <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso1" id="paso1txt" style="color: #003629">Análisis y Planificación</div>
-                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso2" id="paso2txt">Puesta en marcha</div>
+                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso2" id="paso2txt"><p style="margin: 0% !important;"> Puesta en </p> marcha</div>
                             <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso3" id="paso3txt">Monitoreo y optimización</div>
                             <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso4" id="paso4txt">Informe y Propuestas</div>
                         </div>
@@ -673,9 +700,9 @@
                                             <h1 id="icF1" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios1" class="row align">
-                                            <h1 id="arss" class="col-12 precio">$10.000 /mes</h1>
-                                            <h1 id="dolaress1" class="col-12 precio" style="display: none;">$105 /mes</h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars" class="col-3 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd" class="col-3 usd"> USD</h1>
+                                            <h1 id="arss" class="col-12 precio">$ 10.000 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="dolaress1" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos1" class="col-12 desc"> $ 5.000 c/u</h1>
                                             <h1 id="dolares1" class="col-12 desc" style="display: none;"> $ 52 c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
@@ -693,9 +720,9 @@
                                             <h1 id="icF2" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios2" class="row align">
-                                            <h1 id="arss2" class="col-12 precio">$13.500 /mes</h1>
-                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$105 /mes</h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars2" class="col-3 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd2" class="col-3 usd"> USD</h1>
+                                            <h1 id="arss2" class="col-12 precio">$ 13.500 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars2" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd2" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos2" class="col-12 desc">10% OFF / $ 4.500 c/u</h1>
                                             <h1 id="dolares2" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
@@ -713,9 +740,9 @@
                                             <h1 id="icF3" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios3" class="row align">
-                                            <h1 id="arss3" class="col-12 precio">$17.000 /mes</h1>
-                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$105 /mes</h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars3" class="col-3 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd3" class="col-3 usd"> USD</h1>
+                                            <h1 id="arss3" class="col-12 precio">$ 17.000 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars3" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd3" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos3" class="col-12 desc">15% OFF / $ 4.250 c/u</h1>
                                             <h1 id="dolares3" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
@@ -734,9 +761,9 @@
                                         <h1 id="icF4" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios4" class="row align">
-                                            <h1 id="arss4" class="col-12 precio">$20.000 /mes</h1>
-                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;">$105 /mes</h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars4" class="col-3 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd4" class="col-3 usd"> USD</h1>
+                                            <h1 id="arss4" class="col-12 precio">$ 20.000 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars4" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd4" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos4" class="col-12 desc">20% OFF / $ 4.000 c/u</h1>
                                             <h1 id="dolares4" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
@@ -755,9 +782,9 @@
                                         <h1 id="icF5" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;"></i></h1>
                                         </div>
                                         <div id="precios5" class="row align">
-                                            <h1 id="arss5" class="col-12 precio">$5.000 /mes</h1>
-                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$105 /mes</h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars5" class="col-3 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd5" class="col-3 usd"> USD</h1>
+                                            <h1 id="arss5" class="col-12 precio">$ 5.000 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars5" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd5" class="col-2 usd"> USD</h1>
                                             <h1 class="col-12 desc" style="font-size: 15px;">¿No sabes cuantas campañas? Relevamiento y embudo a medida</h1>
                                             
                                             <button class="botonStart col-8">Comenzar ahora</button>
@@ -802,20 +829,23 @@
 
                     <div id="agencia" class="mobile row align col-12" style="display: none;">
                         <div class="col-12 col-lg-5 row align">
-                            <h2 class="col-8 subT">Paquetes para agencias de todos los tamaños</h2>
+                            <h2 class="col-8 subT">Planes para agencias que buscan terecerizar gestión de campañas.</h2>
 
-                            <h1 class="col-12" style="font-weight: 600;text-align: center;font-size: 30px;"><strong style="font-weight: bolder;padding: 20px;font-size: 30px;">+10</strong>Campañas /Mes</h1>
+                            <h1 class="col-12" style="font-weight: 400;text-align: center;font-size: 30px;margin-bottom: 15%;"><strong style="font-weight: bolder;padding: 20px;font-size: 30px;">+10</strong>Campañas /Mes</h1>
                         </div>
 
-                        <!--<div class="center1 align cont">
+                        <div id="planAgencia" class="center1 align cont">
                             <article class="col-11 card">
                                 <div class="row align">
                                     
                                     <div class="col-10 row align">
                                         <h1 class="col-12 precio">PLAN FULL</h1>
-                                        <h1 class="col-12 precio">Dsd $35.000 /MES</h1>
-                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
-                                        <h1 class="col-12 desc">30% OFF / 3.500$ C/U</h1>
+                                        <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $35.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                        <h1 id="dolaress6" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                        <div class="col-12 align" style="justify-content: center;">
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars6" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd6" class="col-2 usd"> USD</h1>
+                                        </div>
+                                        <h1 class="col-12 desc">30% OFF / $ 3.500 c/u</h1>
                                         <button class="botonStart col-8">Comenzar ahora</button>
                                     </div>
                                 </div>
@@ -825,9 +855,12 @@
                                     
                                     <div class="col-10 row align">
                                         <h1 class="col-12 precio">PLAN BÁSICO</h1>
-                                        <h1 class="col-12 precio">Dsd $25.000 /MES</h1>
-                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
-                                        <h1 class="col-12 desc">50% OFF / 2.500$ C/U</h1>
+                                        <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $25.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                        <h1 id="dolaress7" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                        <div class="col-12 align" style="justify-content: center;">
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars7" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd7" class="col-2 usd"> USD</h1>
+                                        </div>
+                                        <h1 class="col-12 desc">50% OFF / $ 2.500 c/u</h1>
                                         <button class="botonStart col-8">Comenzar ahora</button>
                                     </div>
                                 </div>
@@ -835,7 +868,7 @@
                             
                         </div>
                         <script type="text/javascript">
-                            $('.center1').slick({
+                            $('#planAgencia').slick({
                             centerMode: true,
                             centerPadding: '60px',
                             slidesToShow: 1,
@@ -864,72 +897,10 @@
                                 }
                             ]
                             });
-                        </script>-->
+                        </script>
            
 
-                        <div class="center1 align cont" style="margin-top: 20px;">
-                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                                <!-- Bottom Carousel Indicators -->
-                                <ol class="carousel-indicators">
-                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#quote-carousel" data-slide-to="1"></li>
-                                </ol>
-                                
-                                <!-- Carousel Slides / Quotes -->
-                                <div class="carousel-inner align">
-                                
-                                <!-- Quote 1 -->
-                                <div class="item active a134">
-                                    
-                                        <article class="col-12 card" style="margin-left: 0 !important;height: 310px !important;">
-                                            <div class="row align">
-                                                
-                                                <div class="col-10 row align">
-                                                    <div class="col-12 align" style="justify-content: flex-end;">
-                                                    <h1 id="icV6" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
-                                                    <h1 id="icF6" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
-                                                    </div>
-                                                    <div id="precios6" class="row align">
-                                                        <h1 class="col-12 precio">PLAN FULL</h1>
-                                                        <h1 class="col-12 precio">Dsd $35.000 /MES</h1>
-                                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
-                                                        <h1 class="col-12 desc">30% OFF / 3.500$ C/U</h1>
-                                                        <button class="botonStart col-8">Comenzar ahora</button>
-                                                    </div>
-                                                    <h1 id="info6" class="col-10 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    
-                                </div>
-                                <!-- Quote 2 -->
-                                <div class="item a134">
-                                    
-                                        <article class="col-12 card" style="margin-left: 0 !important;height: 310px !important;">
-                                            <div class="row align">
-                                                
-                                                <div class="col-10 row align">
-                                                    <div class="col-12 align" style="justify-content: flex-end;">
-                                                    <h1 id="icV7" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
-                                                    <h1 id="icF7" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
-                                                    </div>
-                                                    <div id="precios7" class="row align">
-                                                        <h1 class="col-12 precio">PLAN BÁSICO</h1>
-                                                        <h1 class="col-12 precio">Dsd $25.000 /MES</h1>
-                                                        <h1 class="col-12 ars"> ARS - <strong class="usd">USD</strong></h1>
-                                                        <h1 class="col-12 desc">50% OFF / 2.500$ C/U</h1>
-                                                        <button class="botonStart col-8">Comenzar ahora</button>
-                                                    </div>
-                                                    <h1 id="info7" class="col-10 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    
-                                </div>
-                                
-                                <!-- Carousel Buttons Next/Prev -->
-                                
-                            </div>   
+                        
                           
                     </div>
                     
@@ -963,57 +934,57 @@
 
                 <div class="col-12 align fondo">
                     <section id="faqs" class="row align preguntas" style="width: 100% !important;">
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Qué comprende la tarifa por campaña? <i id="icono45" class="fas fa-chevron-down 1 fa-cerrado" data-toggle="collapse" data-target="#content"></i>
+                        <p id="icono45" class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;" data-toggle="collapse" data-target="#content">
+                            ¿Qué comprende la tarifa por campaña? <i id="iicono45" class="fas fa-chevron-down 1 fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content" style="justify-content: space-between;">
                            data-aos="fade-right" data-aos-duration="1300"  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
 
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Qué delimita cada campaña? <i id="icono46" class="fas fa-chevron-down 2 fa-cerrado" data-toggle="collapse" data-target="#content2"></i>
+                        <p id="icono46" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content2" style="display: flex;justify-content: space-between;">
+                            ¿Qué delimita cada campaña? <i id="iicono46" class="fas fa-chevron-down 2 fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content2" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Qué costos adicionales a los exhibidos hay? <i id="icono47" class="fas fa-chevron-down 3 fa-cerrado" data-toggle="collapse" data-target="#content3"></i>
+                        <p id="icono47" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content3" style="display: flex;justify-content: space-between;">
+                            ¿Qué costos adicionales a los exhibidos hay? <i id="iicono47" class="fas fa-chevron-down 3 fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content3" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Cuántas campañas son adecuadas para mi organización? <i id="icono48" class="fas fa-chevron-down  fa-cerrado" data-toggle="collapse" data-target="#content4"></i>
+                        <p id="icono48" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content4" style="display: flex;justify-content: space-between;">
+                            ¿Cuántas campañas son adecuadas para mi organización? <i id="iicono48"  class="fas fa-chevron-down  fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content4" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Qué metodos de pago aceptan? <i id="icono49" class="fas fa-chevron-down  fa-cerrado" data-toggle="collapse" data-target="#content5"></i>
+                        <p id="icono49" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content5" style="display: flex;justify-content: space-between;">
+                            ¿Qué metodos de pago aceptan? <i id="iicono49" class="fas fa-chevron-down  fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content5" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Cuándo se paga por los servicios? <i id="icono50" class="fas fa-chevron-down  fa-cerrado" data-toggle="collapse" data-target="#content6"></i>
+                        <p id="icono50" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content6" style="display: flex;justify-content: space-between;">
+                            ¿Cuándo se paga por los servicios? <i id="iicono50"  class="fas fa-chevron-down  fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content6" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Hay devolución en caso de cancelación de servicios? <i id="icono51" class="fas fa-chevron-down  fa-cerrado" data-toggle="collapse" data-target="#content7"></i>
+                        <p id="icono51" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content7" style="display: flex;justify-content: space-between;">
+                            ¿Hay devolución en caso de cancelación de servicios? <i id="iicono51" class="fas fa-chevron-down  fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content7" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
-                        <p class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;">
-                            ¿Ofrecen planes con descuento? <i id="icono52" class="fas fa-chevron-down  fa-cerrado" data-toggle="collapse" data-target="#content8"></i>
+                        <p id="icono52" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content8" style="display: flex;justify-content: space-between;">
+                            ¿Ofrecen planes con descuento? <i id="iicono52" class="fas fa-chevron-down  fa-cerrado"></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content8" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
                         </p>
-                        <p class="preg col-11 col-lg-7" style="display:flex;justify-content: space-between;">
-                            ¿Hay garantía de resultados? <i id="icono53" class="fas fa-chevron-down fa-cerrado" data-toggle="collapse" data-target="#content9"></i></i>
+                        <p id="icono53" class="preg col-11 col-lg-7" data-toggle="collapse" data-target="#content9" style="display:flex;justify-content: space-between;">
+                            ¿Hay garantía de resultados? <i id="iicono53" class="fas fa-chevron-down fa-cerrado"></i></i>
                         </p>
                         <p class="col-12 pregRta col-lg-7 collapse" id="content9" style="justify-content: space-between;">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse nisi ipsa natus totam sint voluptatum soluta, hic dolorum in. Similique error nemo cumque numquam, est optio natus quas reiciendis?
@@ -1092,16 +1063,16 @@
 
                         </div>
 
-                        <div data-aos="zoom-in" data-aos-duration="700" id="mision" class="single-item row align car2 col-lg-7" style="margin-bottom: 40px !important;margin-top: 30px !important;display: none;">
+                        <div data-aos="zoom-in" data-aos-duration="700" id="mision" class="single-item row align car2 col-lg-7" style="margin-bottom: 0px !important;margin-top: 30px !important;display: none;">
                             <p class="item active col-12 textNos2">Ayudar a tu empresa a alcanzar todo el potencial de sus canales digitales, maximizando las conversiones en cada fase del embudo al menor costo posible.</p>
                         </div>
 
-                        <div data-aos="zoom-in" data-aos-duration="700" id="vision" class="single-item row align car2 col-lg-7" style="margin-bottom: 40px !important;margin-top: 30px !important;display: none;">
+                        <div data-aos="zoom-in" data-aos-duration="700" id="vision" class="single-item row align car2 col-lg-7" style="margin-bottom: 0px !important;margin-top: 30px !important;display: none;">
                             <p class="item active col-12 textNos2">Que cualquier empresa del mundo pueda acceder ágilmente a nuestras soluciones ajustadas a sus recursos, revolucionando el marketing digital con la filosofía del performance.</p>
                         </div>
 
                         <!-- Wrapper for slides -->
-                        <div data-aos="zoom-in" data-aos-duration="700" id="valores" class="single-item2 row align car2 col-lg-7" style="margin-bottom: 40px !important;margin-top: 30px !important;">
+                        <div data-aos="zoom-in" data-aos-duration="700" id="valores" class="single-item2 row align car2 col-lg-7" style="margin-bottom: 0px !important;margin-top: 30px !important;">
                             <div class="item col-12">
                                 <p class="textNos2 col-12" style="padding-bottom: 0px;">AMBICIOSOS</p>
                                 <p class="active textNos2 col-12">No nos conformamos con alcanzar las metas, nuestro dogma es la mejora continua.</p>
@@ -1234,16 +1205,16 @@
 
                             <div data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="nosCar align col-12 col-lg-9" style="justify-content: space-around; width: 100%;padding: 0px;">
                                 <div class="imgNos col-5" style="height: 370px !important;">
-                                    <img src="./Images/person-logo.png" alt="" class="foto col-12">
+                                    <img src="./Images/FOTO 1.png" alt="" class="foto col-12">
                                     <h1 class="col-12 nombre">Agustín Ibañez</h1>
                                     <p class="col-12 puesto">PLANNING DIRECTOR
-                                        / Co-fundador
+                                         <br> /Co-fundador </br>
                                     </p>
                                 </div>
                                 <div class="imgNos col-5" style="height: 370px !important;">
                                     <img src="./Images/FOTO-Gonzalo Nazar.png" alt="" class="foto col-12">
                                     <h1 class="col-12 nombre">Gonzalo Nazar</h1>
-                                    <p class="col-12 puesto">OPERATIONS DIRECTOR/ Co-Fundador</p>
+                                    <p class="col-12 puesto">OPERATIONS DIRECTOR <br> /Co-Fundador </br></p>
                                 </div>
                                 <div class="imgNos col-5" style="height: 370px !important;">
                                     <img src="./Images/computer.png" alt="" class="foto col-12">
@@ -1289,7 +1260,7 @@
                                             arrows: false,
                                             centerMode: false,
                                             centerPadding: '40px',
-                                            slidesToScroll: 2,
+                                            swipeToSlide: true,
                                             slidesToShow: 2
                                         }
                                         },
@@ -1299,7 +1270,7 @@
                                             arrows: false,
                                             centerMode: false,
                                             centerPadding: '15px',
-                                            slidesToScroll: 1,
+                                            swipeToSlide: true,
                                             slidesToShow: 2
                                         }
                                         }
@@ -1313,7 +1284,7 @@
                     <section class="row align contacto" id="contacto">
                         <h1 class="col-12 align contactoT">CONTACTO</h1>
 
-                        <h3 data-aos="fade-in" class="subtitle1 col-10 col-lg-12">Contactanos para hacer crecer tu negocio</h3>
+                        <h3 data-aos="fade-in" class="subtitle1 col-10 col-lg-12">Contactanos para hacer <br> crecer tu negocio </br></h3>
                         
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="email" class="align row">
@@ -1372,7 +1343,7 @@
 
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="calen" class="align row" style="display: none;">
-                            <h3 class="msj col-11">/ Dejanos tu fecha</h3>
+                            <h3 class="msj col-11">/ Agendá una videollamada</h3>
 
                             <div id="hora" class="email align col-12 col-lg-7" style="justify-content: space-around;">
                                 <input class="email-input col-10" type="email" placeholder="Fecha"></input>
@@ -1453,7 +1424,7 @@
                             <h3 class="msj col-11">/ Llamanos</h3>
 
                             <div class="email align col-12 col-lg-7" style="justify-content: space-around;">
-                                <p class="numWhats col-12">+54 9 351 702-0235</p>
+                                <a href="https://api.whatsapp.com/send?phone=541167048339&text=Hola."><p class="numWhats col-12">+54 9 351 702-0235</p></a>
                             </div>
 
                             <div class="col-12 col-lg-8 align">
@@ -1465,7 +1436,7 @@
                             <h3 class="msj col-11">/ Whatsappeanos</h3>
 
                             <div class="email align col-12 col-lg-7" style="justify-content: space-around;">
-                                <p class="numWhats col-12">+54 9 351 702-0235</p>
+                                <a href="https://api.whatsapp.com/send?phone=541167048339&text=Hola."><p class="numWhats col-12">+54 9 351 702-0235</p></a>
                             </div>
 
                             <div class="col-12 col-lg-8 align">
