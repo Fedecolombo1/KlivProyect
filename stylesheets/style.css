@@ -18,7 +18,7 @@ body{
     font-family: Product Sans!important;
 }
 *{
-    outline: none
+    outline: none !important
 }
 button, input{
     font-family: Product Sans!important;
@@ -598,6 +598,7 @@ input[type=range].form-range.col-8 {
     display: block;
     height: 26vh;
     object-fit: cover;
+    background: none;
 }
 .cardNos{
     background-color: #fff;
@@ -640,7 +641,7 @@ input[type=range].form-range.col-8 {
     margin:5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16);
+    
 }
 
 .foto{
