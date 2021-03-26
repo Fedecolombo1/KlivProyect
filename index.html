@@ -904,8 +904,8 @@
                         </script>-->
            
 
-                        <div class="carousel" data-flickity='{"prevNextButtons": false, "percentPosition": true }'>
-                            <article class="col-11 card carousel-cell">
+                        <div class="carousel center1 cont" data-flickity='{"prevNextButtons": false }'>
+                            <article class="col-11 col-lg-5 card carousel-cell">
                                 <div class="row align">
                                     
                                     <div class="col-10 row align">
@@ -920,7 +920,7 @@
                                     </div>
                                 </div>
                             </article>
-                            <article class="col-11 card carousel-cell">
+                            <article class="col-11 col-lg-5 card carousel-cell">
                                 <div class="row align">
                                     
                                     <div class="col-10 row align">
@@ -936,7 +936,6 @@
                                 </div>
                             </article>
                         </div>
-
                         
 
                     
@@ -945,8 +944,8 @@
 
                     <script type="text/javascript">
                         $("#emp").click(function(){
-                            $("#agencia").fadeOut();
-                            $("#empresa").fadeIn();
+                            document.getElementById("empresa").style.display = "flex"
+                            document.getElementById("agencia").style.display = "none"
                             document.getElementById("emp").classList.add("seleccionado")
                             document.getElementById("emp").classList.remove("deseleccionado")
                             document.getElementById("age").classList.add("deseleccionado")
@@ -955,8 +954,7 @@
                         </script>
                         <script type="text/javascript">
                             $("#age").click(function(){
-                                $("#empresa").fadeOut();
-                                $("#agencia").fadeIn();
+                                document.getElementById("empresa").style.display = "none"
                                 document.getElementById("agencia").style.display = "flex"
                                 document.getElementById("age").classList.add("seleccionado")
                                 document.getElementById("age").classList.remove("deseleccionado")
@@ -970,7 +968,7 @@
                 </section>
 
                 <div class="col-12 align fondo">
-                    <section id="faqs" class="row align preguntas" style="width: 100% !important;">
+                    <section id="faqs" class="row align preguntas" style="width: 100% !important; padding-top: 21px;">
                         <p id="icono45" class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;" data-toggle="collapse" data-target="#content">
                             ¿Qué comprende la tarifa por campaña? <i id="iicono45" class="fas fa-chevron-down 1 fa-cerrado"></i>
                         </p>
