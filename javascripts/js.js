@@ -9,6 +9,13 @@ window.addEventListener("load", function(){
       });
     });
 
+    $("#age").click(function(){
+                                
+      
+      document.getElementById("agencia").style.position = "relative"
+      
+  });
+
     document.querySelector(".aSec").addEventListener("click", function(){
       quit()
     })
