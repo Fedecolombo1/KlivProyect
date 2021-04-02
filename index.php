@@ -31,6 +31,7 @@
 
     <link rel="stylesheet" href="./stylesheets/aos.scss">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 
 </head>
 <body>
@@ -571,7 +572,6 @@
                         <h1 class="col-12 titles comoT">COMO TRABAJAMOS</h1>
                         <div id="svg-cont" class="col-lg-5 align">
                            
-                            <?xml version="1.0" encoding="utf-8"?>
                             <!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                             <svg class="col-10 col-lg-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
@@ -683,17 +683,43 @@
     
                     <div id="empresa" class="row align col-12" style="position: relative;">
                         <div class="empresa row align col-lg-5">
-                            <h2 data-aos="zoom-in" class="col-8 subT">Paquetes para empresas de todos los tamaños</h2>
+                            <h2 data-aos="zoom-in" class="col-12 subT">Paquetes para empresas de todos los tamaños</h2>
                             
-                            <label for="customRange3" class="form-label col-12" style="text-align: center; font-size: 30px; font-weight: 400;margin-bottom: 20px;"><strong class="num" style="font-weight: bolder;font-size: 32px;"> 3 </strong> Campañas /mes</label>
-                            <div id="range-cont">
+                            <label for="customRange3" class="form-label col-12" style="text-align: center; font-size: 27px; font-weight: 400;margin-bottom: 20px;"><strong id="campanas" class="num" style="font-weight: bolder;font-size: 29px;"> ? </strong> Campañas /mes</label>
+                            <!-- <div id="range-cont">
                                 <a href="#empresa"><input type="range" class="form-range col-8" value="1" min="1" max="100" step="1" id="customRange3"></a> 
                                 <div></div>
-                            </div>
+                                
+                            </div> -->
+                            <a href="#empresa" id="drag-cont">
+                              
+
+                            </a>
                                 
                         </div>
 
                         <div class="center1 align cont col-12">
+                        <article class="col-11 card" data-aos="zoom-in-up" data-aos-duration="900">
+                                <div class="row align">
+                                    
+                                    
+                                    <div class="col-11 row align">
+                                        <div class="col-12 align" style="justify-content: flex-end;">
+                                        <h1 id="icV5" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
+                                        <h1 id="icF5" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;"></i></h1>
+                                        </div>
+                                        <div id="precios5" class="row align">
+                                            <h1 id="arss5" class="col-12 precio">$ 5.000 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars5" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd5" class="col-2 usd"> USD</h1>
+                                            <h1 class="col-12 desc" style="font-size: 15px;">¿No sabes cuantas campañas? Relevamiento y embudo a medida</h1>
+                                            
+                                            <button class="botonStart col-8">Comenzar ahora</button>
+                                        </div>
+                                        <h1 id="info5" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                    </div>
+                                </div>
+                            </article>
                             <article class="col-11 card align" data-aos="zoom-in-up" data-aos-duration="900">
                                 <div class="row align">
                                     <div class="col-11 row align">
@@ -774,27 +800,7 @@
                                     </div>
                                 </div>
                             </article>
-                            <article class="col-11 card" data-aos="zoom-in-up" data-aos-duration="900">
-                                <div class="row align">
-                                    
-                                    
-                                    <div class="col-11 row align">
-                                        <div class="col-12 align" style="justify-content: flex-end;">
-                                        <h1 id="icV5" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
-                                        <h1 id="icF5" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;"></i></h1>
-                                        </div>
-                                        <div id="precios5" class="row align">
-                                            <h1 id="arss5" class="col-12 precio">$ 5.000 /<strong style="font-size: 19px;">mes </strong></h1>
-                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars5" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd5" class="col-2 usd"> USD</h1>
-                                            <h1 class="col-12 desc" style="font-size: 15px;">¿No sabes cuantas campañas? Relevamiento y embudo a medida</h1>
-                                            
-                                            <button class="botonStart col-8">Comenzar ahora</button>
-                                        </div>
-                                        <h1 id="info5" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
-                                    </div>
-                                </div>
-                            </article>
+                            
                         </div>
                         <script type="text/javascript">
                             $('.center1').slick({
@@ -831,9 +837,9 @@
 
                     <div id="agencia" class="mobile row align col-12">
                         <div class="col-12 col-lg-5 row align">
-                            <h2 class="col-8 subT">Planes para agencias que buscan terecerizar gestión de campañas.</h2>
+                            <h2 class="col-12 subT">Planes para agencias que buscan terecerizar gestión de campañas.</h2>
 
-                            <h1 class="col-12" style="font-weight: 400;text-align: center;font-size: 30px;margin-bottom: 15%;"><strong style="font-weight: bolder;padding: 20px;font-size: 30px;">+10</strong>Campañas /Mes</h1>
+                            <h1 class="col-12" style="font-weight: 400;text-align: center;font-size: 27px;margin-bottom: 15%;"><strong style="font-weight: bolder;padding: 20px;font-size: 27px;">+10</strong>Campañas /Mes</h1>
                         </div>
 
                         <!--<div id="planAgencia" class="center1 align cont">
@@ -908,7 +914,7 @@
                                     
                                     <div class="col-10 row align">
                                         <h1 class="col-12 precio">PLAN FULL</h1>
-                                        <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $35.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                        <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ 35.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
                                         <h1 id="dolaress6" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
                                         <div class="col-12 align" style="justify-content: center;">
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars6" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd6" class="col-2 usd"> USD</h1>
@@ -923,7 +929,7 @@
                                     
                                     <div class="col-10 row align">
                                         <h1 class="col-12 precio">PLAN BÁSICO</h1>
-                                        <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $25.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                        <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ 25.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
                                         <h1 id="dolaress7" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
                                         <div class="col-12 align" style="justify-content: center;">
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars7" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd7" class="col-2 usd"> USD</h1>
@@ -1325,7 +1331,7 @@
                     <section class="row align contacto" id="contacto">
                         <h1 class="col-12 align contactoT">CONTACTO</h1>
 
-                        <h3 data-aos="fade-in" class="subtitle1 col-10 col-lg-12">Contactanos para hacer <br> crecer tu negocio </br></h3>
+                        <h3 data-aos="fade-in" class="subtitle1">Contactanos para hacer <br> crecer tu negocio </br></h3>
                         
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="email" class="align row">
@@ -1469,7 +1475,7 @@
                             </div>
 
                             <div class="col-12 col-lg-8 align">
-                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs.</h3>
+                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs. GMT-0300 (hora estándar de Argentina)<br><br>De <cite id="hora-start"></cite> a <cite id="hora-end"></cite> hs horario local.</h3>
                                 
                             </div>
                         </div>
@@ -1636,19 +1642,41 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-    $('#customRange3').change(function(){
-        console.log($(this).val())
-        var porcen = parseInt( $(this).val() /100*5) + 1
-        // var porcen = porcen 
-        console.log(porcen)
-        if (porcen == 6) {
-            porcen = 5;
-        }
-        $('.slick-dots li:nth-child('+ porcen +')').click()
+    // $('#customRange3').change(function(){
+    //     console.log($(this).val())
+    //     var porcen = parseInt( $(this).val() /100*5) + 1
+    //     // var porcen = porcen 
+    //     console.log(porcen)
+    //     if (porcen == 6) {
+    //         porcen = 5;
+    //     }
+    //     $('.slick-dots li:nth-child('+ porcen +')').click()
 
-        $('#range-cont>div').css('background-image','linear-gradient(90deg, #1E7A5E '+ $(this).val() +'% , transparent '+ $(this).val() +'% )')
+    //     $('#range-cont>div').css('background-image','linear-gradient(90deg, #1E7A5E '+ $(this).val() +'% , transparent '+ $(this).val() +'% )')
 
-    })
+    // })
+var d = new Date()
+var gmtHours = -d.getTimezoneOffset()/60;
+
+
+var dt = new Date();
+var test = dt.setHours( dt.getHours() - gmtHours );
+let date = new Date( test );
+
+var start_date = dt.setHours( 9 + 3 + gmtHours );
+var end_date = dt.setHours( 18 + 3 + gmtHours );
+
+$('#hora-start').text(new Date( start_date ).getHours() )
+$('#hora-end').text(new Date( end_date ).getHours() )
+
+
+
+setTimeout(() => {
+    $('#drag-cont').load('draggable.php')
+    $('#empresa .slick-track>article:first-child').addClass('not-shadow')
+}, 3000);
+
+
 })
 
 </script>

@@ -505,6 +505,7 @@ input[type=range].form-range.col-8 {
       font-weight: bold;
       color: #003629;
       margin-top: 5px;
+      padding: 0!important;
   }
   .usd{
     text-align: center;
@@ -512,6 +513,7 @@ input[type=range].form-range.col-8 {
     font-weight: bold;
     color: #2D2D2D;
     margin-top: 5px;
+    padding: 0!important;
   }
 
   .imgPq path{
@@ -665,7 +667,7 @@ input[type=range].form-range.col-8 {
 .puesto{
     margin-top: 5px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     color: grey;
 }
@@ -694,6 +696,9 @@ input[type=range].form-range.col-8 {
     text-align: center;
     color: black;
     margin-top: 15px;
+}
+#contacto .subtitle1 {
+    padding: 0;
 }
 
 .email{
@@ -1495,4 +1500,22 @@ footer{
 
 .my-float{
 	margin-top:16px;
+}
+
+#draggable{
+
+    width:200px;
+    height:200px;
+    background:red;
+}
+
+#empresa .slick-track>article{
+    filter: brightness(0.4);
+
+}
+
+
+.not-shadow{
+    filter: brightness(1)!important;
+
 }
