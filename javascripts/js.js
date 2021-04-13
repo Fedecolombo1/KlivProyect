@@ -321,7 +321,6 @@ window.addEventListener("load", function(){
       })
 
       document.getElementById("icF6").addEventListener("click", function(){
-          
         document.getElementById("precios6").style.display = "none"
         document.getElementById("info6").style.display = "inline"
         document.getElementById("icV6").style.display = "inline"

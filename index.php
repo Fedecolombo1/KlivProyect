@@ -582,6 +582,8 @@
                                 .st3{font-family: Product Sans!important;font-size: 50px!important}
                                 .st4{font-size:50px!important;}
                             </style>
+                            <image style="overflow:visible;" width="1241" height="1241" xlink:href="Images/Logotipos-07.png"  transform="matrix(9.883400e-02 0 0 9.883400e-02 66.3923 66.7644)">
+                            </image>
                             <g id="flecha3"  class="paso3">
                                 <path class="st0" d="M2.7,130.9l34.9-21.2L71.9,131l0.2,0.2c1.6,19.9,14.3,37.9,32.6,46c5.2,2.3,10.8,3.8,16.5,4.4l0.2,0L100,217.2
                                     l21.1,34.1h-0.3c-13.8-0.7-27.4-3.8-40.1-9c-22-8.9-41.2-24.1-54.9-43.4c-14.1-19.8-22.3-43.6-23.2-67.9L2.7,130.9z"/>
@@ -598,8 +600,6 @@
                                 <path class="st0" d="M131.4,251.7l-21.2-34.9l21.4-34.4l0.2-0.2c19.9-1.6,37.9-14.3,46-32.6c2.3-5.2,3.8-10.8,4.4-16.5l0-0.2
                                     l35.6,21.5l34.1-21.1v0.3c-0.7,13.8-3.8,27.4-9,40.1c-8.9,22-24.1,41.2-43.4,54.9c-19.8,14.1-43.6,22.3-67.9,23.2L131.4,251.7z"/>
                             </g>
-                            <image style="overflow:visible;" width="1241" height="1241" xlink:href="Images/Logotipos-07.png"  transform="matrix(9.883400e-02 0 0 9.883400e-02 66.3923 66.7644)">
-                            </image>
                             <rect x="55.6" y="36.6" class="st1 paso4" width="37.4" height="43.2"/>
                             <text transform="matrix(1 0 0 1 55.6401 72.3594)" class="st2 st3 st4 paso4">4</text>
                             <rect x="187" y="57.2" class="st1 paso2" width="37.4" height="43.2"/>
@@ -609,10 +609,10 @@
                             <rect x="41.7" y="160.8" class="st1 paso3" width="37.4" height="43.2"/>
                             <text transform="matrix(1 0 0 1 41.6724 196.6167)" class="st2 st3 st4 paso3">3</text>
                             </svg>
-                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso1" id="paso1txt" style="color: #003629">Análisis y Planificación</div>
-                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso2" id="paso2txt"><p style="margin: 0% !important;"> Puesta en </p> marcha</div>
-                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso3" id="paso3txt">Monitoreo y optimización</div>
-                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso4" id="paso4txt">Informe y Propuestas</div>
+                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso1" id="paso1txt" style="color: #003629">Análisis y<br>Planificación</div>
+                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso2" id="paso2txt"><p style="margin: 0% !important;"> Puesta en<br></p> marcha</div>
+                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso3" id="paso3txt">Monitoreo y<br>optimización</div>
+                            <div data-aos="zoom-in" data-aos-duration="900" class="titulos-pasos paso4" id="paso4txt">Informe y<br>Propuestas</div>
                         </div>
 
                         <div id="content10" class="col-12 align" style="display: flex;">
@@ -683,7 +683,7 @@
     
                     <div id="empresa" class="row align col-12" style="position: relative;">
                         <div class="empresa row align col-lg-5">
-                            <h2 data-aos="zoom-in" class="col-12 subT">Paquetes para empresas de todos los tamaños</h2>
+                            <h2 data-aos="zoom-in" class="col-12 subT">Paquetes para empresas<br>de todos los tamaños</h2>
                             
                             <label for="customRange3" class="form-label col-12" style="text-align: center; font-size: 27px; font-weight: 400;margin-bottom: 20px;"><strong id="campanas" class="num" style="font-weight: bolder;font-size: 29px;"> ? </strong> Campañas /mes</label>
                             <!-- <div id="range-cont">
@@ -698,19 +698,19 @@
                                 
                         </div>
 
-                        <div class="center1 align cont col-12">
+                        <div class="center1 card-cont1 align cont col-12">
                         <article class="col-11 card" data-aos="zoom-in-up" data-aos-duration="900">
                                 <div class="row align">
                                     
                                     
                                     <div class="col-11 row align">
                                         <div class="col-12 align" style="justify-content: flex-end;">
-                                        <h1 id="icV5" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
+                                        <h1 id="icV5" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
                                         <h1 id="icF5" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;"></i></h1>
                                         </div>
                                         <div id="precios5" class="row align">
-                                            <h1 id="arss5" class="col-12 precio">$ 5.000 /<strong style="font-size: 19px;">mes </strong></h1>
-                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="arss5" class="col-12 precio">$ 5.000<p style="font-size: 19px;"> </p></h1>
+                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars5" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd5" class="col-2 usd"> USD</h1>
                                             <h1 class="col-12 desc" style="font-size: 15px;">¿No sabes cuantas campañas? Relevamiento y embudo a medida</h1>
                                             
@@ -724,11 +724,11 @@
                                 <div class="row align">
                                     <div class="col-11 row align">
                                         <div class="col-12 align" style="justify-content: flex-end;">
-                                            <h1 id="icV1" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
+                                            <h1 id="icV1" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
                                             <h1 id="icF1" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios1" class="row align">
-                                            <h1 id="arss" class="col-12 precio">$ 10.000 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="arss" class="col-12 precio">$ 10.000 /<p style="font-size: 19px;">mes </strong></h1>
                                             <h1 id="dolaress1" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos1" class="col-12 desc"> $ 5.000 c/u</h1>
@@ -744,12 +744,12 @@
                                     
                                     <div class="col-11 row align">
                                         <div class="col-12 align" style="justify-content: flex-end;">
-                                            <h1 id="icV2" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
+                                            <h1 id="icV2" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
                                             <h1 id="icF2" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios2" class="row align">
-                                            <h1 id="arss2" class="col-12 precio">$ 13.500 /<strong style="font-size: 19px;">mes </strong></h1>
-                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="arss2" class="col-12 precio">$ 13.500 /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars2" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd2" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos2" class="col-12 desc">10% OFF / $ 4.500 c/u</h1>
                                             <h1 id="dolares2" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
@@ -764,12 +764,12 @@
                                     
                                     <div class="col-11 row align">
                                         <div class="col-12 align" style="justify-content: flex-end;">
-                                            <h1 id="icV3" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
+                                            <h1 id="icV3" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
                                             <h1 id="icF3" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios3" class="row align">
-                                            <h1 id="arss3" class="col-12 precio">$ 17.000 /<strong style="font-size: 19px;">mes </strong></h1>
-                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="arss3" class="col-12 precio">$ 17.000 /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars3" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd3" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos3" class="col-12 desc">15% OFF / $ 4.250 c/u</h1>
                                             <h1 id="dolares3" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
@@ -785,12 +785,12 @@
                                     
                                     <div class="col-11 row align">
                                         <div class="col-12 align" style="justify-content: flex-end;">
-                                        <h1 id="icV4" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;"></h1>
+                                        <h1 id="icV4" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
                                         <h1 id="icF4" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios4" class="row align">
-                                            <h1 id="arss4" class="col-12 precio">$ 20.000 /<strong style="font-size: 19px;">mes </strong></h1>
-                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                        <h1 id="arss4" class="col-12 precio"><p style="font-size: 19px;">Dsd </p>$ 20.000 /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars4" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd4" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos4" class="col-12 desc">20% OFF / $ 4.000 c/u</h1>
                                             <h1 id="dolares4" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
@@ -831,15 +831,51 @@
                                 }
                             ]
                             });
+
+
+                            $(".center1").on("beforeChange", function (){
+                                let sliderWidth = $('#pr-slider').width()
+                                console.log(sliderWidth)
+                                setTimeout(() => {
+                                    console.log('asdddd')
+                                    let diapo = parseInt($('.slick-center').attr('data-slick-index') ) +1
+                                    if(diapo == 1){ 
+                                        $('#campanas').text('?')
+                                        $(".stripe").css("width", ""+ (diapo-1)*0 +"%");
+                                        $('.handle').css('left', sliderWidth*0.0)
+                                    }	
+                                    if(diapo == 2){
+                                        $('#campanas').text('2')
+                                        $(".stripe").css("width", ""+ (diapo-1)*25 +"%");
+                                        $('.handle').css('left', sliderWidth*0.25)
+                                    }	
+                                    if(diapo == 3){
+                                        $('#campanas').text('3')
+                                        $(".stripe").css("width", ""+ (diapo-1)*25 +"%");
+                                        $('.handle').css('left', sliderWidth*0.50)
+                                    }
+                                    if(diapo == 4){
+                                        $('#campanas').text('4')
+                                        $(".stripe").css("width", ""+ (diapo-1)*25 +"%");
+                                        $('.handle').css('left', sliderWidth*0.75)
+                                    }
+                                    if(diapo == 5){
+                                        $('#campanas').text('+5')
+                                        $(".stripe").css("width", ""+ (diapo-1)*25 +"%");
+                                        $('.handle').css('left', sliderWidth)
+                                    }	
+                                    
+                                }, 202);
+                            })
                         </script>
                     </div>
 
 
                     <div id="agencia" class="mobile row align col-12">
                         <div class="col-12 col-lg-5 row align">
-                            <h2 class="col-12 subT">Planes para agencias que buscan terecerizar gestión de campañas.</h2>
+                            <h2 class="col-12 subT">Planes para agencias que buscan<br>terecerizar gestión de campañas.</h2>
 
-                            <h1 class="col-12" style="font-weight: 400;text-align: center;font-size: 27px;margin-bottom: 15%;"><strong style="font-weight: bolder;padding: 20px;font-size: 27px;">+10</strong>Campañas /Mes</h1>
+                            <h1 class="col-12" style="font-weight: 400;text-align: center;font-size: 27px;    margin: 3% 0 16% 0;"><strong style="font-weight: bolder;padding: 0;font-size: 27px;">+10 </strong>Campañas /mes</h1>
                         </div>
 
                         <!--<div id="planAgencia" class="center1 align cont">
@@ -911,8 +947,13 @@
                         <div class="carousel center1 cont" data-flickity='{"prevNextButtons": false }'>
                             <article class="col-11 col-lg-5 card carousel-cell">
                                 <div class="row align">
+                                        <div class="col-12 align" style="justify-content: flex-end;">
+                                            <h1 id="icV6" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
+                                            <h1 id="icF6" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
+                                        </div>
                                     
-                                    <div class="col-10 row align">
+                                    <div class="col-10 row align" id="precios6">
+                                        
                                         <h1 class="col-12 precio">PLAN FULL</h1>
                                         <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ 35.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
                                         <h1 id="dolaress6" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
@@ -922,12 +963,17 @@
                                         <h1 class="col-12 desc">30% OFF / $ 3.500 c/u</h1>
                                         <button class="botonStart col-8">Comenzar ahora</button>
                                     </div>
+                                    <h1 id="info6" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
                                 </div>
                             </article>
                             <article class="col-11 col-lg-5 card carousel-cell">
                                 <div class="row align">
+                                        <div class="col-12 align" style="justify-content: flex-end;">
+                                            <h1 id="icV7" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
+                                            <h1 id="icF7" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
+                                        </div>
                                     
-                                    <div class="col-10 row align">
+                                    <div class="col-10 row align" id="precios7">
                                         <h1 class="col-12 precio">PLAN BÁSICO</h1>
                                         <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ 25.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
                                         <h1 id="dolaress7" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
@@ -936,7 +982,9 @@
                                         </div>
                                         <h1 class="col-12 desc">50% OFF / $ 2.500 c/u</h1>
                                         <button class="botonStart col-8">Comenzar ahora</button>
+                                        <h1 id="info7" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
                                     </div>
+                                    <h1 id="info7" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
                                 </div>
                             </article>
                         </div>
@@ -1336,54 +1384,72 @@
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="email" class="align row">
                             <h3 class="msj col-11">/ Dejanos tu mensaje</h3>
-
-                            <div id="email1" class="email align col-12 col-lg-7" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="Nombre"></input>
+                            <div id="nombre1" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                <input class="email-input col-10  input-activo" type="email" placeholder="Nombre"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
-                            <div id="telefono" class="email align col-12 col-lg-7" style="justify-content: space-around;display: none;">
+                            <div id="email1" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
+                                <input class="email-input col-10" type="email" placeholder="Mail"></input>
+                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                            </div>
+                            <div id="telefono" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
                                 <input class="email-input col-10" type="email" placeholder="Dejanos tu telefono"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
-                            <div id="mensaje" class="email align col-12 col-lg-7" style="justify-content: space-around;display: none;">
+                            <div id="mensaje" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
                                 <input class="email-input col-10" type="email" placeholder="Dejanos tu Mensaje"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
 
-                            <div class="col-12 col-lg-8 align">
+                            <div class="col-12 col-lg-8 align" id="tags-cont-email">
+                                <h3 id="nombreClick" class="active-step opciones col-3 tag-act">Nombre</h3>
                                 <h3 id="emailClick" class="opciones col-3">Email</h3>
                                 <h3 id="telClick" class="opciones col-3">Telefono</h3>
                                 <h3 id="msjClick" class="opciones col-3">Mensaje</h3>
                             </div>
                         </div>
                         <script type="text/javascript">
-                            $("#emailClick").click(function(){
-                                $("#mensaje").fadeOut();
-                                $("#telefono").fadeOut();
-                                $("#email1").fadeIn();
+                            var mail_step = 1;
+                            $('#email button').click(function() {
+                                if ($('#email .input-activo').val() != '') {
+                                   let padresin =  $('.input-activo').parent('.email-campos')
+                                   padresin.find('input').removeClass('input-activo');
+                                   padresin.fadeOut().removeClass('input-activo');
+                                   padresin.next('.email-campos').find('input').addClass('input-activo')
+                                   padresin.next('.email-campos').delay('300').fadeIn();
+                                   $('#tags-cont-email h3').removeClass('active-step')
+                                   mail_step += 1;
+                                   $('#tags-cont-email h3:nth-child('+mail_step+')').addClass('active-step')
+                                }
+                            })
                                 
-                                document.getElementById("mensaje").style.display = "none"
-                                document.getElementById("telefono").style.display = "none"
-                                document.getElementById("email1").style.display = "flex"
-                            });
-                            $("#telClick").click(function(){
-                                $("#email1").fadeOut();
-                                $("#mensaje").fadeOut();
-                                $("#telefono").fadeIn();
+                            // $("#emailClick").click(function(){
+                            //     $("#mensaje").fadeOut();
+                            //     $("#telefono").fadeOut();
+                            //     $("#email1").fadeIn();
                                 
-                                document.getElementById("mensaje").style.display = "none"
-                                document.getElementById("email1").style.display = "none"
-                                document.getElementById("telefono").style.display = "flex"
-                            });
-                            $("#msjClick").click(function(){
-                                $("#email1").fadeOut();
-                                $("#telefono").fadeOut();
-                                $("#mensaje").fadeIn();
+                            //     document.getElementById("mensaje").style.display = "none"
+                            //     document.getElementById("telefono").style.display = "none"
+                            //     document.getElementById("email1").style.display = "flex"
+                            // });
+                            // $("#telClick").click(function(){
+                            //     $("#email1").fadeOut();
+                            //     $("#mensaje").fadeOut();
+                            //     $("#telefono").fadeIn();
                                 
-                                document.getElementById("telefono").style.display = "none"
-                                document.getElementById("email1").style.display = "none"
-                                document.getElementById("mensaje").style.display = "flex"
-                            });
+                            //     document.getElementById("mensaje").style.display = "none"
+                            //     document.getElementById("email1").style.display = "none"
+                            //     document.getElementById("telefono").style.display = "flex"
+                            // });
+                            // $("#msjClick").click(function(){
+                            //     $("#email1").fadeOut();
+                            //     $("#telefono").fadeOut();
+                            //     $("#mensaje").fadeIn();
+                                
+                            //     document.getElementById("telefono").style.display = "none"
+                            //     document.getElementById("email1").style.display = "none"
+                            //     document.getElementById("mensaje").style.display = "flex"
+                            // });
                         </script>
 
 
@@ -1392,76 +1458,89 @@
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="calen" class="align row" style="display: none;">
                             <h3 class="msj col-11">/ Agendá una videollamada</h3>
 
-                            <div id="hora" class="email align col-12 col-lg-7" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="Fecha"></input>
+                            <div id="hora" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                <input class="email-input input-activo col-10" type="email" placeholder="Fecha"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
-                            <div id="email2" class="email align col-12 col-lg-7" style="justify-content: space-around;display: none;">
+                            <div id="email2" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
                                 <input class="email-input col-10" type="email" placeholder="Cual es tu mail?"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
-                            <div id="nombre" class="email align col-12 col-lg-7" style="justify-content: space-around;display: none;">
+                            <div id="nombre" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
                                 <input class="email-input col-10" type="email" placeholder="Nombre"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
-                            <div id="asunto" class="email align col-12 col-lg-7" style="justify-content: space-around;display: none;">
+                            <div id="asunto" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
                                 <input class="email-input col-10" type="email" placeholder="Asunto"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
 
-                            <div class="col-12 col-lg-7 align">
-                                <h3 id="horaClick" class="opciones col-3">Hora</h3>
+                            <div class="col-12 col-lg-7 align" id="tags-cont-calen">
+                                <h3 id="horaClick" class="opciones active-step col-3">Hora</h3>
                                 <h3 id="emailClick2" class="opciones col-3">Email</h3>
                                 <h3 id="nombreClick" class="opciones col-3">Nombre</h3>
                                 <h3 id="asuntoClick" class="opciones col-3">Asunto</h3>
                             </div>
                         </div>
                         <script type="text/javascript">
-                            $("#horaClick").click(function(){
-                                $("#email1").fadeOut();
-                                $("#nombre").fadeOut();
-                                $("#asunto").fadeOut();
-                                $("#hora").fadeIn();
+                         var calen_step = 1;
+                            $('#calen button').click(function() {
+                                if ($('#calen .input-activo').val() != '') {
+                                   let padresin =  $('.input-activo').parent('.calen-campos')
+                                   padresin.find('input').removeClass('input-activo');
+                                   padresin.fadeOut().removeClass('input-activo');
+                                   padresin.next('.calen-campos').find('input').addClass('input-activo')
+                                   padresin.next('.calen-campos').delay('300').fadeIn();
+                                   $('#tags-cont-calen h3').removeClass('active-step')
+                                   calen_step += 1;
+                                   $('#tags-cont-calen h3:nth-child('+calen_step+')').addClass('active-step')
+                                }
+                            })
+                            // $("#horaClick").click(function(){
+                            //     $("#email1").fadeOut();
+                            //     $("#nombre").fadeOut();
+                            //     $("#asunto").fadeOut();
+                            //     $("#hora").fadeIn();
                                 
-                                document.getElementById("asunto").style.display = "none"
-                                document.getElementById("nombre").style.display = "none"
-                                document.getElementById("email2").style.display = "none"
-                                document.getElementById("hora").style.display = "flex"
-                            });
-                            $("#emailClick2").click(function(){
-                                $("#asunto").fadeOut();
-                                $("#nombre").fadeOut();
-                                $("#hora").fadeOut();
-                                $("#email2").fadeIn();
+                            //     document.getElementById("asunto").style.display = "none"
+                            //     document.getElementById("nombre").style.display = "none"
+                            //     document.getElementById("email2").style.display = "none"
+                            //     document.getElementById("hora").style.display = "flex"
+                            // });
+                            // $("#emailClick2").click(function(){
+                            //     $("#asunto").fadeOut();
+                            //     $("#nombre").fadeOut();
+                            //     $("#hora").fadeOut();
+                            //     $("#email2").fadeIn();
                                 
-                                document.getElementById("hora").style.display = "none"
-                                document.getElementById("asunto").style.display = "none"
-                                document.getElementById("nombre").style.display = "none"
-                                document.getElementById("email2").style.display = "flex"
-                            });
+                            //     document.getElementById("hora").style.display = "none"
+                            //     document.getElementById("asunto").style.display = "none"
+                            //     document.getElementById("nombre").style.display = "none"
+                            //     document.getElementById("email2").style.display = "flex"
+                            // });
                             
-                            $("#nombreClick").click(function(){
-                                $("#asunto").fadeOut();
-                                $("#email2").fadeOut();
-                                $("#hora").fadeOut();
-                                $("#nombre").fadeIn();
+                            // $("#nombreClick").click(function(){
+                            //     $("#asunto").fadeOut();
+                            //     $("#email2").fadeOut();
+                            //     $("#hora").fadeOut();
+                            //     $("#nombre").fadeIn();
                                 
-                                document.getElementById("hora").style.display = "none"
-                                document.getElementById("asunto").style.display = "none"
-                                document.getElementById("email2").style.display = "none"
-                                document.getElementById("nombre").style.display = "flex"
-                            });
-                            $("#asuntoClick").click(function(){
-                                $("#nombre").fadeOut();
-                                $("#email2").fadeOut();
-                                $("#hora").fadeOut();
-                                $("#asunto").fadeIn();
+                            //     document.getElementById("hora").style.display = "none"
+                            //     document.getElementById("asunto").style.display = "none"
+                            //     document.getElementById("email2").style.display = "none"
+                            //     document.getElementById("nombre").style.display = "flex"
+                            // });
+                            // $("#asuntoClick").click(function(){
+                            //     $("#nombre").fadeOut();
+                            //     $("#email2").fadeOut();
+                            //     $("#hora").fadeOut();
+                            //     $("#asunto").fadeIn();
                                 
-                                document.getElementById("hora").style.display = "none"
-                                document.getElementById("nombre").style.display = "none"
-                                document.getElementById("email2").style.display = "none"
-                                document.getElementById("asunto").style.display = "flex"
-                            });
+                            //     document.getElementById("hora").style.display = "none"
+                            //     document.getElementById("nombre").style.display = "none"
+                            //     document.getElementById("email2").style.display = "none"
+                            //     document.getElementById("asunto").style.display = "flex"
+                            // });
                         </script>
 
 
@@ -1475,7 +1554,7 @@
                             </div>
 
                             <div class="col-12 col-lg-8 align">
-                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs. GMT-0300 (hora estándar de Argentina)<br><br>De <cite id="hora-start"></cite> a <cite id="hora-end"></cite> hs horario local.</h3>
+                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs. GMT-0300 (hora estándar de Argentina)<br><br>De <cite class="hora-start"></cite> a <cite class="hora-end"></cite> hs horario local.</h3>
                                 
                             </div>
                         </div>
@@ -1487,7 +1566,8 @@
                             </div>
 
                             <div class="col-12 col-lg-8 align">
-                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs.</h3>
+                                <!-- <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs.</h3> -->
+                                <h3 class="opciones col-12">Atención de lunes a viernes, de 9 a 18 hs. GMT-0300 (hora estándar de Argentina)<br><br>De <cite class="hora-start"></cite> a <cite class="hora-end"></cite> hs horario local.</h3>
                             </div>
                         </div>
 
@@ -1666,14 +1746,15 @@ let date = new Date( test );
 var start_date = dt.setHours( 9 + 3 + gmtHours );
 var end_date = dt.setHours( 18 + 3 + gmtHours );
 
-$('#hora-start').text(new Date( start_date ).getHours() )
-$('#hora-end').text(new Date( end_date ).getHours() )
+$('.hora-start').text(new Date( start_date ).getHours() )
+$('.hora-end').text(new Date( end_date ).getHours() )
 
 
 
 setTimeout(() => {
     $('#drag-cont').load('draggable.php')
     $('#empresa .slick-track>article:first-child').addClass('not-shadow')
+    $('#mis').click()
 }, 3000);
 
 

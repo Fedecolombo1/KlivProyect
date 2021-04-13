@@ -280,7 +280,7 @@ h1.nues{
 #svg-cont {
     position: relative;
     width: 40%;
-    padding: 8%;
+    padding: 10%;
 }
 #svg-cont>svg{
     width: 100%;
@@ -291,7 +291,7 @@ h1.nues{
     font-weight: 600;
     color: #adadad;
     font-size: 20px;
-    width: 26%;
+    /* width: 26%; */
 }
 #paso1txt{
     right: -1%;
@@ -476,7 +476,7 @@ input[type=range].form-range.col-8 {
   }
 
   .cont{
-      background: rgba(241, 241, 241, 0.568) !important;
+      background: #f3f3f3 !important;
       padding-top: 40px;
   }
 
@@ -568,7 +568,11 @@ input[type=range].form-range.col-8 {
   #content1{
       background-color: #fff;
   }
+.card-cont1 p{
+    display: inline;
+    font-weight: 500;
 
+}
   .nuestrosS{
       color: #cc6633;
       font-weight: 400;
@@ -838,7 +842,7 @@ footer{
     right: 0;
     top: 0;
     color: black;
-    background: linear-gradient(45deg, white 10%, white);;
+    /* background: linear-gradient(45deg, white 10%, white);; */
     font-size: 32px;
     padding: 16px 16px 13px 28px;
     border-radius: 0% 0% 0% 100%;
@@ -880,7 +884,6 @@ footer{
 
   #empresa{
       left: 0%;
-
   }
   #emp, #age{
     width: fit-content!important;
@@ -897,8 +900,12 @@ footer{
     text-align: center;
     margin-bottom: 60px;
     font-size: 14px;
+    cursor: auto;
   }
-
+  .active-step{
+      font-weight: 900;
+      transform: scale(1.05);
+  }
   .nosotrosDiv{
      
       margin-top: 40px;
@@ -952,6 +959,8 @@ footer{
     }
     #emp, #age{
         width: fit-content!important;
+        padding: 0 4px;
+        margin: 0 5%;
       }
       .imgPq{
         padding: 0!important;
@@ -978,14 +987,12 @@ footer{
     .cont{
         background-color: #f1f2f6;
         margin-bottom: 0px !important;
+        padding: 0;
     }
 
     #agencia{
         
         padding: 0px !important;
-    }
-    #empresa{
-        padding: 3.5% 0 0 0!important;
     }
 
     .sociosImgs{
@@ -1080,7 +1087,21 @@ footer{
         }
         .titulos-pasos {
             font-size: 14px;
-            width: 20%;
+            width: 25%;
+        }
+        #empresa>div:first-child, #agencia>div:first-child{
+            height: 300px;
+        }
+        .empresa{
+            padding-top: 20px;
+        }
+        #agencia>div>h1{
+            transform: translateY(-150%);
+        }
+        #agencia .card{
+            position: absolute;
+            left: 0%;
+            height: fit-content!important;
         }
     }
 
@@ -1112,7 +1133,7 @@ footer{
 
         header{
             display: inline-block;
-            position: absolute;
+            position: fixed;
         }
         .title{
             margin-top: 35%;
@@ -1162,6 +1183,7 @@ footer{
         }
         #pq-car-cont>div p{
             color: #797979;
+            font-size: 17px;
         }
         .servT{
             font-size: 24px;
@@ -1170,7 +1192,7 @@ footer{
 
         }
         .textT{
-            font-size: 16px !important;
+            font-size: 17px !important;
             margin: 3% 0;
             padding: 0 !important;
         }
@@ -1230,6 +1252,9 @@ footer{
             
             margin-bottom: 80px !important;
         }
+        #svg-cont{
+            padding: 5%;
+        }
         .nuestrosS{
             font-size: 40px !important;
         }
@@ -1263,7 +1288,7 @@ footer{
             margin-bottom: 10px;
         }
         .icon-pq{
-            width: 50px!important;
+            width: 110px!important;
         }
         .iconServ{
             width: 200px;
@@ -1327,11 +1352,10 @@ footer{
 
           #svg-cont>svg{
               width: 103%;
+              padding: 0!important;
           }
 
-          .paso4{
-              font-size: 25px;
-          }
+        
 
           .textoSaberMas{
               font-size: 18px;
@@ -1509,13 +1533,13 @@ footer{
     background:red;
 }
 
-#empresa .slick-track>article{
-    filter: brightness(0.4);
 
-}
-
-
-.not-shadow{
-    filter: brightness(1)!important;
-
-}
+@media(min-width:799px){
+    #empresa .slick-track>article{
+        filter: brightness(0.4);
+    }
+    .not-shadow{
+        filter: brightness(1)!important;
+    
+    }
+    }
