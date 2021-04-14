@@ -1384,8 +1384,8 @@
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="email" class="align row">
                             <h3 class="msj col-11">/ Dejanos tu mensaje</h3>
-                            <div id="nombre1" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                <input class="email-input col-10  input-activo" type="email" placeholder="Nombre"></input>
+                            <div id="nombre1" class="email input-activo email-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                <input class="email-input col-10" type="email" placeholder="Nombre"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
                             <div id="email1" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
@@ -1400,6 +1400,9 @@
                                 <input class="email-input col-10" type="email" placeholder="Dejanos tu Mensaje"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
+                            <div id="grax1" class="col-12 col-lg-7 email-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
+                                <h3>Gracias, nos contactaremos a la brevedad.</h3>
+                            </div>
 
                             <div class="col-12 col-lg-8 align" id="tags-cont-email">
                                 <h3 id="nombreClick" class="active-step opciones col-3 tag-act">Nombre</h3>
@@ -1408,49 +1411,7 @@
                                 <h3 id="msjClick" class="opciones col-3">Mensaje</h3>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            var mail_step = 1;
-                            $('#email button').click(function() {
-                                if ($('#email .input-activo').val() != '') {
-                                   let padresin =  $('.input-activo').parent('.email-campos')
-                                   padresin.find('input').removeClass('input-activo');
-                                   padresin.fadeOut().removeClass('input-activo');
-                                   padresin.next('.email-campos').find('input').addClass('input-activo')
-                                   padresin.next('.email-campos').delay('300').fadeIn();
-                                   $('#tags-cont-email h3').removeClass('active-step')
-                                   mail_step += 1;
-                                   $('#tags-cont-email h3:nth-child('+mail_step+')').addClass('active-step')
-                                }
-                            })
-                                
-                            // $("#emailClick").click(function(){
-                            //     $("#mensaje").fadeOut();
-                            //     $("#telefono").fadeOut();
-                            //     $("#email1").fadeIn();
-                                
-                            //     document.getElementById("mensaje").style.display = "none"
-                            //     document.getElementById("telefono").style.display = "none"
-                            //     document.getElementById("email1").style.display = "flex"
-                            // });
-                            // $("#telClick").click(function(){
-                            //     $("#email1").fadeOut();
-                            //     $("#mensaje").fadeOut();
-                            //     $("#telefono").fadeIn();
-                                
-                            //     document.getElementById("mensaje").style.display = "none"
-                            //     document.getElementById("email1").style.display = "none"
-                            //     document.getElementById("telefono").style.display = "flex"
-                            // });
-                            // $("#msjClick").click(function(){
-                            //     $("#email1").fadeOut();
-                            //     $("#telefono").fadeOut();
-                            //     $("#mensaje").fadeIn();
-                                
-                            //     document.getElementById("telefono").style.display = "none"
-                            //     document.getElementById("email1").style.display = "none"
-                            //     document.getElementById("mensaje").style.display = "flex"
-                            // });
-                        </script>
+
 
 
 
@@ -1458,12 +1419,16 @@
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="calen" class="align row" style="display: none;">
                             <h3 class="msj col-11">/ Agendá una videollamada</h3>
 
-                            <div id="hora" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                <input class="email-input input-activo col-10" type="email" placeholder="Fecha"></input>
+                            <div id="fecha" class="email input-activo calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                <input class="email-input col-10" type="email" placeholder="Fecha"></input>
+                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
+                            </div>
+                            <div id="hora" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
+                                <input class="email-input col-10" type="text" placeholder="Hora"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
                             <div id="email2" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="email" placeholder="Cual es tu mail?"></input>
+                                <input class="email-input col-10" type="email" placeholder="Email"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
                             <div id="nombre" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
@@ -1474,28 +1439,20 @@
                                 <input class="email-input col-10" type="email" placeholder="Asunto"></input>
                                 <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
                             </div>
+                            <div id="grax2" class="col-12 col-lg-7 calen-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
+                                <h3>Gracias, nos contactaremos a la brevedad.</h3>
+                            </div>
 
                             <div class="col-12 col-lg-7 align" id="tags-cont-calen">
-                                <h3 id="horaClick" class="opciones active-step col-3">Hora</h3>
+                                <h3 id="horaClick" class="opciones active-step col-3">Fecha</h3>
+                                <h3 id="horaClick" class="opciones col-3">Hora</h3>
                                 <h3 id="emailClick2" class="opciones col-3">Email</h3>
                                 <h3 id="nombreClick" class="opciones col-3">Nombre</h3>
                                 <h3 id="asuntoClick" class="opciones col-3">Asunto</h3>
                             </div>
                         </div>
                         <script type="text/javascript">
-                         var calen_step = 1;
-                            $('#calen button').click(function() {
-                                if ($('#calen .input-activo').val() != '') {
-                                   let padresin =  $('.input-activo').parent('.calen-campos')
-                                   padresin.find('input').removeClass('input-activo');
-                                   padresin.fadeOut().removeClass('input-activo');
-                                   padresin.next('.calen-campos').find('input').addClass('input-activo')
-                                   padresin.next('.calen-campos').delay('300').fadeIn();
-                                   $('#tags-cont-calen h3').removeClass('active-step')
-                                   calen_step += 1;
-                                   $('#tags-cont-calen h3:nth-child('+calen_step+')').addClass('active-step')
-                                }
-                            })
+                         
                             // $("#horaClick").click(function(){
                             //     $("#email1").fadeOut();
                             //     $("#nombre").fadeOut();
@@ -1757,6 +1714,106 @@ setTimeout(() => {
     $('#mis').click()
 }, 3000);
 
+
+
+var mail_step = 1;
+$('#email button').click(function() {
+    if ($('#email .input-activo input').val() != '') {
+        let padresin =  $('.input-activo')
+        padresin.removeClass('input-activo');
+        padresin.fadeOut();
+        padresin.next('.email-campos').addClass('input-activo')
+        padresin.next('.email-campos').delay('300').fadeIn();
+        $('#email .input-activo input').focus()
+        $('#tags-cont-email h3').removeClass('active-step')
+        mail_step += 1;
+        $('#tags-cont-email h3:nth-child('+mail_step+')').addClass('active-step')
+
+        if ( $('.input-activo').is(':nth-child(6)') ) {
+            envioMail();
+        }
+    }
+})
+
+
+function envioMail(){
+
+var nombre = $('#nombre1 input').val();
+var email = $('#email1 input').val();
+var telefono = $('#telefono input').val();
+var mensaje = $('#mensaje input').val();
+
+if($.trim(email) != ''){
+    $.ajax({
+        url:'contacto.php',
+        method:'POST',
+        cache: false,
+        data:{
+            nombre:nombre,
+            email:email,
+            telefono:telefono,
+            mensaje:mensaje
+        },
+        dataType:'text',
+
+        success:function(data){
+            console.log(data);
+        }
+    });
+}
+
+}
+
+
+var calen_step = 1;
+$('#calen button').click(function() {
+    if ($('#calen .input-activo input').val() != '') {
+        let padresin =  $('.input-activo')
+        padresin.removeClass('input-activo');
+        padresin.fadeOut();
+        padresin.next('.calen-campos').addClass('input-activo')
+        padresin.next('.calen-campos').delay('300').fadeIn();
+        $('#tags-cont-calen h3').removeClass('active-step')
+        calen_step += 1;
+        $('#tags-cont-calen h3:nth-child('+calen_step+')').addClass('active-step')
+        
+        if ( $('.input-activo').is(':nth-child(7)') ) {
+            envioCalen();
+        }
+    }
+}) 
+
+
+function envioCalen(){
+
+var fecha = $('#fecha input').val();
+var hora = $('#hora input').val();
+var email = $('#email2 input').val();
+var nombre = $('#nombre input').val();
+var asunto = $('#asunto input').val();
+
+
+if($.trim(mail) != ''){
+    $.ajax({
+        url:'contacto.php',
+        method:'POST',
+        cache: false,
+        data:{
+            fecha:fecha,
+            hora:hora,
+            email:email,
+            nombre:nombre,
+            asunto:asunto
+        },
+        dataType:'text',
+
+        success:function(data){
+            console.log(data);
+        }
+    });
+}
+
+}
 
 })
 
