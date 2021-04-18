@@ -1,30 +1,30 @@
 <?php 
 
-// require 'php/connection.php';
+require '../php/connection.php';
 
-// //INICIO DE SESIÓN
-// session_start();
+//INICIO DE SESIÓN
+session_start();
 
 
-// $_SESSION['message']="";
+$_SESSION['message']="";
 
-// if(isset($_POST['login'])){
-// 	$mail = $_POST['mail'];
-// 	$psw = $_POST['password'];
+if(isset($_POST['login'])){
+	$mail = $_POST['mail'];
+	$psw = $_POST['password'];
 
-// 	$user = $pdo->prepare("SELECT * FROM main_users WHERE user=:user AND psw=:psw");
-// 	$user->execute(['user' => $mail, 'psw'=>$psw]); 
-// 	$user = $user->fetch();
+	$user = $pdo->prepare("SELECT * FROM users WHERE user=:user AND psw=:psw");
+	$user->execute(['user' => $mail, 'psw'=>$psw]); 
+	$user = $user->fetch();
 
-// 	if(sizeof($user)>0){
-// 		$_SESSION['user']=$user['user'];
-// 		$_SESSION['id_user']=$user['id'];
-// 		header('location: index.php');
-// 	}else{
-// 		$_SESSION['message'] = 'Mail o contraseña incorrectos';
-// 	}
+	if(sizeof($user)>0){
+		$_SESSION['user']=$user['user'];
+		$_SESSION['id_user']=$user['id'];
+		header('location: index.php');
+	}else{
+		$_SESSION['message'] = 'Mail o contraseña incorrectos';
+	}
 
-// }
+}
 
 
  ?>
@@ -109,7 +109,7 @@ form label{
     font-weight: 200;
     color: #cacaca;
     position: absolute;
-	background: #111111;
+	/* background: #111111; */
     padding: 0px 5px;
     top: 29%;
     left: 4px;
@@ -219,7 +219,7 @@ form label{
     font-weight: 200;
     color: #cacaca;
     position: absolute;
-	background: #111111;
+	/* background: #111111; */
     padding: 0px 5px;
     top: 35%;
     left: 6px;
@@ -272,12 +272,10 @@ form{
  		<form action="" method="post">
 	 		<div id="inputs-cont">
 				 <div>
-					<label for="mail">Mail</label>
-					 <input class="inputes" type="email" name="mail" id="mail">
+					 <input class="inputes" placeholder="Email" type="email" name="mail" id="mail">
 				 </div>
 				 <div>
-					<label for="pass-log">Contraseña</label>
-					<input class="inputes" type="password" name="password" id="pass-log">
+					<input class="inputes" placeholder="Password" type="password" name="password" id="pass-log">
 				</div>
 	 		</div>
 

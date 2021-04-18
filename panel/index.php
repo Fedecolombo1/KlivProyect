@@ -1,5 +1,11 @@
 <?php
 
+session_start();
+
+if(!isset($_SESSION['id_user'])){
+    header('location: login.php');
+}
+
 require '../php/connection.php';
 
 // Traemos los elementos que tienen precio
@@ -142,6 +148,10 @@ body{
     text-transform: uppercase;
 }
 
+#row1 .ars{
+    color: #1E7A5E;
+    font-weight: bold;
+}
 
 </style>
 
@@ -176,7 +186,7 @@ body{
         
         ?>
 
-        <div class="row" data-id="<?php echo $pricing['id'] ?>">
+        <div class="row" data-id="<?php echo $pricing['id'] ?>" id="row<?php echo $pricing['id'] ?>">
             <div class="cell nombre"><?php echo $pricing['nombre'] ?></div>
             <div class="cell descripcion" contenteditable="true"><?php echo $pricing['descripcion'] ?></div>
             <div class="cell ars" contenteditable="true"><?php echo $pricing['ars'] ?></div>
@@ -290,6 +300,22 @@ $(document).on('click', '#guardar', function(){
     });
 
 })
+
+// Cuando cambian el valor de las 2 campañas x mes, se actualizan los demas planes con un descuento en funcion de ese valor
+$(document).on('DOMSubtreeModified', "[data-id|='1'] .ars", function(){
+    
+    var this_ars = $(this).html()
+
+    // Aplicamos los descuentos en funcion de este valor
+    $("[data-id|='2'] .ars").html(this_ars * 2)
+    $("[data-id|='3'] .ars").html(this_ars * 3 * 0.9)
+    $("[data-id|='4'] .ars").html(this_ars * 4 * 0.85)
+    $("[data-id|='5'] .ars").html(this_ars * 5 * 0.8)
+    $("[data-id|='6'] .ars").html(this_ars * 10 * 0.7)
+    $("[data-id|='7'] .ars").html(this_ars * 10 * 0.5)
+
+})
+
 
 </script>
 
