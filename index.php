@@ -1,3 +1,34 @@
+<?php
+
+require 'php/connection.php';
+
+// Traemos toda la data
+$sql = $pdo->prepare("SELECT * FROM pricing");
+$sql->execute(); 
+$pricings = $sql->fetchAll();
+
+
+// Traemos el dolar
+$sql = $pdo->prepare("SELECT * FROM dolar");
+$sql->execute(); 
+$dolar = $sql->fetch();
+
+$dolar = $dolar['dolar'];
+
+
+// Le agregamos el valor del dolar a los pricings
+foreach ($pricings as $key => $pricing) {
+    
+    $ars_to_usd = $pricing['ars'] / $dolar;
+    $ars_to_usd = floor($ars_to_usd);
+
+    $pricings[$key]['usd'] = $ars_to_usd;
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -709,14 +740,14 @@
                                         <h1 id="icF5" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;"></i></h1>
                                         </div>
                                         <div id="precios5" class="row align">
-                                            <h1 id="arss5" class="col-12 precio">$ 5.000<p style="font-size: 19px;"> </p></h1>
-                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="arss5" class="col-12 precio">$ <?php echo $pricings[0]['ars'] ?><p style="font-size: 19px;"> </p></h1>
+                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$<?php echo $pricings[0]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars5" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd5" class="col-2 usd"> USD</h1>
                                             <h1 class="col-12 desc" style="font-size: 15px;">¿No sabes cuantas campañas? Relevamiento y embudo a medida</h1>
                                             
                                             <button class="botonStart col-8">Comenzar ahora</button>
                                         </div>
-                                        <h1 id="info5" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                        <h1 id="info5" class="col-12 desc" style="display: none;"><?php echo $pricings[0]['descripcion'] ?></h1>
                                     </div>
                                 </div>
                             </article>
@@ -728,14 +759,14 @@
                                             <h1 id="icF1" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios1" class="row align">
-                                            <h1 id="arss" class="col-12 precio">$ 10.000 /<p style="font-size: 19px;">mes </strong></h1>
-                                            <h1 id="dolaress1" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="arss" class="col-12 precio">$ <?php echo $pricings[1]['ars'] ?> /<p style="font-size: 19px;">mes </strong></h1>
+                                            <h1 id="dolaress1" class="col-12 precio" style="display: none;">$<?php echo $pricings[1]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd" class="col-2 usd"> USD</h1>
-                                            <h1 id="pesos1" class="col-12 desc"> $ 5.000 c/u</h1>
-                                            <h1 id="dolares1" class="col-12 desc" style="display: none;"> $ 52 c/u</h1>
+                                            <h1 id="pesos1" class="col-12 desc"> $ <?php echo $pricings[1]['ars'] / 2 ?> c/u</h1>
+                                            <h1 id="dolares1" class="col-12 desc" style="display: none;"> $ <?php echo $pricings[1]['usd'] / 2 ?> c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
                                         </div>
-                                        <h1 id="info1" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                        <h1 id="info1" class="col-12 desc" style="display: none;"><?php echo $pricings[1]['descripcion'] ?></h1>
                                     </div>
                                 </div>
                             </article>
@@ -748,14 +779,14 @@
                                             <h1 id="icF2" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios2" class="row align">
-                                            <h1 id="arss2" class="col-12 precio">$ 13.500 /<p style="font-size: 19px;">mes </p></h1>
-                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="arss2" class="col-12 precio">$ <?php echo $pricings[2]['ars'] ?> /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$<?php echo $pricings[2]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars2" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd2" class="col-2 usd"> USD</h1>
-                                            <h1 id="pesos2" class="col-12 desc">10% OFF / $ 4.500 c/u</h1>
-                                            <h1 id="dolares2" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
+                                            <h1 id="pesos2" class="col-12 desc">10% OFF / $ <?php echo $pricings[2]['ars'] / 3 ?> c/u</h1>
+                                            <h1 id="dolares2" class="col-12 desc" style="display: none;">10% OFF / $ <?php echo $pricings[2]['usd'] / 3 ?> c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
                                         </div>
-                                        <h1 id="info2" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                        <h1 id="info2" class="col-12 desc" style="display: none;"><?php echo $pricings[2]['descripcion'] ?></h1>
                                     </div>
                                 </div>
                             </article>
@@ -768,14 +799,14 @@
                                             <h1 id="icF3" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios3" class="row align">
-                                            <h1 id="arss3" class="col-12 precio">$ 17.000 /<p style="font-size: 19px;">mes </p></h1>
-                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="arss3" class="col-12 precio">$ <?php echo $pricings[3]['ars'] ?> /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$<?php echo $pricings[3]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars3" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd3" class="col-2 usd"> USD</h1>
-                                            <h1 id="pesos3" class="col-12 desc">15% OFF / $ 4.250 c/u</h1>
-                                            <h1 id="dolares3" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
+                                            <h1 id="pesos3" class="col-12 desc">15% OFF / $ <?php echo $pricings[3]['ars'] / 4 ?> c/u</h1>
+                                            <h1 id="dolares3" class="col-12 desc" style="display: none;">10% OFF / $ <?php echo $pricings[3]['usd'] / 4 ?> c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
                                         </div>
-                                        <h1 id="info3" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                        <h1 id="info3" class="col-12 desc" style="display: none;"><?php echo $pricings[3]['descripcion'] ?></h1>
                                     </div>
                                 </div>
                             </article>
@@ -789,14 +820,14 @@
                                         <h1 id="icF4" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                         </div>
                                         <div id="precios4" class="row align">
-                                        <h1 id="arss4" class="col-12 precio"><p style="font-size: 19px;">Dsd </p>$ 20.000 /<p style="font-size: 19px;">mes </p></h1>
-                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;">$105 /<p style="font-size: 19px;">mes </p></h1>
+                                        <h1 id="arss4" class="col-12 precio"><p style="font-size: 19px;">Dsd </p>$ <?php echo $pricings[4]['ars'] ?> /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;">$<?php echo $pricings[4]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars4" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd4" class="col-2 usd"> USD</h1>
-                                            <h1 id="pesos4" class="col-12 desc">20% OFF / $ 4.000 c/u</h1>
-                                            <h1 id="dolares4" class="col-12 desc" style="display: none;">10% OFF / $ 48 c/u</h1>
+                                            <h1 id="pesos4" class="col-12 desc">20% OFF / $ <?php echo $pricings[4]['ars'] / 5 ?> c/u</h1>
+                                            <h1 id="dolares4" class="col-12 desc" style="display: none;">10% OFF / $ <?php echo $pricings[4]['usd'] / 5 ?> c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
                                         </div>
-                                        <h1 id="info4" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                        <h1 id="info4" class="col-12 desc" style="display: none;"><?php echo $pricings[4]['descripcion'] ?></h1>
                                     </div>
                                 </div>
                             </article>
@@ -955,15 +986,15 @@
                                     <div class="col-10 row align" id="precios6">
                                         
                                         <h1 class="col-12 precio">PLAN FULL</h1>
-                                        <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ 35.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
-                                        <h1 id="dolaress6" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                        <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php echo $pricings[6]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                        <h1 id="dolaress6" class="col-12 precio" style="display: none;">$<?php echo $pricings[6]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
                                         <div class="col-12 align" style="justify-content: center;">
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars6" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd6" class="col-2 usd"> USD</h1>
                                         </div>
-                                        <h1 class="col-12 desc">30% OFF / $ 3.500 c/u</h1>
+                                        <h1 class="col-12 desc">30% OFF / $ <?php echo $pricings[6]['ars'] / 10 ?> c/u</h1>
                                         <button class="botonStart col-8">Comenzar ahora</button>
                                     </div>
-                                    <h1 id="info6" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                    <h1 id="info6" class="col-12 desc" style="display: none;"><?php echo $pricings[6]['descripcion'] ?></h1>
                                 </div>
                             </article>
                             <article class="col-11 col-lg-5 card carousel-cell">
@@ -975,16 +1006,16 @@
                                     
                                     <div class="col-10 row align" id="precios7">
                                         <h1 class="col-12 precio">PLAN BÁSICO</h1>
-                                        <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ 25.000 /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
-                                        <h1 id="dolaress7" class="col-12 precio" style="display: none;">$105 /<strong style="font-size: 19px;">mes </strong></h1>
+                                        <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php echo $pricings[5]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                        <h1 id="dolaress7" class="col-12 precio" style="display: none;">$<?php echo $pricings[5]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
                                         <div class="col-12 align" style="justify-content: center;">
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars7" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd7" class="col-2 usd"> USD</h1>
                                         </div>
-                                        <h1 class="col-12 desc">50% OFF / $ 2.500 c/u</h1>
+                                        <h1 class="col-12 desc">50% OFF / $ <?php echo $pricings[5]['ars'] / 10 ?> c/u</h1>
                                         <button class="botonStart col-8">Comenzar ahora</button>
-                                        <h1 id="info7" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                        <h1 id="info7" class="col-12 desc" style="display: none;"><?php echo $pricings[5]['descripcion'] ?></h1>
                                     </div>
-                                    <h1 id="info7" class="col-12 desc" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, officia nam? Doloribus officiis consequuntur blanditiis tempore quidem corrupti eius? Harum, quisquam ut omnis quaerat consequatur officiis tenetur eius eaque voluptatum?</h1>
+                                    <h1 id="info7" class="col-12 desc" style="display: none;"><?php echo $pricings[5]['descripcion'] ?></h1>
                                 </div>
                             </article>
                         </div>
