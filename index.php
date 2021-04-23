@@ -1719,7 +1719,7 @@ setTimeout(() => {
 var mail_step = 1;
 $('#email button').click(function() {
     if ($('#email .input-activo input').val() != '') {
-        let padresin =  $('.input-activo')
+        let padresin =  $('#email .input-activo')
         padresin.removeClass('input-activo');
         padresin.fadeOut();
         padresin.next('.email-campos').addClass('input-activo')
@@ -1768,7 +1768,7 @@ if($.trim(email) != ''){
 var calen_step = 1;
 $('#calen button').click(function() {
     if ($('#calen .input-activo input').val() != '') {
-        let padresin =  $('.input-activo')
+        let padresin =  $('#calen .input-activo')
         padresin.removeClass('input-activo');
         padresin.fadeOut();
         padresin.next('.calen-campos').addClass('input-activo')
