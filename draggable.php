@@ -63,6 +63,7 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
+    filter: drop-shadow(0px 0px 2px dimgrey);
 }
 .square>img{
     width: 60%;

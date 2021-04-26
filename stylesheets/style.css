@@ -172,7 +172,13 @@ strong.verde{
     margin-top: 20px;
     margin-bottom: 80px;
 }
+.carousel-cell{
+    
+}
+.flickity-viewport{
 
+}
+m
 .carousel-control{
     background: transparent !important;
     margin-bottom: 70px;
@@ -1103,6 +1109,9 @@ footer{
             left: 0%;
             height: fit-content!important;
         }
+        .card-width{
+            width: 70%;
+        }
     }
 
     @media(min-width:768px){
@@ -1323,7 +1332,7 @@ footer{
             font-size: 20px;
         }
         .tarifasT{
-            margin-bottom: 0;
+            margin-bottom: 5%;
         }
         
         
