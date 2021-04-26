@@ -9,7 +9,7 @@ if (isset($_POST["asunto"])) {
 
 $fecha = $_POST['fecha'];
 $hora = $_POST['hora'];
-$email = $_POST['mail'];
+$email = $_POST['email'];
 $nombre = $_POST['nombre'];
 $asunto = $_POST['asunto'];
 
@@ -50,7 +50,7 @@ $mail->Body = utf8_decode('Nombre: ' . $nombre . '<br>
 	
 	$mail->isHTML(true);
 	
-	$mail->Subject='Contacto desde la página: ' . $nombre;
+	$mail->Subject='Contacto desde el sitio web: ' . $nombre;
 	
 	$mail->Body = utf8_decode('Nombre: ' . $nombre . '<br>
 				   Email: ' . $email . '<br>
@@ -78,3 +78,6 @@ if(!$mail->send()){
 
 
  ?>
+
+
+ 
