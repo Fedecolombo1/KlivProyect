@@ -186,8 +186,104 @@ foreach ($pricings as $key => $pricing) {
                     <h1 class="col-12 servT" style="color: white;">Publicidad en Redes</h1>
                     <p class="textT col-12" style="color: white;">Estrategias creativas y formatos acordes a cada fase del embudo, con diseño y redacción que capte la atención de tu audencia meta en las redes e induzca a la conversión.</p>
                 </div>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
+                <p class="col-12 textoSaberMas">Atención personalizada y generación de contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con tu marca.</p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifa x Paquete</a></p>
+                <p class="col-12 textoSaberMas">La gestión estratégica de las redes es un componente indispensable en todas las fases del embudo de conversión. No se debe aplicar como una estrategia aislada, sino que debe estar planificada en concordancia con el resto de estrategias digitales de la empresa. </p>
+                <p class="col-12 textoSaberMas">En Kliv desarrollamos contenidos de calidad alineados a objetivos concretos, que se ajustan a los intereses de tu buyer persona y transmiten los valores e identidad de tu marca. Además, monitoreamos tus redes y promovemos una relación cercana con tu público, respondiendo comentarios y atendiendo consultas.</p>
+                
+                <h3 style="margin: 20px 0">Beneficios</h3>
+                
+                <p class="col-12 textoSaberMas">
+                <strong>CONCIENCIA DE MARCA</strong>
+                <br>
+                La presencia periódica a través de publicaciones que aporten valor contribuye a la notoriedad, reconocimiento positivo y distinción de tu marca. Las personas tienden a consumir aquellas marcas que le son familiares.
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                <strong>CREA EMBAJADORES</strong>
+                <br>
+                Fomentar la interacción natural afianza el compromiso de la audiencia con tu marca, creando vínculos más allá de la relación compra-venta. Aquellos que se sienten integrados, escuchados y partícipes, serán aquellos que por propia convicción compartirán el contenido y recomendarán tu marca en sus propias redes.
+                </p>
+                <p class="col-12 textoSaberMas">
+                <strong>EDUCA AL MERCADO</strong>
+                <br>
+                Instruir sobre las especificaciones de tus productos o servicios y responder las dudas frecuentes de tus clientes facilitará que tomen la decisión de compra y su satisfacción será mayor, ya que conocerán a detalle lo que adquirieron. 
+                </p>
+                <p class="col-12 textoSaberMas">
+                <strong>ATRACCIÓN Y POSICIONAMIENTO</strong>
+                <br>
+                El contenido relevante genera tráfico de calidad, reforzando el posicionamiento de tus redes y permitiendo que tus propuestas comerciales lleguen a más clientes potenciales.
+                </p>
+                <p class="col-12 textoSaberMas">
+                <strong>CREDIBILIDAD</strong>
+                <br>
+                La comunicación orgánica elimina el tono publicitario creando relaciones de confianza a través de contenidos cualificados recurrentes que no buscan netamente vender, sino aportar valor y generar conversación con la audiencia. Los consumidores se inclinan por las marcas que reflejan credibilidad.
+                </p>
+                <p class="col-12 textoSaberMas">
+                <strong>FIDELIZA</strong>
+                <br>
+                Siempre es más rentable vender a un cliente actual que atraer a uno nuevo. Los contenidos relevantes ayudan a mantener a tus clientes comprometidos con tu marca a largo plazo.
+                </p>
+                <p class="col-12 textoSaberMas">
+                <strong>SINERGÍA CON CAMPAÑAS</strong>
+                <br>
+                Con estrategias planificadas en concordancia, la gestión de redes logra reducir el costo por adquisición de las campañas pagas optimizando las conversiones; siendo que los usuarios tienden a indagar más allá del anuncio que les llamó la atención antes de tomar la decisión de compra. 
+                </p>
+                
+                <h3 style="margin: 20px 0">Como Trabajamos</h3>
+
+                <p class="col-12 textoSaberMas">
+                <strong>AUDITORÍA</strong>
+                <br>
+                Partiendo de un diagnóstico completo de la situación actual de tu marca y la competencia en redes sociales, definimos objetivos concretos e identificamos la audiencia target, el arquetipo de personalidad y la estética en concordancia con la estrategia global de comunicación.
+                </p>
+
+                <p class="col-12 textoSaberMas">
+                <strong>PLANIFICACIÓN</strong>
+                <br>
+                Con las bases y el norte definido, ingeniamos contenidos de valor y acciones promocionales que calendarizamos para todo el mes; siempre haciendo partícipe del proceso a un responsable interno de tu empresa que nos oriente desde su perspectiva y criterio. 
+                </p>
+
+                <p class="col-12 textoSaberMas">
+                <strong>DISEÑO Y REDACCIÓN</strong>
+                <br>
+                Con grilla de contenidos en mano y mucha creatividad, diseñamos piezas que impacten y redactamos copies que persuadan, adecuado a la identidad de tu marca. Previo a la publicación, cada gráfica, video y texto se comparte para validación y ajustes.
+                </p>
+
+                <p class="col-12 textoSaberMas">
+                <strong>PUBLICACIÓN Y MONITOREO</strong>
+                <br>
+                De acuerdo al plan previsto, se programan las publicaciones con su respectiva pieza y copy, monitoreando su desempeño día a día. Y más allá de lo calendarizado, nos mantenemos receptivos a contenido espontáneo que sume valor, especialmente para las stories. 
+                <br>
+                Además, se responden comentarios y mensajes privados de 09 a 18hs (GMT-3), o se asignan a un responsable de la empresa en los casos que fuera necesario. Predomina la escucha activa para identificar insights de valor, detectando oportunidades y evitando conflictos. 
+                </p>
+                <p class="col-12 textoSaberMas">
+                <strong>REPORTES</strong>
+                <br>
+                Al cierre de cada período mensual se analiza el rendimiento en contraste con los objetivos planteados, presentando un informe cuantitativo y cualitativo, junto a una propuesta de mejora para el siguiente mes. 
+                </p>
+                <p class="col-12 textoSaberMas">
+                <div style="display:flex; justify-content: space-between">
+                    <div><b>Paquete x8/x12/x16</b></div>
+                    <div style="display:flex; flex-direction: column; align-items: flex-end">
+                        <div><b>$ 12.000 / $ 15.000 / $ 18.000</b></div>
+                        <div>*No incluye IVA</div>
+                    </div>
+                </div>
+                </p>
+                <p class="col-12 textoSaberMas">
+                    <div>- <b>8 / 12 / 16</b> publicaciones / Producción de piezas gráficas y redacción. Incluye hasta 3 GIFS.</div>
+                    <br>
+                    - Configuración inicial: Portada, perfil, historias destacadas, descripción, info, etc.
+                    <br>
+                    - Auditoría de tu marca y planificación de contenidos de valor y acciones promocionales.
+                    <br>
+                    - Edición ligera y publicación de historias de contenido espontáneo, 09:00 a 18:00hs (GMT-3) 
+                    <br>
+                    - Monitoreo de publicaciones y atención personalizada de consultas y mensajes, 09:00 a 18:00hs (GMT-3) 
+                    <br>
+                    - Informe de rendimiento del período mensual.
+                </p>
             </div>
             
             

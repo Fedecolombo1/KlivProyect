@@ -973,6 +973,7 @@ footer{
         height: 100%;
         width: 100%;
         background-color: #1E7A5E;
+        overflow-y: scroll;
     }
 
     .cerrado{
