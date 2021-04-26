@@ -362,6 +362,10 @@ strong.num{
     margin-bottom: 20px;
 }
 
+.dark{
+    color: rgba(0,0,0,0.7)
+}
+
 input[type=range].form-range.col-8 {
     width: 90%;
     display: block;

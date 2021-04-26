@@ -187,7 +187,7 @@ foreach ($pricings as $key => $pricing) {
                     <p class="textT col-12" style="color: white;">Estrategias creativas y formatos acordes a cada fase del embudo, con diseño y redacción que capte la atención de tu audencia meta en las redes e induzca a la conversión.</p>
                 </div>
                 <p class="col-12 textoSaberMas">Atención personalizada y generación de contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con tu marca.</p>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifa x Paquete</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#precios-redes">Tarifa x Paquete</a></p>
                 <p class="col-12 textoSaberMas">La gestión estratégica de las redes es un componente indispensable en todas las fases del embudo de conversión. No se debe aplicar como una estrategia aislada, sino que debe estar planificada en concordancia con el resto de estrategias digitales de la empresa. </p>
                 <p class="col-12 textoSaberMas">En Kliv desarrollamos contenidos de calidad alineados a objetivos concretos, que se ajustan a los intereses de tu buyer persona y transmiten los valores e identidad de tu marca. Además, monitoreamos tus redes y promovemos una relación cercana con tu público, respondiendo comentarios y atendiendo consultas.</p>
                 
@@ -263,16 +263,21 @@ foreach ($pricings as $key => $pricing) {
                 Al cierre de cada período mensual se analiza el rendimiento en contraste con los objetivos planteados, presentando un informe cuantitativo y cualitativo, junto a una propuesta de mejora para el siguiente mes. 
                 </p>
                 <p class="col-12 textoSaberMas">
-                <div style="display:flex; justify-content: space-between">
-                    <div><b>Paquete x8/x12/x16</b></div>
-                    <div style="display:flex; flex-direction: column; align-items: flex-end">
-                        <div><b>$ 12.000 / $ 15.000 / $ 18.000</b></div>
-                        <div>*No incluye IVA</div>
+                    <div style="background-color: rgba(0,0,0,0.1 );
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 30px;
+                    border-radius: 7px;" id="precios-redes">
+                        <div><b>Paquete x8/x12/x16</b></div>
+                        <div style="display:flex; flex-direction: column; align-items: flex-end">
+                            <div><b>$ 12.000 / $ 15.000 / $ 18.000</b></div>
+                            <div>*No incluye IVA</div>
+                        </div>
                     </div>
-                </div>
                 </p>
-                <p class="col-12 textoSaberMas">
-                    <div>- <b>8 / 12 / 16</b> publicaciones / Producción de piezas gráficas y redacción. Incluye hasta 3 GIFS.</div>
+               <p class="col-12 textoSaberMas">
+                    <b>8 / 12 / 16</b> publicaciones / Producción de piezas gráficas y redacción. Incluye hasta 3 GIFS.
+                    <br>
                     <br>
                     - Configuración inicial: Portada, perfil, historias destacadas, descripción, info, etc.
                     <br>
@@ -283,7 +288,7 @@ foreach ($pricings as $key => $pricing) {
                     - Monitoreo de publicaciones y atención personalizada de consultas y mensajes, 09:00 a 18:00hs (GMT-3) 
                     <br>
                     - Informe de rendimiento del período mensual.
-                </p>
+               </p>
             </div>
             
             
@@ -339,9 +344,104 @@ foreach ($pricings as $key => $pricing) {
                     <h1 class="col-12 servT"  style="color: white;">Diseño Web</h1>
                     <p class="textT"  style="color: white;">Plataformas web optimizadas para generar acciones de conversión, con navegabilidad ágil y segura, excelente indexación orgánica en buscadores y adaptables a múltiples dispositivos.</p>
                     
+
                 </div>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-            <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifa x Paquete</a></p>
+                
+                <p class="col-12 textoSaberMas">
+                En Kliv contamos con un equipo de “desarrolladores full stack”, es decir, programadores con un perfil técnico muy completo que se desenvuelven en front y backend sin usar sistemas de diseño web (Como Wix o Wordpress), posibilitando desarrollos personalizados y funcionales, 100% a medida de los requerimientos de tu empresa.
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                * Interfaces únicas y exclusivas, adaptadas a la identidad de tu marca.
+                <br>
+                * Plataformas optimizadas para generar acciones de conversión, sin limitaciones en sus funcionalidades.
+                <br>
+                * Páginas eficientes que se adaptan a todos los dispositivos y navegadores, actualizadas con la última tecnología garantizando navegabilidad ágil y segura.
+                <br>
+                * Optimización para buscadores, respetando estándares de calidad que favorecen la indexación orgánica aumentando la visibilidad. 
+                <br>
+                * Junto con tu sitio recibís casillas webmail integradas con el dominio de tu empresa.
+                <br>
+                * Nos encargamos de realizar la integración a Google Analytics, para que puedas analizar el comportamiento del usuario en el sitio, info demográfica, intereses, flujo de visitas, etc.
+                <br>
+
+                </p>
+
+                <p class="col-12 textoSaberMas">
+                    <strong>DINÁMICA DE TRABAJO:</strong>
+                    Segmentamos el proceso en 2 etapas. 1ro diseñamos el sitio, y una vez que tenemos tu aprobación definitiva avanzamos con la programación. 
+                </p>
+                <p class="col-12 textoSaberMas">
+                    <strong>HOSTING Y DOMINIO:</strong>
+                    Nos encargamos de registrar y alojar el dominio (tusitio.com) como los archivos de tu web, con backups mensuales para garantizar la seguridad del contenido. 
+                </p>
+                <p class="col-12 textoSaberMas">
+                    <strong>MANTENIMIENTO Y ACTUALIZACIONES:</strong>
+                    Dispones de nuestro soporte técnico para cualquier cambio/innovación que quieras implementar dentro del sitio.
+                </p>
+                <p class="col-12"><i>* El Dominio, Hosting y Mantenimiento tienen un costo mensual o anual dependiendo del paquete que elijas y las cotizaciones del momento.</i></p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">ONE PAGE</strong>
+                    <br>
+                    Comunica solo lo esencial en un sitio one page. Una sola página, segmentada en secciones. Ideal para sintetizar lo que hace tu negocio, incitando prospectos a ponerse en contacto.
+                    Formulario de contacto integrado.
+                    Casilla de mails propia.
+                    Botón de WhatsApp integrado.
+                    Hasta 1 página.
+
+                </p>
+                
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">ONE PAGE</strong>
+                    <br>
+                    Comunica solo lo esencial en un sitio one page. Una sola página, segmentada en secciones. Ideal para sintetizar lo que hace tu negocio, incitando prospectos a ponerse en contacto.
+                    <br>
+                    <br>
+                    -Formulario de contacto integrado.
+                    <br>
+                    -Casilla de mails propia.
+                    <br>
+                    -Botón de WhatsApp integrado.
+                    <br>
+                    -Hasta 1 página.
+
+                </p>
+                
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">COMPLETO</strong>
+                    <br>
+
+                    Tu sitio web profesional completo. Ideal para quienes buscan establecer una imagen más establecida. Tanto para empresas como particulares e instituciones.
+                    <br>
+                    <br>
+                    -Formulario de contacto integrado.
+                    <br>
+                    -Casilla de mails propia.
+                    <br>
+                    -Botón de WhatsApp integrado.
+                    <br>
+                    -Hasta 5 páginas.
+                    <br>
+                    -Posibilidad de subir videos.
+                    <br>
+                    -Detalles UX/UI interactivos.
+
+
+                </p>
+                
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">A MEDIDA</strong>
+                    <br>
+
+                    Tu idea o proyecto escapa de las limitaciones de los tipos de sitios anteriores? No te preocupes, trabajamos 100 % a medida. <a href="#contacto">Contactate!</a>               
+
+
+                </p>
+
+                
+                    
             </div>
             
         </div>
