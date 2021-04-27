@@ -1,30 +1,30 @@
 <?php
 
-// require 'php/connection.php';
+require 'php/connection.php';
 
-// // Traemos toda la data
-// $sql = $pdo->prepare("SELECT * FROM pricing");
-// $sql->execute(); 
-// $pricings = $sql->fetchAll();
-
-
-// // Traemos el dolar
-// $sql = $pdo->prepare("SELECT * FROM dolar");
-// $sql->execute(); 
-// $dolar = $sql->fetch();
-
-// $dolar = $dolar['dolar'];
+// Traemos toda la data
+$sql = $pdo->prepare("SELECT * FROM pricing");
+$sql->execute(); 
+$pricings = $sql->fetchAll();
 
 
-// // Le agregamos el valor del dolar a los pricings
-// foreach ($pricings as $key => $pricing) {
+// Traemos el dolar
+$sql = $pdo->prepare("SELECT * FROM dolar");
+$sql->execute(); 
+$dolar = $sql->fetch();
+
+$dolar = $dolar['dolar'];
+
+
+// Le agregamos el valor del dolar a los pricings
+foreach ($pricings as $key => $pricing) {
     
-//     $ars_to_usd = $pricing['ars'] / $dolar;
-//     $ars_to_usd = floor($ars_to_usd);
+    $ars_to_usd = $pricing['ars'] / $dolar;
+    $ars_to_usd = floor($ars_to_usd);
 
-//     $pricings[$key]['usd'] = $ars_to_usd;
+    $pricings[$key]['usd'] = $ars_to_usd;
 
-// }
+}
 
 
 ?>
@@ -464,7 +464,7 @@
                     border-radius: 7px;" id="precios-redes">
                         <div><b>Paquete x8/x12/x16</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
-                            <div><b>$ 12.000 / $ 15.000 / $ 18.000</b></div>
+                            <div><b>$ <?php echo $pricings[9]['ars'] ?> / $ <?php echo $pricings[8]['ars'] ?> / $ <?php echo $pricings[7]['ars'] ?></b></div>
                             <div>*No incluye IVA</div>
                         </div>
                     </div>
@@ -533,17 +533,7 @@
                 </p>
                 <p class="col-12"><i>* El Dominio, Hosting y Mantenimiento tienen un costo mensual o anual dependiendo del paquete que elijas y las cotizaciones del momento.</i></p>
                 <br>
-                <p class="col-12 textoSaberMas">
-                    <strong class="dark">ONE PAGE</strong>
-                    <br>
-                    Comunica solo lo esencial en un sitio one page. Una sola página, segmentada en secciones. Ideal para sintetizar lo que hace tu negocio, incitando prospectos a ponerse en contacto.
-                    Formulario de contacto integrado.
-                    Casilla de mails propia.
-                    Botón de WhatsApp integrado.
-                    Hasta 1 página.
-
-                </p>
-                
+               
                 <p class="col-12 textoSaberMas">
                     <strong class="dark">ONE PAGE</strong>
                     <br>
@@ -618,7 +608,7 @@
                     border-radius: 7px;" id="precios-redes">
                         <div><b>MANUAL DE IDENTIDAD CORPORATIVA</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
-                            <div><b>$ 30.000</b></div>
+                            <div><b>$ <?php echo $pricings[13]['ars'] ?></b></div>
                             <div>*No incluye IVA</div>
                         </div>
                     </div>
@@ -637,7 +627,7 @@
                     border-radius: 7px;" id="precios-redes">
                         <div><b>LOGOTIPO</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
-                            <div><b>$ 12.000</b></div>
+                            <div><b>$ <?php echo $pricings[14]['ars'] ?></b></div>
                             <div>*No incluye IVA</div>
                         </div>
                     </div>
@@ -728,7 +718,7 @@
                     border-radius: 7px;" id="precios-redes">
                         <div><b>WHATSAPP MARKETING</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
-                            <div><b>$18.000</b></div>
+                            <div><b>$ <?php echo $pricings[19]['ars'] ?></b></div>
                             <div><i>*No incluye IVA</i></div>
                         </div>
                     </div>
