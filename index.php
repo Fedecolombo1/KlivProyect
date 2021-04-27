@@ -186,8 +186,202 @@
                     <h1 class="col-12 servT" style="color: white;">Publicidad en Redes</h1>
                     <p class="textT col-12" style="color: white;">Estrategias creativas y formatos acordes a cada fase del embudo, con diseño y redacción que capte la atención de tu audencia meta en las redes e induzca a la conversión.</p>
                 </div>
+                
+                <br>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifas x Servicios</a></p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                Millones de empresas, grandes y pequeñas, se conectan con las personas a través de anuncios en las redes sociales, convirtiéndolas en clientes y entablando relaciones duraderas. Pero en un contexto en el que los anunciantes aumentan y los usuarios se resisten cada vez más a la publicidad, conseguir rentabilidad sin una buena estrategia es cuestión de azar.
+                </p>
+                <p class="col-12 textoSaberMas">
+                En Kliv llevamos años encontrando la fórmula idónea para diversidad de empresas, ayudando a alcanzar sus objetivos comerciales y garantizando el retorno de inversión con la filosofía del performance marketing. 
+                </p>
+                
+                <br>
+
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">OBJETIVO Y ESTRATEGIA</strong>
+                    <br>
+                    La efectividad base de toda campaña radica en que sus componentes estén alineados estratégicamente hacia un mismo norte: el objetivo SMART*, siendo la brújula que orienta la ejecución de todo el proceso y permite evaluar el rendimiento. Forjamos estrategias que responden a este objetivo y a los recursos disponibles, documentando todos sus elementos en una ficha de campaña que queda disponible para que todos los equipos involucrados operen con congruencia.  
+                    <br>
+                    <i>* SMART: Específico, medible, alcanzable, relevante y temporal.</i>
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">FORMATOS PUBLICITARIOS</strong>
+                    <br>
+                    Entendiendo que no hay dos empresas iguales, las plataformas publicitarias se diseñaron para adaptarse a variedad de objetivos y estrategias en cada fase del embudo de conversión, con gran versatilidad en sus formatos publicitarios. En Kliv identificamos el óptimo para cada campaña.
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">REDACCIÓN Y DISEÑO</strong>
+                    <br>
+                    Contamos la historia de tu empresa o producto de formas atractivas y eficaces, captando la atención de tu audiencia meta y animándola a realizar acciones específicas. El equipo de redacción, diseñadores gráficos y audiovisuales trabaja a la par con el equipo de performance marketing alineados en la estrategia para optimizar los resultados.
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">MANEJO DE AUDIENCIAS</strong>
+                    <br>
+                    El mayor potencial de las plataformas publicitarias se encuentra en su capacidad de segmentación y manejo de audiencias. Irónicamente suele ser la herramienta más desaprovechada, limitando su uso a la segmentación por intereses que por sí solos no son del todo precisos. En Kliv generamos audiencias dinámicas y customizadas para cada fase del embudo, identificando patrones de comportamiento en tiempo real mediante el píxel de seguimiento web y segmentaciones lookalike que permiten encontrar a las personas con más probabilidades de realizar las acciones deseadas.
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">SEGUIMIENTO DE CONVERSIONES WEB</strong>
+                    <br>
+                    Además de optimizar el manejo de audiencias, el pixel de seguimiento permite monitorear el desempeño de cada campaña con redirección a la web. Configurando eventos y parámetros personalizados, medimos todas las acciones específicas que realizan los usuarios que la visitan, con una acción particular como objetivo de conversión. 
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">FOCO EN LA RENTABILIDAD</strong>
+                    <br>
+                    Fijar las pujas publicitarias en base al costo por impresiones o clics (CPM o CPC) no garantiza rentabilidad, ya que no son métricas vinculadas a las conversiones ni al margen de beneficio. En contraste, la estrategia de puja por adquisición (CPA) regula que el costo publicitario no supere el importe dispuesto a invertir por cada resultado y lo optimiza en el tiempo.  
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">EXPERIMENTACIÓN Y MEJORA CONTINUA</strong>
+                    <br>
+                    Las herramientas de experimentación de Facebook Ads (A/B Testing + Pruebas de Exclusión), sumado a metodologías que implementamos en Kliv (Smoke Test, Fake Door, Flintstone, entre otras) permiten probar hipótesis o responder preguntas específicas en relación con los objetivos comerciales, logrando identificar oportunidades de mejora e insights para optimizar la comunicación.  
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">MONITOREO E INFORMES</strong>
+                    <br>
+                    Exportamos los datos a una herramienta que permite crear paneles interactivos y personalizables (Data Studio), facilitando la lectura y comprensión de los resultados de manera precisa y en tiempo real. Interpretar correctamente las métricas es fundamental para conocer el impacto de las campañas en relación con los objetivos planteados. Se monitorean periódicamente para determinar si van bien encaminadas o si es necesario algún ajuste.     
+                </p>
+                <br>
+
+                
+            </div>
+            
+            
+            
+        </div>
+        <div id="publiGoogle" class="saberMas row align" style="display: none;">
+            <i id="esc2" class="fas fa-arrow-circle-left col-12" style="margin-top: 90px;margin-left: 20px; font-size: 30px;color: white;"></i>
+                <div class="col-12 col-lg-9 align row serv">
+                    <img src="./Images/publi-google.png" alt="" class="col-5 col-lg-2 imgS">
+                    <div class="col-7 row align" style="justify-content: space-between;">
+                        <h1 class="col-12 servT" style="color: white;">Publicidad en Google</h1>
+                        <p class="textT col-12" style="color: white;">Anuncios en los buscadores, Google Maps, Youtube, espacios publicitarios de webs y aplicaciones asociadas, llegando a tu audiencia objetivo en el momento preciso.</p>
+                        
+                    </div>
+                    <br>
+                    <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifa x Paquete</a></p>
+                    <br>
+
+                    <p class="col-12 textoSaberMas">
+                    <strong>RED DE BÚSQUEDA:</strong>
+                    <br>
+                    Resultados patrocinados en el buscador de Google justo cuando el usuario demuestre interés en tus productos o servicios; guiándolos hacia la conversión en ese preciso momento, ya sea, realizar una acción específica en tu web, visitar tus redes, realizar una llamada o dirigirse hacia tu local con GMaps.
+                    </p>
+                    <br>
+                    <p class="col-12 textoSaberMas">
+                    <strong>RED DE DISPLAY:</strong>
+                    <br>
+                    Alcance a tu audiencia objetivo mientras navega por sitios web, utiliza aplicaciones o revisa su Gmail, con banners de imagen o GIF; ideal para fases tempranas del embudo u orientado a quienes ya realizaron alguna acción en tu sitio web.
+                    </p>
+                    <br>
+                    <p class="col-12 textoSaberMas">
+                    <strong>YOUTUBE ADS:</strong>
+                    <br>
+                    Anuncios de video en la plataforma Youtube que provocan un grado de implicación emocional con el contenido como ningún otro medio puede hacerlo; a través de creativos mensajes audiovisuales que deleitan, logran conectar con tu audiencia e inducen a realizar una acción particular, ya sea en ese momento o en uno posterior. 
+                    </p>
+                    <br>
+                    <p class="col-12 textoSaberMas">
+                    <strong>GOOGLE SHOPPING:</strong>
+                    <br>
+                    Anuncios exclusivos para ecommerce, integrados por fichas con imagen, precio y demás información pertinente a usuarios que buscan tu producto, con vínculo directo al carrito de compras de tu web.  
+                    </p>
+                    <br>
+                    <p class="col-12 textoSaberMas">
+                    <strong>GOOGLE MI NEGOCIO:</strong>
+                    <br>
+                    Literalmente te pone en el mapa, permitiendo que te encuentren desde el buscador de Google o Google Maps y, que con solo un click, te llamen, visiten tu web o lleguen a tu local con GPS. Convertí a desconocidos en clientes reclamando tu perfil y compartiendo fotos de tus productos, menú, promociones, horarios de atención y atendiendo consultas, reseñas o reservas.  
+                    </p>
+                    <br>
+                    
+
+                </div>
+                
+        </div>
+        <div id="emailMkt" class="saberMas row align" style="display: none;">
+            <i id="esc3" class="fas fa-arrow-circle-left col-12" style="margin-top: 90px;margin-left: 20px; font-size: 30px;color: white;"></i>
+            <div class="col-12 col-lg-9 align row serv">
+                <img src="./Images/email-mkt.png" alt="" class="col-5 col-lg-2 imgS">
+                <div class="col-7 row align" style="justify-content: space-between;">
+                    <h1 class="col-12 servT"  style="color: white;">Email Marketing</h1>
+                    <p class="textT"  style="color: white;">Newsletters, emails transaccionales, promocionales y secuenciales, convirtiendo contactos en clientes y luego en embajadores de tu marca.</p>
+                    
+                </div>
+                
+                <br>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifas x Servicios</a></p>
+                <br>
+                <i>* En Email Marketing la tarifa aplica por Grupo de Campañas [ De hasta 3 Campañas  ] </i>
+                <br>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Planes del Software GetResponse</a></p>
+                <br>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Planes del Sortware Doppler</a></p>
+                <br>
+                
+                <p class="col-12 textoSaberMas">El email marketing es una herramienta de comunicación que permite contactar a tu público objetivo a través de su correo electrónico, con mensajes personalizados a lo largo del embudo de conversión.</p>
+                <br>
+                <p class="col-12 textoSaberMas">En Kliv utilizamos la plataforma GetResponse, un poderoso software de email marketing con herramientas de diseño, automatización, análisis y segmentación de contactos incorporada. </p>
+                <br>
+                <p class="col-12 textoSaberMas">Alcanza diferentes objetivos con el tipo de email adecuado:</p>
+                <br>
+
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">NEWSLETTERS</strong>
+                    <br>
+                    Envíos periodicos de boletines de interés para tus suscriptores, con contenido relevante del rubro. Cumple una función de fidelización y de posicionamiento de marca, a la vez que genera tráfico hacia el sitio web de la empresa.
+                </p>
+
+                <br>
+
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">TRANSACCIONALES</strong>
+                    <br>
+                    Emails automáticos como respuesta a la interacción del usuario con tu sitio web o aplicación. Confirmación de compra, recordatorio de carrito abandonado, nuevo usuario, cambio de contraseña, descarga de material, entre otros. 
+                </p>
+                
+                <br>
+
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">PROMOCIONALES</strong>
+                    <br>
+                    Disparos orientados a lograr ventas a través de un llamado a la acción y oferta concisa, segmentado por listas de contactos categorizadas, permitiendo enviar ofertas personalizadas. 
+                </p>
+                
+                <br>
+
+                <p class="col-12 textoSaberMas">
+                    <strong class="dark">AUTORESPONDERS</strong>
+                    <br>
+                    Secuencias de email automatizados que orientan al usuario por cada fase del embudo de conversión, construyendo una relación personalizada desde que se da el primer contacto, conoce más a fondo tu marca y productos, realiza una compra, te recomienda y se vuelve un comprador habitual. 
+                </p>
+                
+                
+                <p class="col-12 textoSaberMas"></p>
+            
+            </div>
+            
+        </div>
+        <div id="gesRedes" class="saberMas row align" style="display: none;">
+            <i id="esc4" class="fas fa-arrow-circle-left col-12" style="margin-top: 50px;margin-left: 20px; font-size: 30px;color: white;"></i>
+            <div class="col-12 col-lg-9 align row serv">
+                <img src="./Images/share.png" alt="" class="col-5 col-lg-2 imgS">
+                <div class="col-7 row align" style="justify-content: space-between;">
+                    <h1 class="col-12 servT"  style="color: white;">Gestión de Redes</h1>
+                    <p class="textT"  style="color: white;">Contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con la marca.</p>
+                    
+                </div>
+                
+                <!-- ACA -->
+                <!-- EMPIEZA ABAJO -->
+
                 <p class="col-12 textoSaberMas">Atención personalizada y generación de contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con tu marca.</p>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#precios-redes">Tarifa x Paquete</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifa x Paquete</a></p>
                 <p class="col-12 textoSaberMas">La gestión estratégica de las redes es un componente indispensable en todas las fases del embudo de conversión. No se debe aplicar como una estrategia aislada, sino que debe estar planificada en concordancia con el resto de estrategias digitales de la empresa. </p>
                 <p class="col-12 textoSaberMas">En Kliv desarrollamos contenidos de calidad alineados a objetivos concretos, que se ajustan a los intereses de tu buyer persona y transmiten los valores e identidad de tu marca. Además, monitoreamos tus redes y promovemos una relación cercana con tu público, respondiendo comentarios y atendiendo consultas.</p>
                 
@@ -289,50 +483,7 @@
                     <br>
                     - Informe de rendimiento del período mensual.
                </p>
-            </div>
-            
-            
-            
-        </div>
-        <div id="publiGoogle" class="saberMas row align" style="display: none;">
-            <i id="esc2" class="fas fa-arrow-circle-left col-12" style="margin-top: 90px;margin-left: 20px; font-size: 30px;color: white;"></i>
-                <div class="col-12 col-lg-9 align row serv">
-                    <div class="col-7 row align" style="justify-content: space-between;">
-                        <h1 class="col-12 servT" style="color: white;">Publicidad en Google</h1>
-                        <p class="textT col-12" style="color: white;">Anuncios en los buscadores, Google Maps, Youtube, espacios publicitarios de webs y aplicaciones asociadas, llegando a tu audiencia objetivo en el momento preciso.</p>
-                        
-                    </div>
-                    <img src="./Images/publi-google.png" alt="" class="col-5 col-lg-2 imgS">
-                    <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-                </div>
-                
-        </div>
-        <div id="emailMkt" class="saberMas row align" style="display: none;">
-            <i id="esc3" class="fas fa-arrow-circle-left col-12" style="margin-top: 90px;margin-left: 20px; font-size: 30px;color: white;"></i>
-            <div class="col-12 col-lg-9 align row serv">
-                <img src="./Images/email-mkt.png" alt="" class="col-5 col-lg-2 imgS">
-                <div class="col-7 row align" style="justify-content: space-between;">
-                    <h1 class="col-12 servT"  style="color: white;">Email Marketing</h1>
-                    <p class="textT"  style="color: white;">Newsletters, emails transaccionales, promocionales y secuenciales, convirtiendo contactos en clientes y luego en embajadores de tu marca.</p>
-                    
-                </div>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-            <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-            </div>
-            
-        </div>
-        <div id="gesRedes" class="saberMas row align" style="display: none;">
-            <i id="esc4" class="fas fa-arrow-circle-left col-12" style="margin-top: 50px;margin-left: 20px; font-size: 30px;color: white;"></i>
-            <div class="col-12 col-lg-9 align row serv">
-                <div class="col-7 row align" style="justify-content: space-between;">
-                    <h1 class="col-12 servT"  style="color: white;">Gestión de Redes</h1>
-                    <p class="textT"  style="color: white;">Contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con la marca.</p>
-                    
-                </div>
-                <img src="./Images/share.png" alt="" class="col-5 col-lg-2 imgS">
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-            <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
+
             </div>
             
         </div>
@@ -435,8 +586,9 @@
                     <strong class="dark">A MEDIDA</strong>
                     <br>
 
-                    Tu idea o proyecto escapa de las limitaciones de los tipos de sitios anteriores? No te preocupes, trabajamos 100 % a medida. <a href="#contacto">Contactate!</a>               
-
+                    Tu idea o proyecto escapa de las limitaciones de los tipos de sitios anteriores? No te preocupes, trabajamos 100 % a medida. 
+                    <br>
+                    <a href="#contacto">Contactate!</a>               
 
                 </p>
 
@@ -448,14 +600,107 @@
         <div id="disGrafico" class="saberMas row align" style="display: none;">
             <i id="esc6" class="fas fa-arrow-circle-left col-12" style="margin-top: 50px;margin-left: 20px; font-size: 30px;color: white;"></i>
             <div class="col-12 col-lg-9 align row serv">
+                <img src="./Images/dis-grafico.png" alt="" class="col-5 col-lg-2 imgS">
                 <div class="col-7 row align" style="justify-content: space-between;">
                     <h1 class="col-12 servT"  style="color: white;">Diseño Gráfico + Audiovisual</h1>
                     <p class="textT"  style="color: white;">Manual de identidad corporativa, logos, brochures, folletos, infografía, fotoproducto, lookbooks, retrato, animaciones motion graphic,guión, rodajes y producciones.</p>
                     
                 </div>
-                <img src="./Images/dis-grafico.png" alt="" class="col-5 col-lg-2 imgS">
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifas x Servicios</a></p>
+                <p class="col-12 textoSaberMas">Los elementos gráficos y audiovisuales son indispensables en la estrategia comercial para llegar a tu audiencia de una forma dinámica y cautivadora, que transmita la identidad de tu marca. </p>
+                <p class="col-12 textoSaberMas">En Kliv trabajamos con equipos de diseño y producción audiovisual experimentados en el rubro publicitario con orientación al performance. </p>
+                
+                <p class="col-12 textoSaberMas">
+                    <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    border-radius: 7px;" id="precios-redes">
+                        <div><b>MANUAL DE IDENTIDAD CORPORATIVA</b></div>
+                        <div style="display:flex; flex-direction: column; align-items: flex-end">
+                            <div><b>$ 30.000</b></div>
+                            <div>*No incluye IVA</div>
+                        </div>
+                    </div>
+                </p>
+                <p class="col-12 textoSaberMas" style="margin-top: -10px">
+                Es un documento que recoge los principales elementos gráficos de una marca, explicando cómo deben aplicarse en cada caso. Herramienta imprescindible que garantiza la cohesión en la comunicación visual, con homogeneidad en cualquier soporte, utilice quien la utilice.
+                Desde la elaboración del concepto, naming y logotipo de la marca, su composición y aplicativos correctos e incorrectos, colores definidos, tipografía primaria y complementaria, y todas las aplicaciones, ya sean piezas digitales (Como avatares para redes o firma de emails) o impresas (Tarjetas de presentación, hoja membretada, etc.) 
+                Antes de avanzar con cualquier acción publicitaria sugerimos desarrollar un manual de identidad corporativa actualizado como base fundamental para la comunicación, que quede como una herramienta de tu marca.
+                </p>
+                <br>
+                <p class="col-12 textoSaberMas">
+                    <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    border-radius: 7px;" id="precios-redes">
+                        <div><b>LOGOTIPO</b></div>
+                        <div style="display:flex; flex-direction: column; align-items: flex-end">
+                            <div><b>$ 12.000</b></div>
+                            <div>*No incluye IVA</div>
+                        </div>
+                    </div>
+                </p>
+                <p class="col-12 textoSaberMas" style="margin-top: -10px">
+                El diseño de un logotipo consiste en representar gráficamente los valores, ideales y características de una marca, mediante un símbolo, imagen o tipografía que sea memorable para sus clientes potenciales. 
+                </p>
+                <br>
+
+                <p class="col-12 textoSaberMas">
+                    <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    border-radius: 7px;" id="precios-redes">
+                        <div><b>EDITORIAL</b></div>
+                        <div style="display:flex; flex-direction: column; align-items: flex-end">
+                            <div><b>A Cotizar</b></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </p>
+                <p class="col-12 textoSaberMas" style="margin-top: -10px">
+                Maquetación y composición de cualquier medio que combine texto e imágenes, ya sean carpetas de presentación, brochures trípticos, folletos simple hoja, infografías, entre otros. Se busca siempre que resulte atractivo y funcional para el lector, consiguiendo una armonía perfecta entre formato y contenido. 
+                </p>
+                
+                <br>
+
+                <p class="col-12 textoSaberMas">
+                    <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    border-radius: 7px;" id="precios-redes">
+                        <div><b>PACKAGING</b></div>
+                        <div style="display:flex; flex-direction: column; align-items: flex-end">
+                            <div><b>A Cotizar</b></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </p>
+                <p class="col-12 textoSaberMas" style="margin-top: -10px">
+                El empaque de los productos es un recurso que se utiliza como carta de presentación para transmitir un mensaje atractivo y diferenciar el producto de la competencia, además de garantizar la protección del producto permitiendo su almacenaje y distribución. Diseño de cajas, bolsas, etiquetas, impresión sobre envase y papeles, entre otros. 
+                </p>
+                
+                <p class="col-12 textoSaberMas">
+                    <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    border-radius: 7px;" id="precios-redes">
+                        <div><b>ANIMACIONES MOTION GRAPHICS</b></div>
+                        <div style="display:flex; flex-direction: column; align-items: flex-end">
+                            <div><b>A Cotizar</b></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </p>
+                <p class="col-12 textoSaberMas" style="margin-top: -10px">
+                Videos creados con imágenes, fotografías, textos e iconos, a los que se les da movimiento mediante animación digital. Técnica ideal para expresar ideas complejas de manera fácil y entretenida, captando mayor atención del público y aumentando la retención del mensaje. Se usa habitualmente en presentaciones, propaganda del gobierno y con fines publicitarios. 
+                </p>
+
+                <p class="col-12 textoSaberMas"></p>
             </div>
            
         </div>
@@ -468,8 +713,42 @@
                     <p class="textT"  style="color: white;">Chatbot, campañas de difusión a grupos segmentados e historias periódicas, garantizando el contacto permanente con tu audiencia y enriqueciendo la experiencia con tu marca.</p>
                     
                 </div>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
-                <p class="col-12 textoSaberMas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi corrupti reprehenderit autem quas quasi debitis facilis voluptate! A nobis, cumque vel earum placeat perferendis aliquam sunt ab quos sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur totam, expedita temporibus magnam exercitationem nisi, cumque nobis iste corrupti quidem. Aspernatur mollitia aliquid debitis perspiciatis delectus officia corrupti nobis.</p>
+
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifas x Servicios</a></p>
+
+                <p class="col-12 textoSaberMas">Estrategia que utiliza WhatsApp como canal de marketing para optimizar el servicio al cliente, aumentar la fidelización, incrementar tus ventas y enriquecer tu posventa; alineada con el resto de estrategias digitales de la empresa. Canal indispensable para cualquier empresa que desee mantenerse al alcance inmediato de sus clientes, con mayor visibilidad que cualquier otro medio.</p>
+                <p class="col-12 textoSaberMas">En Kliv explotamos al máximo el potencial de WhatsApp Business, que dispone de múltiples funciones nativas concebidas para empresas, como perfil con ubicación Google Maps, horario de atención desplegable, catálogo de productos, mensaje de bienvenida y ausencia, entre otras.</p>
+                <p class="col-12 textoSaberMas">Además utilizamos softwares complementarios que enriquecen aún más la experiencia de tu audiencia optimizando la comunicación, permitiendo configurar chatbots 100% a medida como apoyo a la atención al público (secuencia de autorespuestas) y hacer campañas de difusión con texto, imagen y archivos a grupos segmentados.</p>
+                
+                <p class="col-12 textoSaberMas">
+                    <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    border-radius: 7px;" id="precios-redes">
+                        <div><b>WHATSAPP MARKETING</b></div>
+                        <div style="display:flex; flex-direction: column; align-items: flex-end">
+                            <div><b>$18.000</b></div>
+                            <div><i>*No incluye IVA</i></div>
+                        </div>
+                    </div>
+                </p>
+                <p class="col-12 textoSaberMas" style="margin-top: -10px">
+                La tarifa es mensual e incluye el costo del software de gestión. El servicio contempla todos los siguientes ítems: 
+                </p>
+                    <ul style="padding-left: 40px; color: white!important">
+                        <li><b>CUENTA BUSINESS:</b>  Capacitación y asistencia en la configuración de tu cuenta WhatsApp Business, adaptando todas sus funcionalidades a tu empresa.</li>
+                        <li><b>CHATBOT:</b> Desarrollo estratégico y mantenimiento de respuestas automáticas de texto (pueden incluir imagen o archivo), activas lunes a viernes de 09:00 a 18:00 hs (GMT-3).</li>
+                        <li><b>CAMPAÑA SEMANAL:</b> Difusión de texto con imagen o archivo a grupos segmentados, sin límite de contactos.</li>
+                        <li><b>BASE DE DATOS:</b> Segmentación de contactos en grupos y variables, permitiendo personalizar los mensajes.</li>
+                        <li><b>ESTRATEGIA:</b> Planificamos en concordancia con el embudo de conversión y las demás acciones publicitarias de tu empresa.</li>
+                        <li><b>DISEÑO GRÁFICO</b> Diseño de placas gráficas adaptadas al formato móvil como parte de las campañas semanales e historias compartidas.</li>
+                        
+                    </ul>
+                
+                <p class="col-12 textoSaberMas"></p>
+                <p class="col-12 textoSaberMas"></p>
+                <p class="col-12 textoSaberMas"></p>
             </div>
             
         </div>
@@ -2041,6 +2320,16 @@ if($.trim(mail) != ''){
 }
 
 }
+
+$(document).on('click', '.ir_a_tarifas', function(e){
+
+    e.preventDefault()
+
+    $('.saberMas').fadeOut()
+
+    $("html, body").animate({ scrollTop: $('#tarifas').offset().top }, 100);
+
+})
 
 })
 
