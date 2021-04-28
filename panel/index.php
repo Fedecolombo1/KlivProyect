@@ -153,6 +153,31 @@ body{
     font-weight: bold;
 }
 
+#socios{
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#socios-container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.socio{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+#socios-inputs input{
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
 </style>
 
 <body>
@@ -198,6 +223,36 @@ body{
         }
         
         ?>
+
+        <div id="socios">
+
+            <div id="socios-container">
+            
+            
+                <div class="socio" data-socio-id="1"></div>
+                <div class="socio" data-socio-id="2"></div>
+                <div class="socio" data-socio-id="3"></div>
+                <div class="socio" data-socio-id="4"></div>
+                <div class="socio" data-socio-id="5"></div>
+                <div class="socio" data-socio-id="6"></div>
+                <div class="socio" data-socio-id="7"></div>
+                <div class="socio" data-socio-id="8"></div>
+            
+            
+            </div>
+
+            <div id="socios-inputs">
+                <input type="file" id="input-1" accept="image/png, image/jpeg">
+                <input type="file" id="input-2" accept="image/png, image/jpeg">
+                <input type="file" id="input-3" accept="image/png, image/jpeg">
+                <input type="file" id="input-4" accept="image/png, image/jpeg">
+                <input type="file" id="input-5" accept="image/png, image/jpeg">
+                <input type="file" id="input-6" accept="image/png, image/jpeg">
+                <input type="file" id="input-7" accept="image/png, image/jpeg">
+                <input type="file" id="input-8" accept="image/png, image/jpeg">
+            </div>
+        
+        </div>
 
         <!-- Boton de guardar -->
         <div class="row not-editable" id="guardar-container">
@@ -313,6 +368,14 @@ $(document).on('DOMSubtreeModified', "[data-id|='1'] .ars", function(){
     $("[data-id|='5'] .ars").html(this_ars * 5 * 0.8)
     $("[data-id|='6'] .ars").html(this_ars * 10 * 0.7)
     $("[data-id|='7'] .ars").html(this_ars * 10 * 0.5)
+
+})
+
+// Cuando cliquean la cajita de un socio, se dispara el click de su respectivo input
+$(document).on('click', '.socio', function(){
+
+    var id = $(this).attr('data-socio-id')
+    $('#input-'+id).click()
 
 })
 
