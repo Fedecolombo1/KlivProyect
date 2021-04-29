@@ -15,6 +15,9 @@ $dolar = $sql->fetch();
 
 $dolar = $dolar['dolar'];
 
+$sql = $pdo->prepare("SELECT * FROM socios");
+$sql->execute(); 
+$socios = $sql->fetchAll();
 
 // Le agregamos el valor del dolar a los pricings
 foreach ($pricings as $key => $pricing) {
@@ -1588,20 +1591,20 @@ foreach ($pricings as $key => $pricing) {
                         <h1 class="col-12 align nuestrosS">NUESTROS SOCIOS</h1>
                         <div class="col-11 row align" style="justify-content: space-around;">
                             <div class="col-12 col-lg-12 align" style="justify-content: space-between;">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/Logo-PaP.png" alt="" class="col-5 sociosImgs">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/Logo-OCIO2.png" alt="" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[0]['src'] ?>" alt="" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[1]['src'] ?>" alt="" class="col-5 sociosImgs">
                             </div>
                             <div class="col-12 col-lg-12 align" style="justify-content: space-between;">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/LOGO-LIMA1.png" alt="" class="col-5 sociosImgs">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/LOGO-EEAF2.png" alt="" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[2]['src'] ?>" alt="" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[3]['src'] ?>" alt="" class="col-5 sociosImgs">
                             </div>
                             <div class="col-12 col-lg-12 align" style="justify-content: space-between;">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/LOGO-LED2.png" alt="" class="col-5 sociosImgs">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/LOGO-ESM2.png" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[4]['src'] ?>" alt="" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[5]['src'] ?>" class="col-5 sociosImgs">
                             </div>
                             <div class="col-12 col-lg-12 align" style="justify-content: space-between;">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/LOGO-AMAN2.png" alt="" class="col-5 sociosImgs">
-                                <img data-aos="fade-right" data-aos-duration="700" src="./Images/Logo-SET-IDEAS.png" alt="" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[6]['src'] ?>" alt="" class="col-5 sociosImgs">
+                                <img data-aos="fade-right" data-aos-duration="700" src="socios_imgs/<?php echo $socios[7]['src'] ?>" alt="" class="col-5 sociosImgs">
                             </div>
                         </div>
                         <p data-aos="fade-right" data-aos-duration="700" class="col-12 muchos">y muchos más!</p>
@@ -1612,20 +1615,20 @@ foreach ($pricings as $key => $pricing) {
                         <h1 class="col-12 align nuestrosS">NUESTROS SOCIOS</h1>
                         <div class="col-12 row align" style="justify-content: space-around;">
                             <div class="col-12 col-lg-6 align" style="justify-content: space-around;">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/Logo-PaP.png" alt="" class="col-3 sociosImgs">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/Logo-OCIO2.png" alt="" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[0]['src'] ?>" alt="" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[1]['src'] ?>" alt="" class="col-3 sociosImgs">
                             </div>
                             <div class="col-12 col-lg-6 align" style="justify-content: space-around;">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/LOGO-LIMA1.png" alt="" class="col-3 sociosImgs">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/LOGO-EEAF2.png" alt="" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[2]['src'] ?>" alt="" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[3]['src'] ?>" alt="" class="col-3 sociosImgs">
                             </div>
                             <div class="col-12 col-lg-6 align" style="justify-content: space-around;">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/LOGO-LED2.png" alt="" class="col-3 sociosImgs">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/LOGO-ESM2.png" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[4]['src'] ?>" alt="" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[5]['src'] ?>" class="col-3 sociosImgs">
                             </div>
                             <div class="col-12 col-lg-6 align" style="justify-content: space-around;">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/LOGO-AMAN2.png" alt="" class="col-3 sociosImgs">
-                                <img data-aos="zoom-in" data-aos-duration="700" src="./Images/Logo-SET-IDEAS.png" alt="" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[6]['src'] ?>" alt="" class="col-3 sociosImgs">
+                                <img data-aos="zoom-in" data-aos-duration="700" src="socios_imgs/<?php echo $socios[7]['src'] ?>" alt="" class="col-3 sociosImgs">
                             </div>
                         </div>
                         <p class="col-12 muchos" style="font-size: 26px;">y muchos más!</p>
