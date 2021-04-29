@@ -1883,32 +1883,31 @@ foreach ($pricings as $key => $pricing) {
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="email" class="align row">
                             <h3 class="msj col-11">/ Dejanos tu mensaje</h3>
-                            <div id="nombre1" class="email input-activo email-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="Nombre"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="email1" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="email" placeholder="Mail"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="telefono" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="email" placeholder="Dejanos tu telefono"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="mensaje" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="email" placeholder="Dejanos tu Mensaje"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="grax1" class="col-12 col-lg-7 email-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
-                                <h3>Gracias, nos contactaremos a la brevedad.</h3>
-                            </div>
+                            <!-- <div id="form-mail"> -->
+                                <div id="nombre1" class="email input-activo email-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Nombre"></input>
+                                </div>
+                                <div id="email1" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Mail"></input>
+                                </div>
+                                <div id="telefono" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Dejanos tu telefono"></input>
+                                </div>
+                                <div id="mensaje" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Dejanos tu Mensaje"></input>
+                                </div>
 
-                            <div class="col-12 col-lg-8 align" id="tags-cont-email">
-                                <h3 id="nombreClick" class="active-step opciones col-3 tag-act">Nombre</h3>
-                                <h3 id="emailClick" class="opciones col-3">Email</h3>
-                                <h3 id="telClick" class="opciones col-3">Telefono</h3>
-                                <h3 id="msjClick" class="opciones col-3">Mensaje</h3>
-                            </div>
+                                <div class="enviar-btn" id="enviar-mail">
+                                <div>
+                                    ENVIAR
+                                </div>
+                                </div>
+
+                                <div id="grax1" class="col-12 col-lg-7 email-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
+                                    <h3>Gracias, nos contactaremos a la brevedad.</h3>
+                                </div>
+                            <!-- </div> -->
+
                         </div>
 
 
@@ -1917,38 +1916,34 @@ foreach ($pricings as $key => $pricing) {
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="calen" class="align row" style="display: none;">
                             <h3 class="msj col-11">/ Agendá una videollamada</h3>
+                            
+                            <!-- <div id="form-calendario"> -->
+                                <div id="fecha" class="email input-activo calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Fecha"></input>
+                                </div>
+                                <div id="hora" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="text" placeholder="Hora"></input>
+                                </div>
+                                <div id="email2" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Email"></input>
+                                </div>
+                                <div id="nombre" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Nombre"></input>
+                                </div>
+                                <div id="asunto" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <input class="email-input col-10" type="email" placeholder="Asunto"></input>
+                                </div>
 
-                            <div id="fecha" class="email input-activo calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                <input class="email-input col-10" type="email" placeholder="Fecha"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="hora" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="text" placeholder="Hora"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="email2" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="email" placeholder="Email"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="nombre" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="email" placeholder="Nombre"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="asunto" class="email calen-campos align col-12 col-lg-7" style="justify-content: space-around;display: none;">
-                                <input class="email-input col-10" type="email" placeholder="Asunto"></input>
-                                <button type="submit" class="btnSub"><i class="fas fa-arrow-right col-1"></i></button>
-                            </div>
-                            <div id="grax2" class="col-12 col-lg-7 calen-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
-                                <h3>Gracias, nos contactaremos a la brevedad.</h3>
-                            </div>
+                                <div class="enviar-btn" id="enviar-videollamada">
+                                    <div>ENVIAR</div>
+                                </div>
 
-                            <div class="col-12 col-lg-7 align" id="tags-cont-calen">
-                                <h3 id="horaClick" class="opciones active-step col-3">Fecha</h3>
-                                <h3 id="horaClick" class="opciones col-3">Hora</h3>
-                                <h3 id="emailClick2" class="opciones col-3">Email</h3>
-                                <h3 id="nombreClick" class="opciones col-3">Nombre</h3>
-                                <h3 id="asuntoClick" class="opciones col-3">Asunto</h3>
-                            </div>
+                                <div id="grax2" class="col-12 col-lg-7 calen-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
+                                    <h3>Gracias, nos contactaremos a la brevedad.</h3>
+                                </div>
+                            <!-- </div> -->
+
+                            
                         </div>
                         <script type="text/javascript">
                          
@@ -2029,7 +2024,7 @@ foreach ($pricings as $key => $pricing) {
 
 
                         <div data-aos="zoom-in-up" data-aos-duration="700" class="col-12 col-lg-7 align iconos" style="justify-content: space-around;">
-                            <button id="mail" class="col-3 iconBut" style="border-bottom: 1px solid grey;"><img class="imgLogos" src="./Images/samsung-mail.png" alt="" style="width: 100%;"></button>
+                            <button id="mail" class="col-3 iconBut contact-option-selected"><img class="imgLogos" src="./Images/samsung-mail.png" alt="" style="width: 100%;"></button>
                             <button id="calendar" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-calendar.png" alt="" style="width: 100%;"></i></button>
                             <button id="numero" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-phone.png" alt="" style="width: 100%;"></i></button>
                             <button id="whats" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-wpp2.png" alt="" style="width: 100%;"></i></button>
@@ -2040,69 +2035,52 @@ foreach ($pricings as $key => $pricing) {
 
                         <script type="text/javascript">
                             $("#mail").click(function(){
-                                $("#calen").fadeOut();
-                                $("#phone").fadeOut();
-                                $("#wpp").fadeOut();
-                                $("#mail").fadeIn();
-                                document.getElementById("email").style.display = "flex"
-                                document.getElementById("calen").style.display = "none"
-                                document.getElementById("num").style.display = "none"
-                                document.getElementById("wpp").style.display = "none"
-                                document.getElementById("mail").style.borderBottom = "1px solid grey"
-                                document.getElementById("calendar").style.borderBottom = "none"
-                                document.getElementById("numero").style.borderBottom = "none"
-                                document.getElementById("whats").style.borderBottom= "none"
+
+                                $('#calen, #phone, #wpp, #num').hide()
+                                $('#email').fadeIn()
+
+                               
                         });
                         </script>
                         <script type="text/javascript">
                             $("#calendar").click(function(){
-                                $("#email").fadeOut();
-                                $("#phone").fadeOut();
-                                $("#wpp").fadeOut();
-                                $("#calen").fadeIn();
-                                document.getElementById("email").style.display = "none"
-                                document.getElementById("num").style.display = "none"
-                                document.getElementById("wpp").style.display = "none"
-                                document.getElementById("calen").style.display = "flex"
-                                document.getElementById("calendar").style.borderBottom = "1px solid grey"
-                                document.getElementById("mail").style.borderBottom = "none"
-                                document.getElementById("numero").style.borderBottom = "none"
-                                document.getElementById("whats").style.borderBottom = "none"
-                                
+
+                                $('#email, #phone, #wpp, #num').hide()
+                                $('#calen').fadeIn()
+
+
+                               
                         });
                         </script>
                         <script type="text/javascript">
                             $("#numero").click(function(){
-                                $("#email").fadeOut();
-                                $("#phone").fadeOut();
-                                $("#calen").fadeOut();
+                                // $("#email").fadeOut();
+                                // $("#phone").fadeOut();
+                                $("#calen, #phone, #email, #wpp").hide();
                                 $("#num").fadeIn();
-                                document.getElementById("email").style.display = "none"
-                                document.getElementById("calen").style.display = "none"
-                                document.getElementById("wpp").style.display = "none"
-                                document.getElementById("num").style.display = "flex"
-                                document.getElementById("numero").style.borderBottom = "1px solid grey"
-                                document.getElementById("calendar").style.borderBottom = "none"
-                                document.getElementById("mail").style.borderBottom = "none"
-                                document.getElementById("whats").style.borderBottom = "none"
+
                                 
                         });
                         </script>
                         <script type="text/javascript">
                             $("#whats").click(function(){
-                                $("#email").fadeOut();
-                                $("#phone").fadeOut();
-                                $("#calen").fadeOut();
+                                // $("#email").fadeOut();
+                                // $("#phone").fadeOut();
+                                $("#calen, #phone, #email, #num").hide();
                                 $("#wpp").fadeIn();
-                                document.getElementById("email").style.display = "none"
-                                document.getElementById("calen").style.display = "none"
-                                document.getElementById("num").style.display = "none"
-                                document.getElementById("wpp").style.display = "flex"
-                                document.getElementById("whats").style.borderBottom = "1px solid grey"
-                                document.getElementById("calendar").style.borderBottom = "none"
-                                document.getElementById("numero").style.borderBottom = "none"
-                                document.getElementById("mail").style.borderBottom = "none"
+ 
                         });
+                        </script>
+
+                        <script>
+
+                        $(document).on('click', '.iconBut', function(){
+
+                        $('.contact-option-selected').removeClass('contact-option-selected')
+                                                        $(this).addClass('contact-option-selected')
+
+                        })
+
                         </script>
 
 
@@ -2215,27 +2193,32 @@ setTimeout(() => {
 
 
 
-var mail_step = 1;
-$('#email button').click(function() {
-    if ($('#email .input-activo input').val() != '') {
-        let padresin =  $('#email .input-activo')
-        padresin.removeClass('input-activo');
-        padresin.fadeOut();
-        padresin.next('.email-campos').addClass('input-activo')
-        padresin.next('.email-campos').delay('300').fadeIn();
-        $('#email .input-activo input').focus()
-        $('#tags-cont-email h3').removeClass('active-step')
-        mail_step += 1;
-        $('#tags-cont-email h3:nth-child('+mail_step+')').addClass('active-step')
+// var mail_step = 1;
+// $('#email button').click(function() {
+//     if ($('#email .input-activo input').val() != '') {
+//         let padresin =  $('#email .input-activo')
+//         padresin.removeClass('input-activo');
+//         padresin.fadeOut();
+//         padresin.next('.email-campos').addClass('input-activo')
+//         padresin.next('.email-campos').delay('300').fadeIn();
+//         $('#email .input-activo input').focus()
+//         $('#tags-cont-email h3').removeClass('active-step')
+//         mail_step += 1;
+//         $('#tags-cont-email h3:nth-child('+mail_step+')').addClass('active-step')
 
-        if ( $('.input-activo').is(':nth-child(6)') ) {
-            envioMail();
-        }
-    }
-})
+//         if ( $('.input-activo').is(':nth-child(6)') ) {
+//             envioMail();
+//         }
+//     }
+// })
+
+// Handler para cuando envian el mail
+$(document).on('click', '#enviar-mail', envioMail)
 
 
 function envioMail(){
+
+    console.log('envio mail ejecutada!')
 
 var nombre = $('#nombre1 input').val();
 var email = $('#email1 input').val();
@@ -2264,26 +2247,31 @@ if($.trim(email) != ''){
 }
 
 
-var calen_step = 1;
-$('#calen button').click(function() {
-    if ($('#calen .input-activo input').val() != '') {
-        let padresin =  $('#calen .input-activo')
-        padresin.removeClass('input-activo');
-        padresin.fadeOut();
-        padresin.next('.calen-campos').addClass('input-activo')
-        padresin.next('.calen-campos').delay('300').fadeIn();
-        $('#tags-cont-calen h3').removeClass('active-step')
-        calen_step += 1;
-        $('#tags-cont-calen h3:nth-child('+calen_step+')').addClass('active-step')
+// var calen_step = 1;
+// $('#calen button').click(function() {
+//     if ($('#calen .input-activo input').val() != '') {
+//         let padresin =  $('#calen .input-activo')
+//         padresin.removeClass('input-activo');
+//         padresin.fadeOut();
+//         padresin.next('.calen-campos').addClass('input-activo')
+//         padresin.next('.calen-campos').delay('300').fadeIn();
+//         $('#tags-cont-calen h3').removeClass('active-step')
+//         calen_step += 1;
+//         $('#tags-cont-calen h3:nth-child('+calen_step+')').addClass('active-step')
         
-        if ( $('.input-activo').is(':nth-child(7)') ) {
-            envioCalen();
-        }
-    }
-}) 
+//         if ( $('.input-activo').is(':nth-child(7)') ) {
+//             envioCalen();
+//         }
+//     }
+// }) 
 
+
+// Handler para cuando envian el mail
+$(document).on('click', '#enviar-videollamada', envioCalen)
 
 function envioCalen(){
+
+    console.log('envioCalen() ejecutada!')
 
 var fecha = $('#fecha input').val();
 var hora = $('#hora input').val();
