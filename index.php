@@ -1,30 +1,30 @@
 <?php
 
-require 'php/connection.php';
+// require 'php/connection.php';
 
-// Traemos toda la data
-$sql = $pdo->prepare("SELECT * FROM pricing");
-$sql->execute(); 
-$pricings = $sql->fetchAll();
-
-
-// Traemos el dolar
-$sql = $pdo->prepare("SELECT * FROM dolar");
-$sql->execute(); 
-$dolar = $sql->fetch();
-
-$dolar = $dolar['dolar'];
+// // Traemos toda la data
+// $sql = $pdo->prepare("SELECT * FROM pricing");
+// $sql->execute(); 
+// $pricings = $sql->fetchAll();
 
 
-// Le agregamos el valor del dolar a los pricings
-foreach ($pricings as $key => $pricing) {
+// // Traemos el dolar
+// $sql = $pdo->prepare("SELECT * FROM dolar");
+// $sql->execute(); 
+// $dolar = $sql->fetch();
+
+// $dolar = $dolar['dolar'];
+
+
+// // Le agregamos el valor del dolar a los pricings
+// foreach ($pricings as $key => $pricing) {
     
-    $ars_to_usd = $pricing['ars'] / $dolar;
-    $ars_to_usd = floor($ars_to_usd);
+//     $ars_to_usd = $pricing['ars'] / $dolar;
+//     $ars_to_usd = floor($ars_to_usd);
 
-    $pricings[$key]['usd'] = $ars_to_usd;
+//     $pricings[$key]['usd'] = $ars_to_usd;
 
-}
+// }
 
 
 ?>
@@ -58,11 +58,21 @@ foreach ($pricings as $key => $pricing) {
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-    
-
     <link rel="stylesheet" href="./stylesheets/aos.scss">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    
+    
+    
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
 </head>
 <body>
@@ -1194,7 +1204,7 @@ foreach ($pricings as $key => $pricing) {
                                 
                         </div>
 
-                        <div class="center1 card-cont1 align cont col-12">
+                    <div class="center1 card-cont1 align cont col-12">
                         <article class="col-11 card" data-aos="zoom-in-up" data-aos-duration="900">
                                 <div class="row align">
                                     
@@ -1215,26 +1225,26 @@ foreach ($pricings as $key => $pricing) {
                                         <h1 id="info5" class="col-12 desc" style="display: none;"><?php //echo $pricings[0]['descripcion'] ?></h1>
                                     </div>
                                 </div>
-                            </article>
-                            <article class="col-11 card align" data-aos="zoom-in-up" data-aos-duration="900">
-                                <div class="row align">
-                                    <div class="col-11 row align">
-                                        <div class="col-12 align" style="justify-content: flex-end;">
-                                            <h1 id="icV1" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
-                                            <h1 id="icF1" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
-                                        </div>
-                                        <div id="precios1" class="row align">
-                                            <h1 id="arss" class="col-12 precio">$ <?php //echo $pricings[1]['ars'] ?> /<p style="font-size: 19px;">mes </strong></h1>
-                                            <h1 id="dolaress1" class="col-12 precio" style="display: none;">$<?php //echo $pricings[1]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd" class="col-2 usd"> USD</h1>
-                                            <h1 id="pesos1" class="col-12 desc"> $ <?php //echo $pricings[1]['ars'] / 2 ?> c/u</h1>
-                                            <h1 id="dolares1" class="col-12 desc" style="display: none;"> $ <?php //echo $pricings[1]['usd'] / 2 ?> c/u</h1>
-                                            <button class="botonStart col-8">Comenzar ahora</button>
-                                        </div>
-                                        <h1 id="info1" class="col-12 desc" style="display: none;"><?php //echo $pricings[1]['descripcion'] ?></h1>
+                        </article>
+                        <article class="col-11 card align" data-aos="zoom-in-up" data-aos-duration="900">
+                            <div class="row align">
+                                <div class="col-11 row align">
+                                    <div class="col-12 align" style="justify-content: flex-end;">
+                                        <h1 id="icV1" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
+                                        <h1 id="icF1" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                     </div>
+                                    <div id="precios1" class="row align">
+                                        <h1 id="arss" class="col-12 precio">$ <?php //echo $pricings[1]['ars'] ?> /<p style="font-size: 19px;">mes </strong></h1>
+                                        <h1 id="dolaress1" class="col-12 precio" style="display: none;">$<?php //echo $pricings[1]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
+                                        <h1 style="cursor: pointer; text-decoration: underline" id="ars" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd" class="col-2 usd"> USD</h1>
+                                        <h1 id="pesos1" class="col-12 desc"> $ <?php //echo $pricings[1]['ars'] / 2 ?> c/u</h1>
+                                        <h1 id="dolares1" class="col-12 desc" style="display: none;"> $ <?php //echo $pricings[1]['usd'] / 2 ?> c/u</h1>
+                                        <button class="botonStart col-8">Comenzar ahora</button>
+                                    </div>
+                                    <h1 id="info1" class="col-12 desc" style="display: none;"><?php //echo $pricings[1]['descripcion'] ?></h1>
                                 </div>
-                            </article>
+                            </div>
+                        </article>
                             <article class="col-11 card" data-aos="zoom-in-up" data-aos-duration="900">
                                 <div class="row align">
                                     
@@ -1440,57 +1450,50 @@ foreach ($pricings as $key => $pricing) {
                         </script>-->
            
 
-                        <div class="carousel center1 cont" data-flickity='{"prevNextButtons": false }'>
-                            <article class="card carousel-cell">
-                                <div class="row align">
-                                        <div class="col-12 align" style="justify-content: flex-end;">
-                                            <h1 id="icV6" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
-                                            <h1 id="icF6" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
-                                        </div>
-                                    
-                                    <div class="col-10 row align" id="precios6">
-                                        
-                                        <h1 class="col-12 precio">PLAN FULL</h1>
-                                        <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php //echo $pricings[6]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
-                                        <h1 id="dolaress6" class="col-12 precio" style="display: none;">$<?php //echo $pricings[6]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
-                                        <div class="col-12 align" style="justify-content: center;">
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars6" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd6" class="col-2 usd"> USD</h1>
-                                        </div>
-                                        <h1 class="col-12 desc">30% OFF / $ <?php //echo $pricings[6]['ars'] / 10 ?> c/u</h1>
-                                        <button class="botonStart col-8">Comenzar ahora</button>
+                    <div class="carousel center1 cont agenciaMob" data-flickity='{"prevNextButtons": false }'>
+                        <article class="card carousel-cell">
+                            <div class="row align">
+                                    <div class="col-12 align" style="justify-content: flex-end;">
+                                        <h1 id="icV6" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
+                                        <h1 id="icF6" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                     </div>
-                                    <h1 id="info6" class="col-12 desc" style="display: none;"><?php //echo $pricings[6]['descripcion'] ?></h1>
+                                
+                                <div class="col-10 row align" id="precios6">
+                                    
+                                    <h1 class="col-12 precio">PLAN FULL</h1>
+                                    <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php //echo $pricings[6]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                    <h1 id="dolaress6" class="col-12 precio" style="display: none;">$<?php //echo $pricings[6]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
+                                    <div class="col-12 align" style="justify-content: center;">
+                                        <h1 style="cursor: pointer; text-decoration: underline" id="ars6" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd6" class="col-2 usd"> USD</h1>
+                                    </div>
+                                    <h1 class="col-12 desc">30% OFF / $ <?php //echo $pricings[6]['ars'] / 10 ?> c/u</h1>
+                                    <button class="botonStart col-8">Comenzar ahora</button>
                                 </div>
-                            </article>
-                            <article class="card carousel-cell card-width">
-                                <div class="row align">
-                                        <div class="col-12 align" style="justify-content: flex-end;">
-                                            <h1 id="icV7" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
-                                            <h1 id="icF7" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
-                                        </div>
-                                    
-                                    <div class="col-10 row align" id="precios7">
-                                        <h1 class="col-12 precio">PLAN BÁSICO</h1>
-                                        <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php //echo $pricings[5]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
-                                        <h1 id="dolaress7" class="col-12 precio" style="display: none;">$<?php //echo $pricings[5]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
-                                        <div class="col-12 align" style="justify-content: center;">
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars7" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd7" class="col-2 usd"> USD</h1>
-                                        </div>
-                                        <h1 class="col-12 desc">50% OFF / $ <?php //echo $pricings[5]['ars'] / 10 ?> c/u</h1>
-                                        <button class="botonStart col-8">Comenzar ahora</button>
-                                        <h1 id="info7" class="col-12 desc" style="display: none;"><?php //echo $pricings[5]['descripcion'] ?></h1>
+                                <h1 id="info6" class="col-12 desc" style="display: none;"><?php //echo $pricings[6]['descripcion'] ?></h1>
+                            </div>
+                        </article>
+                        <article class="card carousel-cell card-width">
+                            <div class="row align">
+                                    <div class="col-12 align" style="justify-content: flex-end;">
+                                        <h1 id="icV7" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
+                                        <h1 id="icF7" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                     </div>
+                                
+                                <div class="col-10 row align" id="precios7">
+                                    <h1 class="col-12 precio">PLAN BÁSICO</h1>
+                                    <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php //echo $pricings[5]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
+                                    <h1 id="dolaress7" class="col-12 precio" style="display: none;">$<?php //echo $pricings[5]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
+                                    <div class="col-12 align" style="justify-content: center;">
+                                        <h1 style="cursor: pointer; text-decoration: underline" id="ars7" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd7" class="col-2 usd"> USD</h1>
+                                    </div>
+                                    <h1 class="col-12 desc">50% OFF / $ <?php //echo $pricings[5]['ars'] / 10 ?> c/u</h1>
+                                    <button class="botonStart col-8">Comenzar ahora</button>
                                     <h1 id="info7" class="col-12 desc" style="display: none;"><?php //echo $pricings[5]['descripcion'] ?></h1>
                                 </div>
-                            </article>
-                        </div>
-
-                        
-                        
-
-                    
-                    
-
+                                <h1 id="info7" class="col-12 desc" style="display: none;"><?php //echo $pricings[5]['descripcion'] ?></h1>
+                            </div>
+                        </article>
+                    </div>
 
                     <script type="text/javascript">
                         $("#emp").click(function(){
@@ -1520,10 +1523,15 @@ foreach ($pricings as $key => $pricing) {
                     </script>
 
 
+                    <div class="agenciaDesk">
+                    
+                    </div>
+                    <iframe src="agencia-slider.php" height="500px" style="overflow: hidden;padding: 0; height:340px"></iframe>
+
 
                 </section>
 
-                <div class="col-12 align fondo">
+                <div class="col-12 align fondo pers">
                     <section id="faqs" class="row align preguntas" style="width: 100% !important; padding-top: 21px;">
                         <p id="icono45" class="preg col-11 col-lg-7" style="display: flex;justify-content: space-between;" data-toggle="collapse" data-target="#content">
                             ¿Qué comprende la tarifa por campaña? <i id="iicono45" class="fas fa-chevron-down 1 fa-cerrado"></i>
@@ -2175,6 +2183,9 @@ foreach ($pricings as $key => $pricing) {
 <script type="text/javascript">
 $(document).ready(function() {
 
+
+// $('.agenciaDesk').load('agencia-slider.php')
+
     // $('#customRange3').change(function(){
     //     console.log($(this).val())
     //     var porcen = parseInt( $(this).val() /100*5) + 1
@@ -2321,7 +2332,46 @@ $(document).on('click', '.ir_a_tarifas', function(e){
 
 })
 
+$('startBoton').click(function () {
+    $("html, body").animate({ scrollTop: $('#contacto').offset().top }, 300);
+    
 })
 
+$('iframe').on('load', function() {
+    $('iframe').contents().find('button').click(function() {
+        $("html, body").animate({ scrollTop: $('#contacto').offset().top }, 300);
+
+    });
+});
+$('iframe').on('load', function() {
+    $('iframe').contents().find('button').click(function() {
+    });
+});
+
+       document.getElementById("icF6").addEventListener("click", function(){
+        document.getElementById("precios6").style.display = "none"
+        document.getElementById("info6").style.display = "inline"
+        document.getElementById("icV6").style.display = "inline"
+      })
+      document.getElementById("icV6").addEventListener("click", function(){
+        document.getElementById("icV6").style.display = "none"
+        document.getElementById("precios6").style.display = "flex"
+        document.getElementById("info6").style.display = "none"
+      })
+
+      document.getElementById("icF7").addEventListener("click", function(){
+          
+        document.getElementById("precios7").style.display = "none"
+        document.getElementById("info7").style.display = "inline"
+        document.getElementById("icV7").style.display = "inline"
+      })
+      document.getElementById("icV7").addEventListener("click", function(){
+        document.getElementById("icV7").style.display = "none"
+        document.getElementById("precios7").style.display = "flex"
+        document.getElementById("info7").style.display = "none"
+      })
+
+
+})
 </script>
 </html>

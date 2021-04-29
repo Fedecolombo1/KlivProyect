@@ -35,7 +35,7 @@ justify-content: center;
 align-items: center;
 }
 
-span:before{
+header span:before{
     content: "";
     animation: animate linear infinite 6s;
 }
@@ -329,7 +329,9 @@ h1.nues{
     margin-bottom: 50px;
     color: #003629;
 }
-
+.tarifas{
+    margin-top: 5%;
+}
 .tarifasT{
     color: #ffcc66;
     font-size: 30px;
@@ -892,9 +894,10 @@ footer{
       position: relative !important;
   }
 
-  #empresa{
+  #empresa, .pers{
       left: 0%;
-  }
+      padding: 0;
+    }
   #emp, #age{
     width: fit-content!important;
     font-size: 16px;
@@ -1002,8 +1005,10 @@ footer{
     }
 
     #agencia{
-        
         padding: 0px !important;
+    }
+    .agenciaMob{
+        display: none!important;
     }
 
     .sociosImgs{
@@ -1095,6 +1100,9 @@ footer{
     @media(max-width:768px){
         #svg-cont {
             width: 90%;
+        }
+        .agenciaDesk{
+            display: none!important;
         }
         .titulos-pasos {
             font-size: 14px;
@@ -1557,3 +1565,44 @@ footer{
     
     }
     }
+
+
+/* Slider alternativo agencia */
+/*
+Optional styles
+*/
+
+  
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 20%;
+  }
