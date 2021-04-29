@@ -42,4 +42,30 @@ if($func=='update_pricing'){
 
 }
 
+if($func=='upload_img'){
+
+    $id_socio = $_GET['id_socio']; 
+
+    try{
+	
+        echo basename($_FILES['inputThumbnail']['name']);
+        
+        // Mover el archivo subido al directorio correspondiente
+        $target_path = '../socios_imgs/'. basename($_FILES['inputThumbnail']['name']);
+        move_uploaded_file($_FILES['inputThumbnail']['tmp_name'], $target_path);
+
+        echo 'exito!';
+
+        // Actualizamos el src
+        $sql = "UPDATE socios SET src=? WHERE id=?";
+        $stmt= $pdo->prepare($sql);
+        $stmt->execute([basename($_FILES['inputThumbnail']['name']), $id_socio]);
+    
+    }catch(Excaption $e){
+        echo $e;	
+    }
+    
+
+}
+
 ?>

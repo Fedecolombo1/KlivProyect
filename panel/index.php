@@ -18,9 +18,13 @@ $sql = $pdo->prepare("SELECT * FROM dolar");
 $sql->execute(); 
 $dolar = $sql->fetch();
 
-$dolar = $dolar['dolar']
+$dolar = $dolar['dolar'];
 
 // var_dump($sql);
+
+$sql = $pdo->prepare("SELECT * FROM socios");
+$sql->execute(); 
+$socios = $sql->fetchAll();
 
 
 
@@ -169,7 +173,13 @@ body{
     width: 80px;
     height: 50px;
     border-radius: 5px;
-    background-color: red;
+    background-color: #e8e8e8;
+    margin-right: 35px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid gray;
 }
 
 #socios-inputs input{
@@ -229,27 +239,27 @@ body{
             <div id="socios-container">
             
             
-                <div class="socio" data-socio-id="1"></div>
-                <div class="socio" data-socio-id="2"></div>
-                <div class="socio" data-socio-id="3"></div>
-                <div class="socio" data-socio-id="4"></div>
-                <div class="socio" data-socio-id="5"></div>
-                <div class="socio" data-socio-id="6"></div>
-                <div class="socio" data-socio-id="7"></div>
-                <div class="socio" data-socio-id="8"></div>
+                <div class="socio" data-socio-id="1" style="background-image: url('../socios_imgs/<?php echo $socios[0]['src'] ?>')"></div>
+                <div class="socio" data-socio-id="2" style="background-image: url('../socios_imgs/<?php echo $socios[1]['src'] ?>')"></div>
+                <div class="socio" data-socio-id="3" style="background-image: url('../socios_imgs/<?php echo $socios[2]['src'] ?>')"></div>
+                <div class="socio" data-socio-id="4" style="background-image: url('../socios_imgs/<?php echo $socios[3]['src'] ?>')"></div>
+                <div class="socio" data-socio-id="5" style="background-image: url('../socios_imgs/<?php echo $socios[4]['src'] ?>')"></div>
+                <div class="socio" data-socio-id="6" style="background-image: url('../socios_imgs/<?php echo $socios[5]['src'] ?>')"></div>
+                <div class="socio" data-socio-id="7" style="background-image: url('../socios_imgs/<?php echo $socios[6]['src'] ?>')"></div>
+                <div class="socio" data-socio-id="8" style="background-image: url('../socios_imgs/<?php echo $socios[7]['src'] ?>')"></div>
             
             
             </div>
 
             <div id="socios-inputs">
-                <input type="file" id="input-1" accept="image/png, image/jpeg">
-                <input type="file" id="input-2" accept="image/png, image/jpeg">
-                <input type="file" id="input-3" accept="image/png, image/jpeg">
-                <input type="file" id="input-4" accept="image/png, image/jpeg">
-                <input type="file" id="input-5" accept="image/png, image/jpeg">
-                <input type="file" id="input-6" accept="image/png, image/jpeg">
-                <input type="file" id="input-7" accept="image/png, image/jpeg">
-                <input type="file" id="input-8" accept="image/png, image/jpeg">
+                <input type="file" id="input-1" data-id="1" accept="image/png, image/jpeg">
+                <input type="file" id="input-2" data-id="2" accept="image/png, image/jpeg">
+                <input type="file" id="input-3" data-id="3" accept="image/png, image/jpeg">
+                <input type="file" id="input-4" data-id="4" accept="image/png, image/jpeg">
+                <input type="file" id="input-5" data-id="5" accept="image/png, image/jpeg">
+                <input type="file" id="input-6" data-id="6" accept="image/png, image/jpeg">
+                <input type="file" id="input-7" data-id="7" accept="image/png, image/jpeg">
+                <input type="file" id="input-8" data-id="8" accept="image/png, image/jpeg">
             </div>
         
         </div>
@@ -354,6 +364,15 @@ $(document).on('click', '#guardar', function(){
         }
     });
 
+    // Por cada foto que cambió de valor, hacemos la subida a la bbdd
+    for(img in imgs_to_upload){
+
+        subir_thumbnail(imgs_to_upload[img])
+
+    }
+    
+
+
 })
 
 // Cuando cambian el valor de las 2 campañas x mes, se actualizan los demas planes con un descuento en funcion de ese valor
@@ -379,6 +398,79 @@ $(document).on('click', '.socio', function(){
 
 })
 
+imgs_to_upload = []
+
+$(document).on('change', '#socios-inputs input', function(){
+   
+    console.log('cambio!')
+
+    imgs_to_upload.push($(this).attr('data-id'))
+
+    $('#guardar').addClass('clickable')
+
+    show_preview(this)
+
+})
+
+// Funcion que muestra preview del archivo adjuntado
+function show_preview(input){
+
+    var id_input = $(input).attr('data-id')
+
+    console.log('id_input: ', id_input)
+
+	var detalle = '<div>'+input.files[0].name+' <span id="remove-file" onclick="removeFile()">x</span></div>'
+    console.log('detalle: ', detalle)
+	var preview_image = URL.createObjectURL(input.files[0]);
+
+    console.log('prev url: ', preview_image)
+
+    $( ".socio[data-socio-id='"+id_input+"']" ).css('background-image', 'url('+preview_image+')')
+
+	// Escupiendo la preview image al div
+	// img_prev.style.backgroundImage = 'url('+preview_image+')'
+
+
+}
+
+
+
+function subir_thumbnail(id_input){
+
+	const inputThumbnail = document.getElementById('input-'+id_input)
+
+	const endpoint = '../php/api.php?func=upload_img&id_socio='+id_input;
+	const formData = new FormData();
+
+	console.log(inputThumbnail.files)
+
+	var file_name = inputThumbnail.files[0].name
+
+    var new_name = id_input + get_extension(file_name)
+
+	formData.append('inputThumbnail', inputThumbnail.files[0], new_name)
+
+	fetch(endpoint, {
+		method: 'post',
+		body: formData
+	}).then(function(response) {
+  		console.log(response)
+  		if(response.status == 200){
+
+  			// Mostramos el preview del thumbnail
+  			console.log('exito!')
+
+  		}
+	}).catch(console.error)
+
+	return new_name
+
+}
+
+function get_extension(file_name){
+    var re = /(?:\.([^.]+))?$/;
+    return re.exec(file_name)[0]
+}
 
 </script>
 
