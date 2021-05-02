@@ -2251,6 +2251,14 @@ if($.trim(email) != ''){
 
         success:function(data){
             console.log(data);
+
+                $('#nombre1 input').val('');
+                $('#email1 input').val('');
+                $('#telefono input').val('');
+                $('#mensaje input').val('');
+
+                $('#grax1').fadeIn()
+
         }
     });
 }
@@ -2307,6 +2315,17 @@ if($.trim(mail) != ''){
 
         success:function(data){
             console.log(data);
+
+
+                $('#fecha input').val('');
+                $('#hora input').val('');
+                $('#email2 input').val('');
+                $('#nombre input').val('');
+                $('#asunto input').val('');
+
+                $('#grax2').fadeIn()
+
+
         }
     });
 }
