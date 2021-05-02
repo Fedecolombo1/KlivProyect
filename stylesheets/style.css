@@ -24,6 +24,10 @@ button, input{
     font-family: Product Sans!important;
 }
 
+.saberMas a{
+    color: #23527c!important;
+}
+
 
 header.desk1 {
 position: absolute;
@@ -178,7 +182,7 @@ strong.verde{
 .flickity-viewport{
 
 }
-m
+
 .carousel-control{
     background: transparent !important;
     margin-bottom: 70px;

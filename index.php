@@ -38,7 +38,7 @@ foreach ($pricings as $key => $pricing) {
     <meta charset="UTF-8">
     <title>Kliv</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel='stylesheet' href='./stylesheets/style.css' />
+    <link rel='stylesheet' href='./stylesheets/style.css?r=1' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/882d6fd4b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -332,9 +332,9 @@ foreach ($pricings as $key => $pricing) {
                 <br>
                 <i>* En Email Marketing la tarifa aplica por Grupo de Campañas [ De hasta 3 Campañas  ] </i>
                 <br>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Planes del Software GetResponse</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="https://getresponse.com/pricing">Planes del Software GetResponse</a></p>
                 <br>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Planes del Sortware Doppler</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="https://fromdoppler.com/es/precios">Planes del Sortware Doppler</a></p>
                 <br>
                 
                 <p class="col-12 textoSaberMas">El email marketing es una herramienta de comunicación que permite contactar a tu público objetivo a través de su correo electrónico, con mensajes personalizados a lo largo del embudo de conversión.</p>
@@ -394,7 +394,7 @@ foreach ($pricings as $key => $pricing) {
                 <!-- EMPIEZA ABAJO -->
 
                 <p class="col-12 textoSaberMas">Atención personalizada y generación de contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con tu marca.</p>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifa x Paquete</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#precios-redes">Tarifa x Paquete</a></p>
                 <p class="col-12 textoSaberMas">La gestión estratégica de las redes es un componente indispensable en todas las fases del embudo de conversión. No se debe aplicar como una estrategia aislada, sino que debe estar planificada en concordancia con el resto de estrategias digitales de la empresa. </p>
                 <p class="col-12 textoSaberMas">En Kliv desarrollamos contenidos de calidad alineados a objetivos concretos, que se ajustan a los intereses de tu buyer persona y transmiten los valores e identidad de tu marca. Además, monitoreamos tus redes y promovemos una relación cercana con tu público, respondiendo comentarios y atendiendo consultas.</p>
                 
@@ -510,7 +510,7 @@ foreach ($pricings as $key => $pricing) {
                     
 
                 </div>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifa x Paquete</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#mantenimiento">Tarifa x Paquete</a></p>
                 
                 <p class="col-12 textoSaberMas">
                 En Kliv contamos con un equipo de “desarrolladores full stack”, es decir, programadores con un perfil técnico muy completo que se desenvuelven en front y backend sin usar sistemas de diseño web (Como Wix o Wordpress), posibilitando desarrollos personalizados y funcionales, 100% a medida de los requerimientos de tu empresa.
@@ -540,7 +540,7 @@ foreach ($pricings as $key => $pricing) {
                     <strong>HOSTING Y DOMINIO:</strong>
                     Nos encargamos de registrar y alojar el dominio (tusitio.com) como los archivos de tu web, con backups mensuales para garantizar la seguridad del contenido. 
                 </p>
-                <p class="col-12 textoSaberMas">
+                <p class="col-12 textoSaberMas" id="mantenimiento">
                     <strong>MANTENIMIENTO Y ACTUALIZACIONES:</strong>
                     Dispones de nuestro soporte técnico para cualquier cambio/innovación que quieras implementar dentro del sitio.
                 </p>
@@ -548,7 +548,7 @@ foreach ($pricings as $key => $pricing) {
                 <br>
                
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">ONE PAGE</strong>
+                    <strong class="dark">ONE PAGE   -   <i>(A cotizar)</i></strong>
                     <br>
                     Comunica solo lo esencial en un sitio one page. Una sola página, segmentada en secciones. Ideal para sintetizar lo que hace tu negocio, incitando prospectos a ponerse en contacto.
                     <br>
@@ -564,7 +564,7 @@ foreach ($pricings as $key => $pricing) {
                 </p>
                 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">COMPLETO</strong>
+                    <strong class="dark">COMPLETO   -   <i>(A cotizar)</i></strong>
                     <br>
 
                     Tu sitio web profesional completo. Ideal para quienes buscan establecer una imagen más establecida. Tanto para empresas como particulares e instituciones.
@@ -582,16 +582,16 @@ foreach ($pricings as $key => $pricing) {
                     <br>
                     -Detalles UX/UI interactivos.
 
-
                 </p>
                 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">A MEDIDA</strong>
+                    <strong class="dark">A MEDIDA   -   <i>(A cotizar)</i></strong>
                     <br>
 
                     Tu idea o proyecto escapa de las limitaciones de los tipos de sitios anteriores? No te preocupes, trabajamos 100 % a medida. 
                     <br>
-                    <a href="#contacto">Contactate!</a>               
+                    <br>
+                    <a href="" class="ir_a_contacto">Contactate!</a>               
 
                 </p>
 
@@ -609,9 +609,9 @@ foreach ($pricings as $key => $pricing) {
                     <p class="textT"  style="color: white;">Manual de identidad corporativa, logos, brochures, folletos, infografía, fotoproducto, lookbooks, retrato, animaciones motion graphic,guión, rodajes y producciones.</p>
                     
                 </div>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifas x Servicios</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#en-kliv">Tarifas x Servicios</a></p>
                 <p class="col-12 textoSaberMas">Los elementos gráficos y audiovisuales son indispensables en la estrategia comercial para llegar a tu audiencia de una forma dinámica y cautivadora, que transmita la identidad de tu marca. </p>
-                <p class="col-12 textoSaberMas">En Kliv trabajamos con equipos de diseño y producción audiovisual experimentados en el rubro publicitario con orientación al performance. </p>
+                <p class="col-12 textoSaberMas" id="en-kliv">En Kliv trabajamos con equipos de diseño y producción audiovisual experimentados en el rubro publicitario con orientación al performance. </p>
                 
                 <p class="col-12 textoSaberMas">
                     <div style="
@@ -717,11 +717,11 @@ foreach ($pricings as $key => $pricing) {
                     
                 </div>
 
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="">Tarifas x Servicios</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#ademas-utilizamos">Tarifas x Servicios</a></p>
 
                 <p class="col-12 textoSaberMas">Estrategia que utiliza WhatsApp como canal de marketing para optimizar el servicio al cliente, aumentar la fidelización, incrementar tus ventas y enriquecer tu posventa; alineada con el resto de estrategias digitales de la empresa. Canal indispensable para cualquier empresa que desee mantenerse al alcance inmediato de sus clientes, con mayor visibilidad que cualquier otro medio.</p>
                 <p class="col-12 textoSaberMas">En Kliv explotamos al máximo el potencial de WhatsApp Business, que dispone de múltiples funciones nativas concebidas para empresas, como perfil con ubicación Google Maps, horario de atención desplegable, catálogo de productos, mensaje de bienvenida y ausencia, entre otras.</p>
-                <p class="col-12 textoSaberMas">Además utilizamos softwares complementarios que enriquecen aún más la experiencia de tu audiencia optimizando la comunicación, permitiendo configurar chatbots 100% a medida como apoyo a la atención al público (secuencia de autorespuestas) y hacer campañas de difusión con texto, imagen y archivos a grupos segmentados.</p>
+                <p class="col-12 textoSaberMas" id="ademas-utilizamos">Además utilizamos softwares complementarios que enriquecen aún más la experiencia de tu audiencia optimizando la comunicación, permitiendo configurar chatbots 100% a medida como apoyo a la atención al público (secuencia de autorespuestas) y hacer campañas de difusión con texto, imagen y archivos a grupos segmentados.</p>
                 
                 <p class="col-12 textoSaberMas">
                     <div style="
@@ -731,7 +731,7 @@ foreach ($pricings as $key => $pricing) {
                     border-radius: 7px;" id="precios-redes">
                         <div><b>WHATSAPP MARKETING</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
-                            <div><b>$ <?php echo $pricings[19]['ars'] ?></b></div>
+                            <div><b>$ <?php echo $pricings[18]['ars'] ?></b></div>
                             <div><i>*No incluye IVA</i></div>
                         </div>
                     </div>
@@ -2320,6 +2320,16 @@ $(document).on('click', '.ir_a_tarifas', function(e){
     $('.saberMas').fadeOut()
 
     $("html, body").animate({ scrollTop: $('#tarifas').offset().top }, 100);
+
+})
+
+$(document).on('click', '.ir_a_contacto', function(e){
+
+    e.preventDefault()
+
+    $('.saberMas').fadeOut()
+
+    $("html, body").animate({ scrollTop: $('#contacto').offset().top }, 100);
 
 })
 
