@@ -197,7 +197,7 @@ body{
     <div id="panel-area">
 
         <div id="logo">
-            <img src="../images/kliv-logo.png" alt="">
+            <img src="../Images/kliv-logo.png" alt="">
         </div>
 
         <div id="dolar">

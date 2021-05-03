@@ -266,7 +266,7 @@ form{
  	
  	<div id="sub-mother-cont">
 
-		<div id="logo"><img src="../images/kliv-logo.png" alt=""></div>
+		<div id="logo"><img src="../Images/kliv-logo.png" alt=""></div>
 
  		
  		<form action="" method="post">
