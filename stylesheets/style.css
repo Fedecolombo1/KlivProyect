@@ -1163,6 +1163,19 @@ footer{
         .card-width{
             width: 70%;
         }
+
+        #form-section{
+            width: 100%!important;
+        }
+
+        .inputs-row{
+            flex-direction: column!important;
+        }
+
+        .input-cont{
+            width: 100%!important;
+        }
+
     }
 
     @media(min-width:768px){
