@@ -1888,8 +1888,126 @@ foreach ($pricings as $key => $pricing) {
 
                         <h3 data-aos="fade-in" class="subtitle1">Contactanos para hacer <br> crecer tu negocio </br></h3>
                         
+                        <style>
 
-                        <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="email" class="align row">
+                        #form-section{
+                            margin-top: 35px;
+                            width: 80%;
+                            margin-bottom: 40px;
+                        }
+
+                        #form-section input, #form-section textarea{
+                            padding: 8px;
+                        }
+
+                        .inputs-row{
+                            display: flex;
+                            align-items: center; 
+                            justify-content: space-between;
+                        }
+
+                        .input-cont{
+                            width: 48%;
+                            margin-bottom: 35px;
+                        }
+
+                        .input-cont input{
+                            width: 100%;
+                            height: 42px;
+                            border: 1px solid #e3e3e3!important;
+                        }
+
+                        .input-label{
+                            font-size: 0.9em;
+                            margin-bottom: 8px;
+                        }
+
+                        .textarea-cont{
+                            width: 100%;
+                        }
+
+                        .textarea-cont textarea{
+                            width: 100%;
+                            border: 1px solid #e3e3e3!important;
+                            resize: none;
+                        }
+
+                        #enviar-btn{
+                            border: 1px solid black;
+                            width: fit-content;
+                            padding: 10px 27px;
+                            color: #1E7A5E;
+                            cursor: pointer;
+                        }
+
+                        #enviar-cont{
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                        
+                        #enviar-btn:hover{
+                            background-color: #1E7A5E;
+                            color: white; 
+                        }
+
+                        #grax1{
+                            width: 100%!important;
+                        }
+
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                        }
+
+                        </style>
+
+                        <div id="form-section">
+                                
+                                <div class="inputs-row">
+                                    <div class="input-cont">
+                                        <div class="input-label">Nombre y Apellido</div>
+                                        <input type="text" id="i-nombre-apellido">
+                                    </div>
+                                    <div class="input-cont">
+                                        <div class="input-label">Empresa</div>
+                                        <input type="text" id="i-empresa">
+                                    </div>
+                                </div>
+                                
+                                <div class="inputs-row">
+                                    <div class="input-cont">
+                                        <div class="input-label">Email</div>
+                                        <input type="email" id="i-email">
+                                    </div>
+                                    <div class="input-cont">
+                                        <div class="input-label">Teléfono</div>
+                                        <input type="number" id="i-telefono">
+                                    </div>
+                                </div>
+
+                                <div class="inputs-row">
+                                    <div class="textarea-cont">
+                                        <div class="input-label">Consulta</div>
+                                        <textarea name="" id="i-consulta" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+
+                                <div id="enviar-cont">
+                                    <div id="enviar-btn">
+                                    ENVIAR
+                                    </div>
+                                </div>
+
+                                <div id="grax1" class="col-12 col-lg-7 email-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
+                                    <h3>Gracias, nos contactaremos a la brevedad.</h3>
+                                </div>
+                        
+                        </div>
+
+
+                        <!-- Este formulario de aca abajo en breve va a ser eliminado -->
+                        <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="email" class="align row" style="display: none">
                             <h3 class="msj col-11">/ Dejanos tu mensaje</h3>
                             <!-- <div id="form-mail"> -->
                                 <div id="nombre1" class="email input-activo email-campos align col-12 col-lg-7" style="justify-content: space-around;">
@@ -1953,57 +2071,6 @@ foreach ($pricings as $key => $pricing) {
 
                             
                         </div>
-                        <script type="text/javascript">
-                         
-                            // $("#horaClick").click(function(){
-                            //     $("#email1").fadeOut();
-                            //     $("#nombre").fadeOut();
-                            //     $("#asunto").fadeOut();
-                            //     $("#hora").fadeIn();
-                                
-                            //     document.getElementById("asunto").style.display = "none"
-                            //     document.getElementById("nombre").style.display = "none"
-                            //     document.getElementById("email2").style.display = "none"
-                            //     document.getElementById("hora").style.display = "flex"
-                            // });
-                            // $("#emailClick2").click(function(){
-                            //     $("#asunto").fadeOut();
-                            //     $("#nombre").fadeOut();
-                            //     $("#hora").fadeOut();
-                            //     $("#email2").fadeIn();
-                                
-                            //     document.getElementById("hora").style.display = "none"
-                            //     document.getElementById("asunto").style.display = "none"
-                            //     document.getElementById("nombre").style.display = "none"
-                            //     document.getElementById("email2").style.display = "flex"
-                            // });
-                            
-                            // $("#nombreClick").click(function(){
-                            //     $("#asunto").fadeOut();
-                            //     $("#email2").fadeOut();
-                            //     $("#hora").fadeOut();
-                            //     $("#nombre").fadeIn();
-                                
-                            //     document.getElementById("hora").style.display = "none"
-                            //     document.getElementById("asunto").style.display = "none"
-                            //     document.getElementById("email2").style.display = "none"
-                            //     document.getElementById("nombre").style.display = "flex"
-                            // });
-                            // $("#asuntoClick").click(function(){
-                            //     $("#nombre").fadeOut();
-                            //     $("#email2").fadeOut();
-                            //     $("#hora").fadeOut();
-                            //     $("#asunto").fadeIn();
-                                
-                            //     document.getElementById("hora").style.display = "none"
-                            //     document.getElementById("nombre").style.display = "none"
-                            //     document.getElementById("email2").style.display = "none"
-                            //     document.getElementById("asunto").style.display = "flex"
-                            // });
-                        </script>
-
-
-
 
                         <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="num" class="align row" style="display: none;">
                             <h3 class="msj col-11">/ Llamanos</h3>
@@ -2031,12 +2098,12 @@ foreach ($pricings as $key => $pricing) {
                         </div>
 
 
-                        <div data-aos="zoom-in-up" data-aos-duration="700" class="col-12 col-lg-7 align iconos" style="justify-content: space-around;">
+                        <!-- <div data-aos="zoom-in-up" data-aos-duration="700" class="col-12 col-lg-7 align iconos" style="justify-content: space-around;">
                             <button id="mail" class="col-3 iconBut contact-option-selected"><img class="imgLogos" src="./Images/samsung-mail.png" alt="" style="width: 100%;"></button>
                             <button id="calendar" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-calendar.png" alt="" style="width: 100%;"></i></button>
                             <button id="numero" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-phone.png" alt="" style="width: 100%;"></i></button>
                             <button id="whats" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-wpp2.png" alt="" style="width: 100%;"></i></button>
-                        </div>
+                        </div> -->
 
 
 
@@ -2224,17 +2291,18 @@ setTimeout(() => {
 // })
 
 // Handler para cuando envian el mail
-$(document).on('click', '#enviar-mail', envioMail)
+$(document).on('click', '#enviar-btn', envioMail)
 
 
 function envioMail(){
 
     console.log('envio mail ejecutada!')
 
-var nombre = $('#nombre1 input').val();
-var email = $('#email1 input').val();
-var telefono = $('#telefono input').val();
-var mensaje = $('#mensaje input').val();
+var nombre = $('#i-nombre-apellido').val();
+var empresa = $('#i-empresa').val();
+var email = $('#i-email').val();
+var telefono = $('#i-telefono').val();
+var consulta = $('#i-consulta').val();
 
 if($.trim(email) != ''){
     $.ajax({
@@ -2242,10 +2310,11 @@ if($.trim(email) != ''){
         method:'POST',
         cache: false,
         data:{
-            nombre:nombre,
-            email:email,
-            telefono:telefono,
-            mensaje:mensaje
+            nombre,
+            empresa,
+            email,
+            telefono,
+            consulta
         },
         dataType:'text',
 
