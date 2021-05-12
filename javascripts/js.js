@@ -156,6 +156,8 @@ window.addEventListener("load", function(){
         document.getElementById("dolaress1").style.display = "none"
         document.getElementById("ars").style.textDecoration = "underline"
         document.getElementById("usd").style.textDecoration = "none"
+        document.getElementById("ars").style.color = "#003629"
+        document.getElementById("usd").style.color = "#2D2D2D"
       })
       document.getElementById("usd").addEventListener("click", function(){
           document.getElementById("pesos1").style.display = "none"
@@ -164,6 +166,8 @@ window.addEventListener("load", function(){
           document.getElementById("dolaress1").style.display = "inline"
           document.getElementById("usd").style.textDecoration = "underline"
           document.getElementById("ars").style.textDecoration = "none"
+          document.getElementById("ars").style.color = "#2D2D2D"
+          document.getElementById("usd").style.color = "#003629"
       })
       document.getElementById("ars2").addEventListener("click", function(){
         document.getElementById("pesos2").style.display = "inline"
@@ -172,6 +176,8 @@ window.addEventListener("load", function(){
         document.getElementById("dolaress2").style.display = "none"
         document.getElementById("ars2").style.textDecoration = "underline"
         document.getElementById("usd2").style.textDecoration = "none"
+        document.getElementById("ars2").style.color = "#003629"
+        document.getElementById("usd2").style.color = "#2D2D2D"
       })
       document.getElementById("usd2").addEventListener("click", function(){
           document.getElementById("pesos2").style.display = "none"
@@ -180,6 +186,8 @@ window.addEventListener("load", function(){
           document.getElementById("dolaress2").style.display = "inline"
           document.getElementById("usd2").style.textDecoration = "underline"
           document.getElementById("ars2").style.textDecoration = "none"
+          document.getElementById("ars2").style.color = "#2D2D2D"
+          document.getElementById("usd2").style.color = "#003629"
       })
       document.getElementById("ars3").addEventListener("click", function(){
         document.getElementById("pesos3").style.display = "inline"
@@ -188,6 +196,8 @@ window.addEventListener("load", function(){
         document.getElementById("dolaress3").style.display = "none"
         document.getElementById("ars3").style.textDecoration = "underline"
         document.getElementById("usd3").style.textDecoration = "none"
+        document.getElementById("ars3").style.color = "#003629"
+        document.getElementById("usd3").style.color = "#2D2D2D"
       })
       document.getElementById("usd3").addEventListener("click", function(){
           document.getElementById("pesos3").style.display = "none"
@@ -196,6 +206,8 @@ window.addEventListener("load", function(){
           document.getElementById("dolaress3").style.display = "inline"
           document.getElementById("usd3").style.textDecoration = "underline"
           document.getElementById("ars3").style.textDecoration = "none"
+          document.getElementById("ars3").style.color = "#2D2D2D"
+          document.getElementById("usd3").style.color = "#003629"
       })
       document.getElementById("ars4").addEventListener("click", function(){
         document.getElementById("pesos4").style.display = "inline"
@@ -204,37 +216,40 @@ window.addEventListener("load", function(){
         document.getElementById("dolaress4").style.display = "none"
         document.getElementById("ars4").style.textDecoration = "underline"
         document.getElementById("usd4").style.textDecoration = "none"
+        document.getElementById("ars4").style.color = "#003629"
+        document.getElementById("usd4").style.color = "#2D2D2D"
+        
       })
       document.getElementById("usd4").addEventListener("click", function(){
-          document.getElementById("pesos4").style.display = "none"
-          document.getElementById("dolares4").style.display = "inline"
-          document.getElementById("arss4").style.display = "none"
-          document.getElementById("dolaress4").style.display = "inline"
-          document.getElementById("usd4").style.textDecoration = "underline"
-          document.getElementById("ars4").style.textDecoration = "none"
+        document.getElementById("pesos4").style.display = "none"
+        document.getElementById("dolares4").style.display = "inline"
+        document.getElementById("arss4").style.display = "none"
+        document.getElementById("dolaress4").style.display = "inline"
+        document.getElementById("usd4").style.textDecoration = "underline"
+        document.getElementById("ars4").style.textDecoration = "none"
+        document.getElementById("ars4").style.color = "#2D2D2D"
+        document.getElementById("usd4").style.color = "#003629"
       })
-      document.getElementById("ars5").addEventListener("click", function(){
-        
-        
-        document.getElementById("arss5").style.display = "inline"
-        document.getElementById("dolaress5").style.display = "none"
-        document.getElementById("ars5").style.textDecoration = "underline"
-        document.getElementById("usd5").style.textDecoration = "none"
-      })
-      document.getElementById("usd5").addEventListener("click", function(){
-          
-          document.getElementById("arss5").style.display = "none"
-          document.getElementById("dolaress5").style.display = "inline"
-          document.getElementById("usd5").style.textDecoration = "underline"
-          document.getElementById("ars5").style.textDecoration = "none"
-      })
+      // document.getElementById("ars5").addEventListener("click", function(){     
+      //   document.getElementById("arss5").style.display = "inline"
+      //   document.getElementById("dolaress5").style.display = "none"
+      //   document.getElementById("ars5").style.textDecoration = "underline"
+      //   document.getElementById("usd5").style.textDecoration = "none"
+      // })
+      // document.getElementById("usd5").addEventListener("click", function(){
+      //     document.getElementById("arss5").style.display = "none"
+      //     document.getElementById("dolaress5").style.display = "inline"
+      //     document.getElementById("usd5").style.textDecoration = "underline"
+      //     document.getElementById("ars5").style.textDecoration = "none"
+      // })
       document.getElementById("ars6").addEventListener("click", function(){
-        
-        
         document.getElementById("arss6").style.display = "inline"
         document.getElementById("dolaress6").style.display = "none"
         document.getElementById("ars6").style.textDecoration = "underline"
         document.getElementById("usd6").style.textDecoration = "none"
+        document.getElementById("ars6").style.color = "#003629"
+        document.getElementById("usd6").style.color = "#2D2D2D"
+
       })
       document.getElementById("usd6").addEventListener("click", function(){
           
@@ -242,14 +257,16 @@ window.addEventListener("load", function(){
           document.getElementById("dolaress6").style.display = "inline"
           document.getElementById("usd6").style.textDecoration = "underline"
           document.getElementById("ars6").style.textDecoration = "none"
+          document.getElementById("ars6").style.color = "#2D2D2D"
+          document.getElementById("usd6").style.color = "#003629"
       })
       document.getElementById("ars7").addEventListener("click", function(){
-        
-        
         document.getElementById("arss7").style.display = "inline"
         document.getElementById("dolaress7").style.display = "none"
         document.getElementById("ars7").style.textDecoration = "underline"
         document.getElementById("usd7").style.textDecoration = "none"
+        document.getElementById("ars6").style.color = "#003629"
+        document.getElementById("usd6").style.color = "#2D2D2D"
       })
       document.getElementById("usd7").addEventListener("click", function(){
           
@@ -257,6 +274,41 @@ window.addEventListener("load", function(){
           document.getElementById("dolaress7").style.display = "inline"
           document.getElementById("usd7").style.textDecoration = "underline"
           document.getElementById("ars7").style.textDecoration = "none"
+          document.getElementById("ars7").style.color = "#2D2D2D"
+          document.getElementById("usd7").style.color = "#003629"
+      })
+
+      document.getElementById("ars8").addEventListener("click", function(){
+        document.getElementById("arss8").style.display = "flex"
+        document.getElementById("dolaress8").style.display = "none"
+        document.getElementById("ars8").style.textDecoration = "underline"
+        document.getElementById("usd8").style.textDecoration = "none"
+        document.getElementById("ars8").style.color = "#003629"
+        document.getElementById("usd8").style.color = "#2D2D2D"
+      })
+      document.getElementById("usd8").addEventListener("click", function(){
+          document.getElementById("arss8").style.display = "none"
+          document.getElementById("dolaress8").style.display = "flex"
+          document.getElementById("usd8").style.textDecoration = "underline"
+          document.getElementById("ars8").style.textDecoration = "none"
+          document.getElementById("ars8").style.color = "#2D2D2D"
+          document.getElementById("usd8").style.color = "#003629"
+      })
+      document.getElementById("ars9").addEventListener("click", function(){
+        document.getElementById("arss9").style.display = "flex"
+        document.getElementById("dolaress9").style.display = "none"
+        document.getElementById("ars9").style.textDecoration = "underline"
+        document.getElementById("usd9").style.textDecoration = "none"
+        document.getElementById("ars9").style.color = "#003629"
+        document.getElementById("usd9").style.color = "#2D2D2D"
+      })
+      document.getElementById("usd9").addEventListener("click", function(){
+          document.getElementById("arss9").style.display = "none"
+          document.getElementById("dolaress9").style.display = "flex"
+          document.getElementById("usd9").style.textDecoration = "underline"
+          document.getElementById("ars9").style.textDecoration = "none"
+          document.getElementById("ars9").style.color = "#2D2D2D"
+          document.getElementById("usd9").style.color = "#003629"
       })
 
 
@@ -342,4 +394,7 @@ window.addEventListener("load", function(){
         document.getElementById("precios7").style.display = "flex"
         document.getElementById("info7").style.display = "none"
       })
+      
 })
+
+

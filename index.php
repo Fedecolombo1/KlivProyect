@@ -1,33 +1,33 @@
 <?php
 
-require 'php/connection.php';
+// require 'php/connection.php';
 
-// Traemos toda la data
-$sql = $pdo->prepare("SELECT * FROM pricing");
-$sql->execute(); 
-$pricings = $sql->fetchAll();
+// // Traemos toda la data
+// $sql = $pdo->prepare("SELECT * FROM pricing");
+// $sql->execute(); 
+// $pricings = $sql->fetchAll();
 
 
-// Traemos el dolar
-$sql = $pdo->prepare("SELECT * FROM dolar");
-$sql->execute(); 
-$dolar = $sql->fetch();
+// // Traemos el dolar
+// $sql = $pdo->prepare("SELECT * FROM dolar");
+// $sql->execute(); 
+// $dolar = $sql->fetch();
 
-$dolar = $dolar['dolar'];
+// $dolar = $dolar['dolar'];
 
-$sql = $pdo->prepare("SELECT * FROM socios");
-$sql->execute(); 
-$socios = $sql->fetchAll();
+// $sql = $pdo->prepare("SELECT * FROM socios");
+// $sql->execute(); 
+// $socios = $sql->fetchAll();
 
-// // Le agregamos el valor del dolar a los pricings
-foreach ($pricings as $key => $pricing) {
+// // // Le agregamos el valor del dolar a los pricings
+// foreach ($pricings as $key => $pricing) {
     
-    $ars_to_usd = $pricing['ars'] / $dolar;
-    $ars_to_usd = floor($ars_to_usd);
+//     $ars_to_usd = $pricing['ars'] / $dolar;
+//     $ars_to_usd = floor($ars_to_usd);
 
-    $pricings[$key]['usd'] = $ars_to_usd;
+//     $pricings[$key]['usd'] = $ars_to_usd;
 
-}
+// }
 
 
 ?>
@@ -86,21 +86,17 @@ foreach ($pricings as $key => $pricing) {
             
                 <img class="col-5 logo12" src="./images/kliv-logo.png" alt="">
         
-                <div class="col-7" style="display: flex;justify-content: center;align-items: center;">
+                <div class="col-7 addonMenu" style="display: flex;justify-content: center;align-items: center;">
                     <div class="col-12 nav align">
-                        <a href="#servicios" class="col 1 sec aSec">Servicios</a>
-                        <a href="#trabajamos" class="col 1 sec aSec">Como Trabajamos</a>
-                        <a href="#tarifas" class="col 1 sec aSec">Tarifas</a>
-                        <a href="#faqs" class="col 1 sec aSec">FAQs</a>
-                        <a href="#socios2" class="col 1 sec aSec">Nuestros Socios</a>
-                        <a href="#nosotros" class="col 1 sec aSec">Nosotros</a>
+                        <a href="#servicios" class="sec aSec">Servicios</a>
+                        <a href="#trabajamos" class="sec aSec">Como Trabajamos</a>
+                        <a href="#tarifas" class="sec aSec">Tarifas</a>
+                        <a href="#socios2" class="sec aSec">Nuestros Socios</a>
+                        <a href="#nosotros" class="sec aSec">Nosotros</a>
+                        <a href="#contacto" class="sec aSec">Contactanos</a>
                     </div>
                 </div>
-            
-                <div class="col-3 align" style="justify-content: flex-end;">
-                    <a href="#contacto"><button href="#contacto" class="col-1 icon23">Contactanos</button></a>
-                </div>
-            
+
           </div>
           
         </div>
@@ -146,7 +142,7 @@ foreach ($pricings as $key => $pricing) {
                         burger.style.padding = '10px 16px 11px 32px';
                         links.style.display = 'none';
                         quit.style.display = 'none';
-                        burger.style.left = "82%"
+                        burger.style.left = "77%"
                     }
                 </script>
             <i id="burger" class="material-icons" onclick="burger()" style="padding: 10px 16px 11px 28px;">menu</i>
@@ -157,9 +153,10 @@ foreach ($pricings as $key => $pricing) {
                 <a href="#servicios" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Servicios</a>
                 <a href="#trabajamos" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Como Trabajamos</a>
                 <a href="#tarifas" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Tarifas</a>
-                <a href="#faqs" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">FAQs</a>
+ 
                 <a href="#socios" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Nuestros Socios</a>
                 <a href="#nosotros" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Nosotros</a>
+                <a href="#contacto" onclick="quit()" class="col 1 sec aSec align" style="display: flex;align-items: center;">Contacto</a>
 
 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -201,7 +198,7 @@ foreach ($pricings as $key => $pricing) {
                 </div>
                 
                 <br>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifas x Servicios</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifas</a></p>
                 <br>
                 <p class="col-12 textoSaberMas">
                 Millones de empresas, grandes y pequeñas, se conectan con las personas a través de anuncios en las redes sociales, convirtiéndolas en clientes y entablando relaciones duraderas. Pero en un contexto en el que los anunciantes aumentan y los usuarios se resisten cada vez más a la publicidad, conseguir rentabilidad sin una buena estrategia es cuestión de azar.
@@ -213,51 +210,51 @@ foreach ($pricings as $key => $pricing) {
                 <br>
 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">OBJETIVO Y ESTRATEGIA</strong>
+                    <strong>OBJETIVO Y ESTRATEGIA</strong>
                     <br>
                     La efectividad base de toda campaña radica en que sus componentes estén alineados estratégicamente hacia un mismo norte: el objetivo SMART*, siendo la brújula que orienta la ejecución de todo el proceso y permite evaluar el rendimiento. Forjamos estrategias que responden a este objetivo y a los recursos disponibles, documentando todos sus elementos en una ficha de campaña que queda disponible para que todos los equipos involucrados operen con congruencia.  
                     <br>
-                    <i>* SMART: Específico, medible, alcanzable, relevante y temporal.</i>
+                    <i class="italin">* SMART: Específico, medible, alcanzable, relevante y temporal.</i>
                 </p>
                 <br>
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">FORMATOS PUBLICITARIOS</strong>
+                    <strong>FORMATOS PUBLICITARIOS</strong>
                     <br>
                     Entendiendo que no hay dos empresas iguales, las plataformas publicitarias se diseñaron para adaptarse a variedad de objetivos y estrategias en cada fase del embudo de conversión, con gran versatilidad en sus formatos publicitarios. En Kliv identificamos el óptimo para cada campaña.
                 </p>
                 <br>
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">REDACCIÓN Y DISEÑO</strong>
+                    <strong>REDACCIÓN Y DISEÑO</strong>
                     <br>
                     Contamos la historia de tu empresa o producto de formas atractivas y eficaces, captando la atención de tu audiencia meta y animándola a realizar acciones específicas. El equipo de redacción, diseñadores gráficos y audiovisuales trabaja a la par con el equipo de performance marketing alineados en la estrategia para optimizar los resultados.
                 </p>
                 <br>
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">MANEJO DE AUDIENCIAS</strong>
+                    <strong>MANEJO DE AUDIENCIAS</strong>
                     <br>
                     El mayor potencial de las plataformas publicitarias se encuentra en su capacidad de segmentación y manejo de audiencias. Irónicamente suele ser la herramienta más desaprovechada, limitando su uso a la segmentación por intereses que por sí solos no son del todo precisos. En Kliv generamos audiencias dinámicas y customizadas para cada fase del embudo, identificando patrones de comportamiento en tiempo real mediante el píxel de seguimiento web y segmentaciones lookalike que permiten encontrar a las personas con más probabilidades de realizar las acciones deseadas.
                 </p>
                 <br>
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">SEGUIMIENTO DE CONVERSIONES WEB</strong>
+                    <strong>SEGUIMIENTO DE CONVERSIONES WEB</strong>
                     <br>
                     Además de optimizar el manejo de audiencias, el pixel de seguimiento permite monitorear el desempeño de cada campaña con redirección a la web. Configurando eventos y parámetros personalizados, medimos todas las acciones específicas que realizan los usuarios que la visitan, con una acción particular como objetivo de conversión. 
                 </p>
                 <br>
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">FOCO EN LA RENTABILIDAD</strong>
+                    <strong>FOCO EN LA RENTABILIDAD</strong>
                     <br>
                     Fijar las pujas publicitarias en base al costo por impresiones o clics (CPM o CPC) no garantiza rentabilidad, ya que no son métricas vinculadas a las conversiones ni al margen de beneficio. En contraste, la estrategia de puja por adquisición (CPA) regula que el costo publicitario no supere el importe dispuesto a invertir por cada resultado y lo optimiza en el tiempo.  
                 </p>
                 <br>
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">EXPERIMENTACIÓN Y MEJORA CONTINUA</strong>
+                    <strong>EXPERIMENTACIÓN Y MEJORA CONTINUA</strong>
                     <br>
                     Las herramientas de experimentación de Facebook Ads (A/B Testing + Pruebas de Exclusión), sumado a metodologías que implementamos en Kliv (Smoke Test, Fake Door, Flintstone, entre otras) permiten probar hipótesis o responder preguntas específicas en relación con los objetivos comerciales, logrando identificar oportunidades de mejora e insights para optimizar la comunicación.  
                 </p>
                 <br>
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">MONITOREO E INFORMES</strong>
+                    <strong>MONITOREO E INFORMES</strong>
                     <br>
                     Exportamos los datos a una herramienta que permite crear paneles interactivos y personalizables (Data Studio), facilitando la lectura y comprensión de los resultados de manera precisa y en tiempo real. Interpretar correctamente las métricas es fundamental para conocer el impacto de las campañas en relación con los objetivos planteados. Se monitorean periódicamente para determinar si van bien encaminadas o si es necesario algún ajuste.     
                 </p>
@@ -283,31 +280,31 @@ foreach ($pricings as $key => $pricing) {
                     <br>
 
                     <p class="col-12 textoSaberMas">
-                    <strong>RED DE BÚSQUEDA:</strong>
+                    <strong>RED DE BÚSQUEDA</strong>
                     <br>
                     Resultados patrocinados en el buscador de Google justo cuando el usuario demuestre interés en tus productos o servicios; guiándolos hacia la conversión en ese preciso momento, ya sea, realizar una acción específica en tu web, visitar tus redes, realizar una llamada o dirigirse hacia tu local con GMaps.
                     </p>
                     <br>
                     <p class="col-12 textoSaberMas">
-                    <strong>RED DE DISPLAY:</strong>
+                    <strong>RED DE DISPLAY</strong>
                     <br>
                     Alcance a tu audiencia objetivo mientras navega por sitios web, utiliza aplicaciones o revisa su Gmail, con banners de imagen o GIF; ideal para fases tempranas del embudo u orientado a quienes ya realizaron alguna acción en tu sitio web.
                     </p>
                     <br>
                     <p class="col-12 textoSaberMas">
-                    <strong>YOUTUBE ADS:</strong>
+                    <strong>YOUTUBE ADS</strong>
                     <br>
                     Anuncios de video en la plataforma Youtube que provocan un grado de implicación emocional con el contenido como ningún otro medio puede hacerlo; a través de creativos mensajes audiovisuales que deleitan, logran conectar con tu audiencia e inducen a realizar una acción particular, ya sea en ese momento o en uno posterior. 
                     </p>
                     <br>
                     <p class="col-12 textoSaberMas">
-                    <strong>GOOGLE SHOPPING:</strong>
+                    <strong>GOOGLE SHOPPING</strong>
                     <br>
                     Anuncios exclusivos para ecommerce, integrados por fichas con imagen, precio y demás información pertinente a usuarios que buscan tu producto, con vínculo directo al carrito de compras de tu web.  
                     </p>
                     <br>
                     <p class="col-12 textoSaberMas">
-                    <strong>GOOGLE MI NEGOCIO:</strong>
+                    <strong>GOOGLE MI NEGOCIO</strong>
                     <br>
                     Literalmente te pone en el mapa, permitiendo que te encuentren desde el buscador de Google o Google Maps y, que con solo un click, te llamen, visiten tu web o lleguen a tu local con GPS. Convertí a desconocidos en clientes reclamando tu perfil y compartiendo fotos de tus productos, menú, promociones, horarios de atención y atendiendo consultas, reseñas o reservas.  
                     </p>
@@ -328,13 +325,11 @@ foreach ($pricings as $key => $pricing) {
                 </div>
                 
                 <br>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifas x Servicios</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px" class="ir_a_tarifas"><a href="">Tarifas</a></p>
+                <i class="italin">* En Email Marketing la tarifa aplica por Grupo de Campañas [ De hasta 3 Campañas  ] </i>
                 <br>
-                <i>* En Email Marketing la tarifa aplica por Grupo de Campañas [ De hasta 3 Campañas  ] </i>
-                <br>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="https://getresponse.com/pricing">Planes del Software GetResponse</a></p>
-                <br>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="https://fromdoppler.com/es/precios">Planes del Sortware Doppler</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin: 25px 0"><a href="https://getresponse.com/pricing">Planes del Software GetResponse</a><br>
+                <a href="https://fromdoppler.com/es/precios">Planes del Sortware Doppler</a></p>
                 <br>
                 
                 <p class="col-12 textoSaberMas">El email marketing es una herramienta de comunicación que permite contactar a tu público objetivo a través de su correo electrónico, con mensajes personalizados a lo largo del embudo de conversión.</p>
@@ -345,7 +340,7 @@ foreach ($pricings as $key => $pricing) {
                 <br>
 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">NEWSLETTERS</strong>
+                    <strong>NEWSLETTERS</strong>
                     <br>
                     Envíos periodicos de boletines de interés para tus suscriptores, con contenido relevante del rubro. Cumple una función de fidelización y de posicionamiento de marca, a la vez que genera tráfico hacia el sitio web de la empresa.
                 </p>
@@ -353,7 +348,7 @@ foreach ($pricings as $key => $pricing) {
                 <br>
 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">TRANSACCIONALES</strong>
+                    <strong>TRANSACCIONALES</strong>
                     <br>
                     Emails automáticos como respuesta a la interacción del usuario con tu sitio web o aplicación. Confirmación de compra, recordatorio de carrito abandonado, nuevo usuario, cambio de contraseña, descarga de material, entre otros. 
                 </p>
@@ -361,7 +356,7 @@ foreach ($pricings as $key => $pricing) {
                 <br>
 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">PROMOCIONALES</strong>
+                    <strong>PROMOCIONALES</strong>
                     <br>
                     Disparos orientados a lograr ventas a través de un llamado a la acción y oferta concisa, segmentado por listas de contactos categorizadas, permitiendo enviar ofertas personalizadas. 
                 </p>
@@ -369,7 +364,7 @@ foreach ($pricings as $key => $pricing) {
                 <br>
 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">AUTORESPONDERS</strong>
+                    <strong>AUTORESPONDERS</strong>
                     <br>
                     Secuencias de email automatizados que orientan al usuario por cada fase del embudo de conversión, construyendo una relación personalizada desde que se da el primer contacto, conoce más a fondo tu marca y productos, realiza una compra, te recomienda y se vuelve un comprador habitual. 
                 </p>
@@ -398,7 +393,7 @@ foreach ($pricings as $key => $pricing) {
                 <p class="col-12 textoSaberMas">La gestión estratégica de las redes es un componente indispensable en todas las fases del embudo de conversión. No se debe aplicar como una estrategia aislada, sino que debe estar planificada en concordancia con el resto de estrategias digitales de la empresa. </p>
                 <p class="col-12 textoSaberMas">En Kliv desarrollamos contenidos de calidad alineados a objetivos concretos, que se ajustan a los intereses de tu buyer persona y transmiten los valores e identidad de tu marca. Además, monitoreamos tus redes y promovemos una relación cercana con tu público, respondiendo comentarios y atendiendo consultas.</p>
                 
-                <h3 style="margin: 20px 0">Beneficios</h3>
+                <h3 class="hr-tit">BENEFICIOS</h3>
                 
                 <p class="col-12 textoSaberMas">
                 <strong>CONCIENCIA DE MARCA</strong>
@@ -437,7 +432,7 @@ foreach ($pricings as $key => $pricing) {
                 Con estrategias planificadas en concordancia, la gestión de redes logra reducir el costo por adquisición de las campañas pagas optimizando las conversiones; siendo que los usuarios tienden a indagar más allá del anuncio que les llamó la atención antes de tomar la decisión de compra. 
                 </p>
                 
-                <h3 style="margin: 20px 0">Como Trabajamos</h3>
+                <h3 class="hr-tit">COMO TRABAJAMOS</h3>
 
                 <p class="col-12 textoSaberMas">
                 <strong>AUDITORÍA</strong>
@@ -469,32 +464,31 @@ foreach ($pricings as $key => $pricing) {
                 <br>
                 Al cierre de cada período mensual se analiza el rendimiento en contraste con los objetivos planteados, presentando un informe cuantitativo y cualitativo, junto a una propuesta de mejora para el siguiente mes. 
                 </p>
+                <h3 class="hr-tit">TARIFAS</h3>
+
                 <p class="col-12 textoSaberMas">
                     <div style="background-color: rgba(0,0,0,0.1 );
                     display: flex;
                     justify-content: space-between;
                     padding: 20px 30px;
                     border-radius: 7px;" id="precios-redes">
-                        <div><b>Paquete x8/x12/x16</b></div>
+                        <div><b>Paquete x8 / x12 / x16</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
                             <div><b>$ <?php echo $pricings[9]['ars'] ?> / $ <?php echo $pricings[8]['ars'] ?> / $ <?php echo $pricings[7]['ars'] ?></b></div>
-                            <div>*No incluye IVA</div>
+                            <div><i>*No incluye IVA</i></div>
                         </div>
                     </div>
                 </p>
                <p class="col-12 textoSaberMas">
                     <b>8 / 12 / 16</b> publicaciones / Producción de piezas gráficas y redacción. Incluye hasta 3 GIFS.
                     <br>
-                    <br>
-                    - Configuración inicial: Portada, perfil, historias destacadas, descripción, info, etc.
-                    <br>
-                    - Auditoría de tu marca y planificación de contenidos de valor y acciones promocionales.
-                    <br>
-                    - Edición ligera y publicación de historias de contenido espontáneo, 09:00 a 18:00hs (GMT-3) 
-                    <br>
-                    - Monitoreo de publicaciones y atención personalizada de consultas y mensajes, 09:00 a 18:00hs (GMT-3) 
-                    <br>
-                    - Informe de rendimiento del período mensual.
+                    <ul id="tarifas-list" class="textoSaberMas">
+                        <li>Configuración inicial: Portada, perfil, historias destacadas, descripción, info, etc.</li>
+                        <li>Auditoría de tu marca y planificación de contenidos de valor y acciones promocionales.</li>
+                        <li>Edición ligera y publicación de historias de contenido espontáneo, 09:00 a 18:00hs (GMT-3)</li>
+                        <li>Monitoreo de publicaciones y atención personalizada de consultas y mensajes, 09:00 a 18:00hs (GMT-3)</li>
+                        <li>Informe de rendimiento del período mensual.</li>
+                    </ul>
                </p>
 
             </div>
@@ -515,77 +509,61 @@ foreach ($pricings as $key => $pricing) {
                 <p class="col-12 textoSaberMas">
                 En Kliv contamos con un equipo de “desarrolladores full stack”, es decir, programadores con un perfil técnico muy completo que se desenvuelven en front y backend sin usar sistemas de diseño web (Como Wix o Wordpress), posibilitando desarrollos personalizados y funcionales, 100% a medida de los requerimientos de tu empresa.
                 </p>
-                <br>
+                <ul class="list-apartado">
+                    <li>Interfaces únicas y exclusivas, adaptadas a la identidad de tu marca.</li>
+                    <li>Plataformas optimizadas para generar acciones de conversión, sin limitaciones en sus funcionalidades.</li>
+                    <li>Páginas eficientes que se adaptan a todos los dispositivos y navegadores, actualizadas con la última tecnología garantizando navegabilidad ágil y segura.</li>
+                    <li>Optimización para buscadores, respetando estándares de calidad que favorecen la indexación orgánica aumentando la visibilidad.</li>
+                    <li>Optimización para buscadores, respetando estándares de calidad que favorecen la indexación orgánica aumentando la visibilidad.</li>
+                    <li>Junto con tu sitio recibís casillas webmail integradas con el dominio de tu empresa.</li>
+                    <li>Nos encargamos de realizar la integración a Google Analytics, para que puedas analizar el comportamiento del usuario en el sitio, info demográfica, intereses, flujo de visitas, etc.</li>
+                </ul>
+                
+    
                 <p class="col-12 textoSaberMas">
-                * Interfaces únicas y exclusivas, adaptadas a la identidad de tu marca.
-                <br>
-                * Plataformas optimizadas para generar acciones de conversión, sin limitaciones en sus funcionalidades.
-                <br>
-                * Páginas eficientes que se adaptan a todos los dispositivos y navegadores, actualizadas con la última tecnología garantizando navegabilidad ágil y segura.
-                <br>
-                * Optimización para buscadores, respetando estándares de calidad que favorecen la indexación orgánica aumentando la visibilidad. 
-                <br>
-                * Junto con tu sitio recibís casillas webmail integradas con el dominio de tu empresa.
-                <br>
-                * Nos encargamos de realizar la integración a Google Analytics, para que puedas analizar el comportamiento del usuario en el sitio, info demográfica, intereses, flujo de visitas, etc.
-                <br>
-
-                </p>
-
-                <p class="col-12 textoSaberMas">
-                    <strong>DINÁMICA DE TRABAJO:</strong>
+                    <strong>DINÁMICA DE TRABAJO</strong>
                     Segmentamos el proceso en 2 etapas. 1ro diseñamos el sitio, y una vez que tenemos tu aprobación definitiva avanzamos con la programación. 
                 </p>
                 <p class="col-12 textoSaberMas">
-                    <strong>HOSTING Y DOMINIO:</strong>
+                    <strong>HOSTING Y DOMINIO</strong>
                     Nos encargamos de registrar y alojar el dominio (tusitio.com) como los archivos de tu web, con backups mensuales para garantizar la seguridad del contenido. 
                 </p>
                 <p class="col-12 textoSaberMas" id="mantenimiento">
-                    <strong>MANTENIMIENTO Y ACTUALIZACIONES:</strong>
+                    <strong>MANTENIMIENTO Y ACTUALIZACIONES</strong>
                     Dispones de nuestro soporte técnico para cualquier cambio/innovación que quieras implementar dentro del sitio.
                 </p>
-                <p class="col-12"><i>* El Dominio, Hosting y Mantenimiento tienen un costo mensual o anual dependiendo del paquete que elijas y las cotizaciones del momento.</i></p>
-                <br>
-               
+                <p class="col-12"><i class="italin" style=";margin-bottom: 13vh;">* El Dominio, Hosting y Mantenimiento tienen un costo mensual o anual dependiendo del paquete que elijas y las cotizaciones del momento.</i></p>
+                
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">ONE PAGE   -   <i>(A cotizar)</i></strong>
+                    <strong class="dark PRDyTAR"><span>ONE PAGE</span><span>A cotizar</span></strong>
                     <br>
                     Comunica solo lo esencial en un sitio one page. Una sola página, segmentada en secciones. Ideal para sintetizar lo que hace tu negocio, incitando prospectos a ponerse en contacto.
-                    <br>
-                    <br>
-                    -Formulario de contacto integrado.
-                    <br>
-                    -Casilla de mails propia.
-                    <br>
-                    -Botón de WhatsApp integrado.
-                    <br>
-                    -Hasta 1 página.
-
                 </p>
+                <ul class="list-apartado">
+                    <li>Formulario de contacto integrado.</li>
+                    <li>Casilla de mails propia.</li>
+                    <li>Botón de WhatsApp integrado.</li>
+                    <li>Hasta 1 página.</li>
+                </ul>
+
                 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">COMPLETO   -   <i>(A cotizar)</i></strong>
+                    <strong class="dark PRDyTAR"><span>COMPLETO</span><span>A cotizar</span></strong>
                     <br>
-
                     Tu sitio web profesional completo. Ideal para quienes buscan establecer una imagen más establecida. Tanto para empresas como particulares e instituciones.
-                    <br>
-                    <br>
-                    -Formulario de contacto integrado.
-                    <br>
-                    -Casilla de mails propia.
-                    <br>
-                    -Botón de WhatsApp integrado.
-                    <br>
-                    -Hasta 5 páginas.
-                    <br>
-                    -Posibilidad de subir videos.
-                    <br>
-                    -Detalles UX/UI interactivos.
-
                 </p>
+                <ul class="list-apartado">
+                    <li>Tu sitio web profesional completo. Ideal para quienes buscan establecer una imagen más establecida. Tanto para empresas como particulares e instituciones.</li>
+                    <li>Formulario de contacto integrado.</li>
+                    <li>Casilla de mails propia.</li>
+                    <li>Botón de WhatsApp integrado.</li>
+                    <li>Hasta 5 páginas.</li>
+                    <li>Posibilidad de subir videos.</li>
+                    <li>Detalles UX/UI interactivos.</li>
+                </ul>
                 
                 <p class="col-12 textoSaberMas">
-                    <strong class="dark">A MEDIDA   -   <i>(A cotizar)</i></strong>
+                    <strong class="dark PRDyTAR"><span>A MEDIDA</span><span>A cotizar</span></strong>
                     <br>
 
                     Tu idea o proyecto escapa de las limitaciones de los tipos de sitios anteriores? No te preocupes, trabajamos 100 % a medida. 
@@ -606,10 +584,10 @@ foreach ($pricings as $key => $pricing) {
                 <img src="./Images/dis-grafico.png" alt="" class="col-5 col-lg-2 imgS">
                 <div class="col-7 row align" style="justify-content: space-between;">
                     <h1 class="col-12 servT"  style="color: white;">Diseño Gráfico + Audiovisual</h1>
-                    <p class="textT"  style="color: white;">Manual de identidad corporativa, logos, brochures, folletos, infografía, fotoproducto, lookbooks, retrato, animaciones motion graphic,guión, rodajes y producciones.</p>
+                    <p class="textT"  style="color: white;">Manual de identidad corporativa, logos, brochures, folletos, infografía, y animaciones motion graphic.</p>
                     
                 </div>
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#en-kliv">Tarifas x Servicios</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#en-kliv">Tarifas</a></p>
                 <p class="col-12 textoSaberMas">Los elementos gráficos y audiovisuales son indispensables en la estrategia comercial para llegar a tu audiencia de una forma dinámica y cautivadora, que transmita la identidad de tu marca. </p>
                 <p class="col-12 textoSaberMas" id="en-kliv">En Kliv trabajamos con equipos de diseño y producción audiovisual experimentados en el rubro publicitario con orientación al performance. </p>
                 
@@ -622,13 +600,13 @@ foreach ($pricings as $key => $pricing) {
                         <div><b>MANUAL DE IDENTIDAD CORPORATIVA</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
                             <div><b>$ <?php echo $pricings[13]['ars'] ?></b></div>
-                            <div>*No incluye IVA</div>
+                            <div><i>*No incluye IVA</i></div>
                         </div>
                     </div>
                 </p>
                 <p class="col-12 textoSaberMas" style="margin-top: -10px">
-                Es un documento que recoge los principales elementos gráficos de una marca, explicando cómo deben aplicarse en cada caso. Herramienta imprescindible que garantiza la cohesión en la comunicación visual, con homogeneidad en cualquier soporte, utilice quien la utilice.
-                Desde la elaboración del concepto, naming y logotipo de la marca, su composición y aplicativos correctos e incorrectos, colores definidos, tipografía primaria y complementaria, y todas las aplicaciones, ya sean piezas digitales (Como avatares para redes o firma de emails) o impresas (Tarjetas de presentación, hoja membretada, etc.) 
+                Es un documento que recoge los principales elementos gráficos de una marca, explicando cómo deben aplicarse en cada caso. Herramienta imprescindible que garantiza la cohesión en la comunicación visual, con homogeneidad en cualquier soporte, utilice quien la utilice.<br>
+                Desde la elaboración del concepto, naming y logotipo de la marca, su composición y aplicativos correctos e incorrectos, colores definidos, tipografía primaria y complementaria, y todas las aplicaciones, ya sean piezas digitales (Como avatares para redes o firma de emails) o impresas (Tarjetas de presentación, hoja membretada, etc.)<br>
                 Antes de avanzar con cualquier acción publicitaria sugerimos desarrollar un manual de identidad corporativa actualizado como base fundamental para la comunicación, que quede como una herramienta de tu marca.
                 </p>
                 <br>
@@ -641,13 +619,15 @@ foreach ($pricings as $key => $pricing) {
                         <div><b>LOGOTIPO</b></div>
                         <div style="display:flex; flex-direction: column; align-items: flex-end">
                             <div><b>$ <?php echo $pricings[14]['ars'] ?></b></div>
-                            <div>*No incluye IVA</div>
+                            <div><i>*No incluye IVA</i></div>
                         </div>
                     </div>
                 </p>
                 <p class="col-12 textoSaberMas" style="margin-top: -10px">
                 El diseño de un logotipo consiste en representar gráficamente los valores, ideales y características de una marca, mediante un símbolo, imagen o tipografía que sea memorable para sus clientes potenciales. 
                 </p>
+                <i class="italin">* El manual de identidad incluye el diseño o rediseño de un logo para tu marca, pero también lo trabajamos por separado.</i>
+
                 <br>
 
                 <p class="col-12 textoSaberMas">
@@ -717,7 +697,7 @@ foreach ($pricings as $key => $pricing) {
                     
                 </div>
 
-                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#ademas-utilizamos">Tarifas x Servicios</a></p>
+                <p style="text-decoration: underline; font-weight: bold;margin-top: 16px"><a href="#ademas-utilizamos">Tarifas</a></p>
 
                 <p class="col-12 textoSaberMas">Estrategia que utiliza WhatsApp como canal de marketing para optimizar el servicio al cliente, aumentar la fidelización, incrementar tus ventas y enriquecer tu posventa; alineada con el resto de estrategias digitales de la empresa. Canal indispensable para cualquier empresa que desee mantenerse al alcance inmediato de sus clientes, con mayor visibilidad que cualquier otro medio.</p>
                 <p class="col-12 textoSaberMas">En Kliv explotamos al máximo el potencial de WhatsApp Business, que dispone de múltiples funciones nativas concebidas para empresas, como perfil con ubicación Google Maps, horario de atención desplegable, catálogo de productos, mensaje de bienvenida y ausencia, entre otras.</p>
@@ -739,7 +719,7 @@ foreach ($pricings as $key => $pricing) {
                 <p class="col-12 textoSaberMas" style="margin-top: -10px">
                 La tarifa es mensual e incluye el costo del software de gestión. El servicio contempla todos los siguientes ítems: 
                 </p>
-                    <ul style="padding-left: 40px; color: white!important">
+                    <ul style="padding-left: 40px; color: white!important" id="wpp-list">
                         <li><b>CUENTA BUSINESS:</b>  Capacitación y asistencia en la configuración de tu cuenta WhatsApp Business, adaptando todas sus funcionalidades a tu empresa.</li>
                         <li><b>CHATBOT:</b> Desarrollo estratégico y mantenimiento de respuestas automáticas de texto (pueden incluir imagen o archivo), activas lunes a viernes de 09:00 a 18:00 hs (GMT-3).</li>
                         <li><b>CAMPAÑA SEMANAL:</b> Difusión de texto con imagen o archivo a grupos segmentados, sin límite de contactos.</li>
@@ -749,9 +729,7 @@ foreach ($pricings as $key => $pricing) {
                         
                     </ul>
                 
-                <p class="col-12 textoSaberMas"></p>
-                <p class="col-12 textoSaberMas"></p>
-                <p class="col-12 textoSaberMas"></p>
+
             </div>
             
         </div>
@@ -844,7 +822,7 @@ foreach ($pricings as $key => $pricing) {
                         <div class="item active align">
                           <img src="./Images/return-of-investment.svg" alt="" class="col-10 col-lg-8 imgPq">
                           <h2 class="col-10 cSubtitle">+ Retorno de inversión</h2>
-                          <p class="col-11 cText">Maximizamos el rendimiento de tu presupuesto publicitario, ya que solo pagas por los resultados conseguidos a un costo por adquisición asignado que garantize rentabilidad.</p>
+                          <p class="col-11 cText">Maximizamos el rendimiento de tu presupuesto publicitario, ya que solo pagas por los resultados conseguidos a un costo por adquisición asignado que garantice rentabilidad.</p>
                         </div>
                     
                         <div class="item align">
@@ -856,7 +834,7 @@ foreach ($pricings as $key => $pricing) {
                         <div class="item align">
                             <img src="./Images/profits.svg" alt="" class="col-10 col-lg-8 imgPq">
                           <h2 class="col-10 cSubtitle">Escalable</h2>
-                          <p class="col-11 cText">Adaptamos las campañas constantemente en función de los resultados que se van obteniendo para mejorar su efectividad y bajar los costos.Optimización y mejora continua.</p>
+                          <p class="col-11 cText">Adaptamos las campañas constantemente en función de los resultados que se van obteniendo para mejorar su efectividad y bajar los costos. Optimización y mejora continua.</p>
                         </div>
 
                         <div class="item align">
@@ -972,7 +950,7 @@ foreach ($pricings as $key => $pricing) {
                     <div data-aos="fade-up" data-aos-duration="900" class="col-12 col-lg-6 row serv">
                         <div class="col-9 col-lg-7 row align" style="justify-content: space-between;">
                             <h1 class="col-12 servT">Gestión de Redes</h1>
-                            <p class="textT">Contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con la marca.</p>
+                            <p class="textT">Contenidos relevantes ajustados a los intereses y necesidades de tu público objetivo, creando entornos de valor que refuercen el vínculo con tu marca.</p>
                             <button id="btn15" class="col-7 btnS align">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
                         </div>
                         <img src="./Images/share.png" alt="" class="col-3 col-lg-3 imgS iconServ">
@@ -989,7 +967,7 @@ foreach ($pricings as $key => $pricing) {
                     <div data-aos="fade-up" data-aos-duration="900" class="col-12 col-lg-6 row serv">
                         <div class="col-9 col-lg-7 row align" style="justify-content: space-between;">
                             <h1 class="col-12 servT">Diseño Gráfico + Audiovisual</h1>
-                            <p class="textT">Manual de identidad corporativa, logos, brochures, folletos, infografía, fotoproducto, lookbooks, retrato, animaciones motion graphic,guión, rodajes y producciones.</p>
+                            <p class="textT">Manual de identidad corporativa, logos, brochures, folletos, infografía, y animaciones motion graphic.</p>
                             <button id="btn17" class="col-7 btnS align">Saber Mas <i class="fas fa-arrow-right flechita"></i></button>
                         </div>
                         <img src="./Images/dis-grafico.png" alt="" class="col-3 col-lg-3 imgS iconServ">
@@ -1125,7 +1103,7 @@ foreach ($pricings as $key => $pricing) {
                         </div>
 
                         <div id="content10" class="col-12 align" style="display: flex;">
-                            <p class="col-12 col-lg-6 textC">Partiendo de un relevamiento 360 grados de tu empresa y al mercado, diseñamos un embudo de conversión 100% a medida, ajustada a sus recursos y objetivos</p>
+                            <p class="col-12 col-lg-6 textC">Partiendo de un relevamiento 360 grados a tu empresa y al mercado, diseñamos un embudo de conversión 100% a medida, ajustado a sus recursos y objetivos</p>
                         </div>
  
                         <div id="content20" class="col-12 align" style="display: none;">
@@ -1182,8 +1160,8 @@ foreach ($pricings as $key => $pricing) {
                 </div>
 
                 <section id="tarifas" class="row align tarifas">
-                    <h1 class="col-12 titles tarifasT">TARIFAS POR CAMPAÑA</h1>
-                    <div class="col-8 col-lg-5 align" style="display: flex; justify-content: space-evenly;">
+                    <h1 class="col-12 titles tarifasT">TARIFAS</h1>
+                    <div class="col-8 col-lg-5 align tarifasRetoq1" style="display: flex; justify-content: space-evenly;">
                         <button id="emp" class="col-4 col-lg-3 btn2 emp seleccionado"><i class="fas fa-city"></i> Empresa</button>
                         <button id="age" class="col-4 col-lg-3 btn2 age deseleccionado"><i class="fas fa-building"></i> Agencia</button>
                     </div>
@@ -1194,16 +1172,16 @@ foreach ($pricings as $key => $pricing) {
                         <div class="empresa row align col-lg-5">
                             <h2 data-aos="zoom-in" class="col-12 subT">Paquetes para empresas<br>de todos los tamaños</h2>
                             
-                            <label for="customRange3" class="form-label col-12" style="text-align: center; font-size: 27px; font-weight: 400;margin-bottom: 20px;"><strong id="campanas" class="num" style="font-weight: bolder;font-size: 29px;"> ? </strong> Campañas /mes</label>
+                            <label for="customRange3" class="form-label col-12" style="text-align: center; font-weight: 400;margin-bottom: 20px;"><strong id="campanas" class="num" style="font-weight: bolder;"> ? </strong> Campañas /mes</label>
                             <!-- <div id="range-cont">
                                 <a href="#empresa"><input type="range" class="form-range col-8" value="1" min="1" max="100" step="1" id="customRange3"></a> 
                                 <div></div>
                                 
                             </div> -->
-                            <a href="#empresa" id="drag-cont">
+                            <div style="cursor:pointer;" id="drag-cont">
                               
 
-                            </a>
+                            </div>
                                 
                         </div>
 
@@ -1218,9 +1196,8 @@ foreach ($pricings as $key => $pricing) {
                                         <h1 id="icF5" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;"></i></h1>
                                         </div>
                                         <div id="precios5" class="row align">
-                                            <h1 id="arss5" class="col-12 precio">$ <?php echo $pricings[0]['ars'] ?><p style="font-size: 19px;"> </p></h1>
-                                            <h1 id="dolaress5" class="col-12 precio" style="display: none;">$<?php echo $pricings[0]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
-                                            <h1 style="cursor: pointer; text-decoration: underline" id="ars5" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd5" class="col-2 usd"> USD</h1>
+                                            <h1 id="arss5" class="col-12 precio">¡ GRATIS !<p style="font-size: 19px;"> </p></h1>
+                                            
                                             <h1 class="col-12 desc" style="font-size: 15px;">¿No sabes cuantas campañas? Relevamiento y embudo a medida</h1>
                                             
                                             <button class="botonStart col-8">Comenzar ahora</button>
@@ -1238,7 +1215,7 @@ foreach ($pricings as $key => $pricing) {
                                     </div>
                                     <div id="precios1" class="row align">
                                         <h1 id="arss" class="col-12 precio">$ <?php echo $pricings[1]['ars'] ?> /<p style="font-size: 19px;">mes </strong></h1>
-                                        <h1 id="dolaress1" class="col-12 precio" style="display: none;">$<?php echo $pricings[1]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
+                                        <h1 id="dolaress1" class="col-12 precio" style="display: none;">$ <?php echo $pricings[1]['usd'] ?> /<p style="font-size: 19px;">mes</p> </h1>
                                         <h1 style="cursor: pointer; text-decoration: underline" id="ars" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd" class="col-2 usd"> USD</h1>
                                         <h1 id="pesos1" class="col-12 desc"> $ <?php echo $pricings[1]['ars'] / 2 ?> c/u</h1>
                                         <h1 id="dolares1" class="col-12 desc" style="display: none;"> $ <?php echo $pricings[1]['usd'] / 2 ?> c/u</h1>
@@ -1258,7 +1235,7 @@ foreach ($pricings as $key => $pricing) {
                                         </div>
                                         <div id="precios2" class="row align">
                                             <h1 id="arss2" class="col-12 precio">$ <?php echo $pricings[2]['ars'] ?> /<p style="font-size: 19px;">mes </p></h1>
-                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$<?php echo $pricings[2]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress2" class="col-12 precio" style="display: none;">$ <?php echo $pricings[2]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars2" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd2" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos2" class="col-12 desc">10% OFF / $ <?php echo $pricings[2]['ars'] / 3 ?> c/u</h1>
                                             <h1 id="dolares2" class="col-12 desc" style="display: none;">10% OFF / $ <?php echo $pricings[2]['usd'] / 3 ?> c/u</h1>
@@ -1278,10 +1255,10 @@ foreach ($pricings as $key => $pricing) {
                                         </div>
                                         <div id="precios3" class="row align">
                                             <h1 id="arss3" class="col-12 precio">$ <?php echo $pricings[3]['ars'] ?> /<p style="font-size: 19px;">mes </p></h1>
-                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$<?php echo $pricings[3]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress3" class="col-12 precio" style="display: none;">$ <?php echo $pricings[3]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars3" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd3" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos3" class="col-12 desc">15% OFF / $ <?php echo $pricings[3]['ars'] / 4 ?> c/u</h1>
-                                            <h1 id="dolares3" class="col-12 desc" style="display: none;">10% OFF / $ <?php echo $pricings[3]['usd'] / 4 ?> c/u</h1>
+                                            <h1 id="dolares3" class="col-12 desc" style="display: none;">15% OFF / $ <?php echo $pricings[3]['usd'] / 4 ?> c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
                                         </div>
                                         <h1 id="info3" class="col-12 desc" style="display: none;"><?php echo $pricings[3]['descripcion'] ?></h1>
@@ -1299,10 +1276,10 @@ foreach ($pricings as $key => $pricing) {
                                         </div>
                                         <div id="precios4" class="row align">
                                         <h1 id="arss4" class="col-12 precio"><p style="font-size: 19px;">Dsd </p>$ <?php echo $pricings[4]['ars'] ?> /<p style="font-size: 19px;">mes </p></h1>
-                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;">$<?php echo $pricings[4]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
+                                            <h1 id="dolaress4" class="col-12 precio" style="display: none;"><p style="font-size: 19px;">Dsd </p>$ <?php echo $pricings[4]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                             <h1 style="cursor: pointer; text-decoration: underline" id="ars4" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd4" class="col-2 usd"> USD</h1>
                                             <h1 id="pesos4" class="col-12 desc">20% OFF / $ <?php echo $pricings[4]['ars'] / 5 ?> c/u</h1>
-                                            <h1 id="dolares4" class="col-12 desc" style="display: none;">10% OFF / $ <?php echo $pricings[4]['usd'] / 5 ?> c/u</h1>
+                                            <h1 id="dolares4" class="col-12 desc" style="display: none;">20% OFF / $ <?php echo $pricings[4]['usd'] / 5 ?> c/u</h1>
                                             <button class="botonStart col-8">Comenzar ahora</button>
                                         </div>
                                         <h1 id="info4" class="col-12 desc" style="display: none;"><?php echo $pricings[4]['descripcion'] ?></h1>
@@ -1369,7 +1346,7 @@ foreach ($pricings as $key => $pricing) {
                                         $('.handle').css('left', sliderWidth*0.75)
                                     }
                                     if(diapo == 5){
-                                        $('#campanas').text('+5')
+                                        $('#campanas').text('+5')   
                                         $(".stripe").css("width", ""+ (diapo-1)*25 +"%");
                                         $('.handle').css('left', sliderWidth)
                                     }	
@@ -1384,7 +1361,7 @@ foreach ($pricings as $key => $pricing) {
                         <div class="col-12 col-lg-5 row align">
                             <h2 class="col-12 subT">Planes para agencias que buscan<br>terecerizar gestión de campañas.</h2>
 
-                            <h1 class="col-12" style="font-weight: 400;text-align: center;font-size: 27px;    margin: 3% 0 16% 0;"><strong style="font-weight: bolder;padding: 0;font-size: 27px;">+10 </strong>Campañas /mes</h1>
+                            <h1 class="col-12" style="font-weight: 400;text-align: center; margin: 3% 0 16% 0;"><strong style="font-weight: bolder;padding: 0;">+10 </strong>Campañas /mes</h1>
                         </div>
 
                         <!--<div id="planAgencia" class="center1 align cont">
@@ -1451,12 +1428,13 @@ foreach ($pricings as $key => $pricing) {
                             ]
                             });
                         </script>-->
+                    
            
 
                     <div class="carousel center1 cont agenciaMob" data-flickity='{"prevNextButtons": false }'>
                         <article class="card carousel-cell">
                             <div class="row align">
-                                    <div class="col-12 align" style="justify-content: flex-end;">
+                                    <div class="col-12 align" style="justify-content: flex-end;width: 85%;">
                                         <h1 id="icV6" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
                                         <h1 id="icF6" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                     </div>
@@ -1464,8 +1442,8 @@ foreach ($pricings as $key => $pricing) {
                                 <div class="col-10 row align" id="precios6">
                                     
                                     <h1 class="col-12 precio">PLAN FULL</h1>
-                                    <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php echo $pricings[6]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
-                                    <h1 id="dolaress6" class="col-12 precio" style="display: none;">$<?php echo $pricings[6]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
+                                    <h1 id="arss6" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php echo $pricings[6]['ars'] ?> /<p style="font-size: 19px;font-weight: 400;">mes </p></h1>
+                                    <h1 id="dolaress6" class="col-12 precio" style="display: none;">$ <?php echo $pricings[6]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                     <div class="col-12 align" style="justify-content: center;">
                                         <h1 style="cursor: pointer; text-decoration: underline" id="ars6" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd6" class="col-2 usd"> USD</h1>
                                     </div>
@@ -1477,15 +1455,15 @@ foreach ($pricings as $key => $pricing) {
                         </article>
                         <article class="card carousel-cell card-width">
                             <div class="row align">
-                                    <div class="col-12 align" style="justify-content: flex-end;">
+                                    <div class="col-12 align" style="justify-content: flex-end;width: 85%;">
                                         <h1 id="icV7" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
                                         <h1 id="icF7" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
                                     </div>
                                 
                                 <div class="col-10 row align" id="precios7">
                                     <h1 class="col-12 precio">PLAN BÁSICO</h1>
-                                    <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php echo $pricings[5]['ars'] ?> /<strong style="font-size: 19px;font-weight: 400;">mes </strong></h1>
-                                    <h1 id="dolaress7" class="col-12 precio" style="display: none;">$<?php echo $pricings[5]['usd'] ?> /<strong style="font-size: 19px;">mes </strong></h1>
+                                    <h1 id="arss7" class="col-12 precio"><strong style="font-size: 19px;font-weight: 400;"> Dsd</strong> $ <?php echo $pricings[5]['ars'] ?> /<p style="font-size: 19px;font-weight: 400;">mes </p></h1>
+                                    <h1 id="dolaress7" class="col-12 precio" style="display: none;">$ <?php echo $pricings[5]['usd'] ?> /<p style="font-size: 19px;">mes </p></h1>
                                     <div class="col-12 align" style="justify-content: center;">
                                         <h1 style="cursor: pointer; text-decoration: underline" id="ars7" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd7" class="col-2 usd"> USD</h1>
                                     </div>
@@ -1528,11 +1506,85 @@ foreach ($pricings as $key => $pricing) {
 
                     <div class="agenciaDesk">
                     
-                        <iframe src="agencia-slider.php" height="500px" style="overflow: hidden;padding: 0; height:340px"></iframe>
+                    <div class="">
+                        <div class="age-card-cont">
+                            <div class="agencia-card">
+                                <article class="card is-selected">
+                                    <div class="row align">
+                                            <div class="col-12 align3" style="justify-content: flex-end;">
+                                                    <h1 id="icV8" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
+                                                    <h1 id="icF8" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
+                                            </div>
+                                        
+                                        <div class="col-10 row" id="precios8">
+                                            
+                                            <h1 class="col-12 precio">PLAN FULL</h1>
+                                            <h1 id="arss8" class="col-12 precio"><p style="font-size: 19px;font-weight: 400;"> Dsd </p> <?php echo $pricings[6]['ars'] ?> /<p style="font-size: 19px;font-weight: 400;">mes </p></h1>
+                                            <h1 id="dolaress8" class="col-12 precio" style="display: none;"><p style="font-size: 19px;font-weight: 400;"> Dsd </p> <?php echo $pricings[6]['usd'] ?> /<p style="font-size: 19px;font-weight: 500;">mes </p></h1>
+                                            <div class="col-12 align2" style="justify-content: center;">
+                                                <h1 style="cursor: pointer; text-decoration: underline" id="ars8" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd8" class="col-2 usd"> USD</h1>
+                                            </div>
+                                            <h1 class="col-12 desc">30% OFF / $ <?php echo $pricings[6]['ars'] / 10 ?> c/u</h1>
+                                            <button class="botonStart col-8">Comenzar ahora</button>
+                                        </div>
+                                        <h1 id="info8" class="col-12 desc" style="display: none; padding: 5%"><?php echo $pricings[6]['descripcion'] ?></h1>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="agencia-card">
+                                    <article class="card card-width">
+                                        <div class="row align">
+                                                <div class="col-12 align3" style="justify-content: flex-end;">
+                                                    <h1 id="icV9" class="fas fa-arrow-circle-left col-6" style="cursor: pointer !important;font-size: 16px;text-align: start;margin-top: 20px;margin-bottom: -5px;display: none;position:absolute; text-align: right;background:white;"></h1>
+                                                    <h1 id="icF9" class="fas fa-info-circle col-6" style="cursor: pointer !important;font-size: 16px;text-align: end;margin-top: 20px;margin-bottom: -5px"><i style="text-align: end;margin-top: 20px;margin-bottom: -20px;font-size: 16px;cursor: pointer;"></i></h1>
+                                                </div>
+                                            
+                                            <div class="col-10 row align" id="precios9">
+                                                <h1 class="col-12 precio">PLAN BÁSICO</h1>
+                                                <h1 id="arss9" class="col-12 precio"><p style="font-size: 19px;font-weight: 400;"> Dsd </p> $ <?php echo $pricings[5]['ars'] ?> /<p style="font-size: 19px;font-weight: 400;">mes </p></h1>
+                                                <h1 id="dolaress9" class="col-12 precio" style="display: none;"><p style="font-size: 19px;font-weight: 400;"> Dsd </p> $ <?php echo $pricings[5]['usd'] ?> /<p style="font-size: 19px;font-weight: 500;">mes </p></h1>
+                                                <div class="col-12 align2" style="justify-content: center;">
+                                                    <h1 style="cursor: pointer; text-decoration: underline" id="ars9" class="col-2 ars">ARS </h1>-<h1 style="cursor: pointer;" id="usd9" class="col-2 usd"> USD</h1>
+                                                </div>
+                                                <h1 class="col-12 desc">50% OFF / $ <?php echo $pricings[5]['ars'] / 10 ?> c/u</h1>
+                                                <button class="botonStart col-8">Comenzar ahora</button>
+                                                <h1 id="info9" class="col-12 desc" style="display: none;"><?php echo $pricings[5]['descripcion'] ?></h1>
+                                            </div>
+                                           
+                                        </div>
+                                    </article>
+                            </div>
+                        </div>
+                    </div>
                         
                     </div>
 
                 </section>
+                <script>
+
+                        document.getElementById("icF8").addEventListener("click", function(){
+                            document.getElementById("precios8").style.display = "none"
+                            document.getElementById("info8").style.display = "inline"
+                            document.getElementById("icV8").style.display = "inline";
+                        })
+                        document.getElementById("icV8").addEventListener("click", function(){
+                            document.getElementById("icV8").style.display = "none"
+                            document.getElementById("precios8").style.display = "flex"
+                            document.getElementById("info8").style.display = "none"
+                        })
+
+                        document.getElementById("icF9").addEventListener("click", function(){
+                            
+                            document.getElementById("precios9").style.display = "none"
+                            document.getElementById("info9").style.display = "inline"
+                            document.getElementById("icV9").style.display = "inline"
+                        })
+                        document.getElementById("icV9").addEventListener("click", function(){
+                            document.getElementById("icV9").style.display = "none"
+                            document.getElementById("precios9").style.display = "flex"
+                            document.getElementById("info9").style.display = "none"
+                        })
+                </script>
 
                 <div class="col-12 align fondo pers">
                     <section id="faqs" class="row align preguntas" style="width: 100% !important; padding-top: 21px;">
@@ -1893,16 +1945,24 @@ foreach ($pricings as $key => $pricing) {
                             <h3 class="msj col-11">/ Dejanos tu mensaje</h3>
                             <!-- <div id="form-mail"> -->
                                 <div id="nombre1" class="email input-activo email-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                    <input class="email-input col-10" type="email" placeholder="Nombre"></input>
+                                    <label>Nombre y Apellido</label>
+                                    <input class="email-input col-10" type="text"></input>
+                                </div>
+                                <div id="empresa1" class="email input-activo email-campos align col-12 col-lg-7" style="justify-content: space-around;">
+                                    <label>Empresa</label>
+                                    <input class="email-input col-10" type="text"></input>
                                 </div>
                                 <div id="email1" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                    <input class="email-input col-10" type="email" placeholder="Mail"></input>
+                                    <label>Email</label>
+                                    <input class="email-input col-10" type="email"></input>
                                 </div>
-                                <div id="telefono" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                    <input class="email-input col-10" type="email" placeholder="Dejanos tu telefono"></input>
+                                <div id="telefono" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">                                    
+                                    <label>Telefono</label>
+                                    <input class="email-input col-10" type="cellphone"></input>
                                 </div>
-                                <div id="mensaje" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">
-                                    <input class="email-input col-10" type="email" placeholder="Dejanos tu Mensaje"></input>
+                                <div id="mensaje" class="email email-campos align col-12 col-lg-7" style="justify-content: space-around;">                                    
+                                    <label>Consulta</label>
+                                    <textarea class="email-input col-10"></textarea>
                                 </div>
 
                                 <div class="enviar-btn" id="enviar-mail">
@@ -1922,10 +1982,9 @@ foreach ($pricings as $key => $pricing) {
 
 
 
-                        <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="calen" class="align row" style="display: none;">
+                        <!-- <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="calen" class="align row" style="display: none;">
                             <h3 class="msj col-11">/ Agendá una videollamada</h3>
                             
-                            <!-- <div id="form-calendario"> -->
                                 <div id="fecha" class="email input-activo calen-campos align col-12 col-lg-7" style="justify-content: space-around;">
                                     <input class="email-input col-10" type="email" placeholder="Fecha"></input>
                                 </div>
@@ -1949,10 +2008,8 @@ foreach ($pricings as $key => $pricing) {
                                 <div id="grax2" class="col-12 col-lg-7 calen-campos" style="justify-content: space-around;display: none; padding: 3%; text-align: center">
                                     <h3>Gracias, nos contactaremos a la brevedad.</h3>
                                 </div>
-                            <!-- </div> -->
-
-                            
                         </div>
+                         -->
                         <script type="text/javascript">
                          
                             // $("#horaClick").click(function(){
@@ -2031,17 +2088,17 @@ foreach ($pricings as $key => $pricing) {
                         </div>
 
 
-                        <div data-aos="zoom-in-up" data-aos-duration="700" class="col-12 col-lg-7 align iconos" style="justify-content: space-around;">
+                        <!-- <div data-aos="zoom-in-up" data-aos-duration="700" class="col-12 col-lg-7 align iconos" style="justify-content: space-around;">
                             <button id="mail" class="col-3 iconBut contact-option-selected"><img class="imgLogos" src="./Images/samsung-mail.png" alt="" style="width: 100%;"></button>
                             <button id="calendar" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-calendar.png" alt="" style="width: 100%;"></i></button>
                             <button id="numero" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-phone.png" alt="" style="width: 100%;"></i></button>
                             <button id="whats" class="col-3 iconBut"><img class="imgLogos" src="./Images/samsung-wpp2.png" alt="" style="width: 100%;"></i></button>
-                        </div>
+                        </div> -->
 
 
 
 
-                        <script type="text/javascript">
+                        <!-- <script type="text/javascript">
                             $("#mail").click(function(){
 
                                 $('#calen, #phone, #wpp, #num').hide()
@@ -2078,7 +2135,7 @@ foreach ($pricings as $key => $pricing) {
                                 $("#wpp").fadeIn();
  
                         });
-                        </script>
+                        </script> -->
 
                         <script>
 
@@ -2122,7 +2179,7 @@ foreach ($pricings as $key => $pricing) {
                     <img src="./Images/kliv-logo-blanco.png" alt="" class="col-3  logoFoot">
                 </div>
                 <div class="col-6 align iconosFoot" style="justify-content: center;"> 
-                    <p class="direc col-2" style="margin:0">Seguinos:</p>
+                    <i class="fab fa-whatsapp col-2 icFoot" style="cursor: pointer;"></i>
                     <i class="fab fa-facebook-square col-2 icFoot" style="cursor: pointer;"></i>
                     <i class="fab fa-instagram col-2 icFoot" style="cursor: pointer;"></i>
                 </div>
@@ -2391,6 +2448,48 @@ $('iframe').on('load', function() {
         document.getElementById("info7").style.display = "none"
       })
 
+
+
+let servicio = $("section.services").offset().top;
+let como = $("#trabajamos").offset().top;
+let tarifas = $("#tarifas").offset().top;
+let faqs = $("#faqs").offset().top;
+let socios = $("#socios2").offset().top;
+let contacto = $("#contacto").offset().top;
+
+$(window).scroll( function(){
+    
+    let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    let scroll = $(window).scrollTop();   
+    if (bottom_of_screen > servicio) {
+        $('.nav>a').css('font-weight','normal')
+    }
+    if (scroll > servicio - 320) {
+        $('.nav>a').css('font-weight','normal')
+        $('.nav>a:nth-child(1)').css('font-weight','bold')
+    }
+    if (scroll > como - 320) {
+        $('.nav>a').css('font-weight','normal')
+        $('.nav>a:nth-child(2)').css('font-weight','bold')
+    }
+    if (scroll > tarifas - 320) {
+        $('.nav>a').css('font-weight','normal')
+        $('.nav>a:nth-child(3)').css('font-weight','bold')
+    }
+    if (scroll > faqs - 320) {
+        $('.nav>a').css('font-weight','normal')
+        $('.nav>a:nth-child(4)').css('font-weight','bold')
+    }
+    if (scroll > socios - 320) {
+        $('.nav>a').css('font-weight','normal')
+        $('.nav>a:nth-child(5)').css('font-weight','bold')
+    }
+    if (scroll > contacto - 320) {
+        $('.nav>a').css('font-weight','normal')
+        $('.nav>a:nth-child(6)').css('font-weight','bold')
+    }
+
+})
 
 })
 </script>
