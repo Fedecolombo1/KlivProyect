@@ -1225,13 +1225,19 @@ footer{
         .card-width{
             width: 70%;
         }
-        #empresa .slick-track>article {
-            height: 54vh!important;
+
+        #form-section{
+            width: 100%!important;
         }
-        .enviar-btn{
-            width: 50%;
-            margin-left:auto;
+
+        .inputs-row{
+            flex-direction: column!important;
         }
+
+        .input-cont{
+            width: 100%!important;
+        }
+
     }
 
     @media(min-width:768px){

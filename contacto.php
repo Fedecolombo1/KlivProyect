@@ -35,9 +35,10 @@ $mail->Body = utf8_decode('Nombre: ' . $nombre . '<br>
 
 }else{
 	$nombre = $_POST['nombre'];
+	$empresa = $_POST['empresa'];
 	$email = $_POST['email'];
 	$telefono = $_POST['telefono'];
-	$mensaje = $_POST['mensaje'];
+	$consulta = $_POST['consulta'];
 	
 	
 	$mail = new PHPMailer;
@@ -53,9 +54,10 @@ $mail->Body = utf8_decode('Nombre: ' . $nombre . '<br>
 	$mail->Subject='Contacto desde el sitio web: ' . $nombre;
 	
 	$mail->Body = utf8_decode('Nombre: ' . $nombre . '<br>
+				   Empresa: ' . $empresa . '<br>
 				   Email: ' . $email . '<br>
 				   Telefono: ' . $telefono . '<br>
-				   Mensaje: ' . $mensaje . '<br>');
+				   Consulta: ' . $consulta . '<br>');
 
 }
 
